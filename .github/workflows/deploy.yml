@@ -1,5 +1,9 @@
 name: Deploy Astro Starlight to GitHub Pages
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # future-proof GitHub Actions Node version
+
+
 on:
   push:
     branches:
@@ -35,7 +39,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist        # Astro output folder
-          branch: gh-pages           # branch where site will be deployed
+          publish_branch: gh-pages   # <-- correct input name
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: "Deploy Astro Starlight site: ${{ github.sha }}"
+          commit_message: "Deploy Astro Starlight site: ${{ github.sha }}"  
