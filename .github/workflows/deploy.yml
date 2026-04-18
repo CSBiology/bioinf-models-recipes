@@ -40,6 +40,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist        # Astro output folder
           publish_branch: gh-pages   # <-- correct input name
+          force_orphan: true   # ensures branch is created if missing
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: "Deploy Astro Starlight site: ${{ github.sha }}"  
