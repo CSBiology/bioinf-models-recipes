@@ -1,3 +1,8 @@
+---
+title: Dot Plots as a Conceptual Bridge
+description: Use dot plots to visualize sequence similarity and motivate seed-based search strategies.
+---
+
 ## **4.5 Dot Plots as a Conceptual Bridge**
 
 Before introducing concrete algorithms, it is helpful to develop an intuitive understanding of how similarity between sequences is distributed. One of the simplest and most insightful tools for this purpose is the **dot plot**.

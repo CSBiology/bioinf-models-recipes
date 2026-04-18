@@ -1,3 +1,8 @@
+---
+title: What Similarity Search Reveals
+description: Describe how sequence matches generate biological hypotheses about function, domains, and evolution.
+---
+
 ## **4.3 What Similarity Search Reveals**
 
 Having established how similarity search allows us to efficiently navigate vast sequence databases, we now return to the biological question that motivated this entire framework:

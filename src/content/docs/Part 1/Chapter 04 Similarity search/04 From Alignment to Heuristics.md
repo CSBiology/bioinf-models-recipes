@@ -1,3 +1,8 @@
+---
+title: From Alignment to Heuristics
+description: Move from exact alignment algorithms to heuristic strategies for large-scale similarity search.
+---
+
 ## **4.4 From Alignment to Heuristics**
 
 Up to this point, we have developed two complementary perspectives.

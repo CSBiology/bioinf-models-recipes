@@ -1,3 +1,8 @@
+---
+title: From Molecular Function to Sequence Comparison
+description: Connect molecular function, NRPS biology, and sequence comparison as a computational problem.
+---
+
 # 1. From Molecular Function to Sequence Comparison
 
 ## Learning Objectives

@@ -1,3 +1,8 @@
+---
+title: Why Similarity Search Matters
+description: Show how similarity search connects sequence data to biological function and computational discovery.
+---
+
 # **4.1 Why Similarity Search Matters**
 
 In Chapter 03, we explored **non-ribosomal peptide synthesis (NRPS)** as an example of how biological function is encoded in sequence. Unlike ribosomal protein synthesis, NRPS systems assemble complex peptides through modular enzymatic machinery. Each module, and in particular each **adenylation domain**, determines which substrate is incorporated into the growing peptide chain.

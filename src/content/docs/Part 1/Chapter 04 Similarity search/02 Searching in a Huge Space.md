@@ -1,3 +1,8 @@
+---
+title: "The Core Problem: Searching in a Huge Space"
+description: Explain why exhaustive sequence search is impractical and motivates heuristic filtering.
+---
+
 # **4.2 The Core Problem: Searching in a Huge Space**
 
 The NRPS example from the previous section gives us a clear formulation of the task:

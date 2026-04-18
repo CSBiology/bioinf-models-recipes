@@ -1,3 +1,8 @@
+---
+title: Sensitivity vs Speed Trade-off
+description: Discuss how search parameters balance sensitivity, selectivity, and runtime in similarity search.
+---
+
 
 ## **4.11 Sensitivity vs Speed Trade-off**
 

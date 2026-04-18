@@ -1,3 +1,8 @@
+---
+title: Statistical Significance of Matches
+description: Explain P-values, E-values, database size, and statistical interpretation of sequence matches.
+---
+
 ## **4.14 Statistical Significance of Matches**
 
 Up to this point, similarity search has produced alignments and scores that reflect how well two sequences match. However, an important question remains:

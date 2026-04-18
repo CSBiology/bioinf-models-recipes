@@ -1,3 +1,8 @@
+---
+title: Limitations and Misinterpretations
+description: Review common interpretation errors in similarity search, including weak hits and domain effects.
+---
+
 ## **4.16 Limitations and Misinterpretations**
 
 Similarity search is a powerful tool, but it is not a substitute for careful reasoning. Many errors in bioinformatics do not arise from incorrect algorithms, but from **misinterpretation of their results**.

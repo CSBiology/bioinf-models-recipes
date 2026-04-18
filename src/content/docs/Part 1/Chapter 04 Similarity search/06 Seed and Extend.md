@@ -1,3 +1,8 @@
+---
+title: "The Key Idea: Seed and Extend"
+description: Explain how seed-and-extend methods reduce search space while retaining useful similarity signals.
+---
+
 ## **4.6 The Key Idea: Seed and Extend**
 
 The dot plot provided an important insight: meaningful similarity between sequences does not appear uniformly across the search space. Instead, it is concentrated along **diagonals formed by clusters of short matching segments**.

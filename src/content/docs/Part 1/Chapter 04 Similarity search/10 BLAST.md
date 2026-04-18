@@ -1,3 +1,8 @@
+---
+title: "BLAST: The Standard Tool"
+description: Explain BLAST's seed-based workflow, neighborhood words, extension, and practical trade-offs.
+---
+
 ## **4.10 BLAST: The Standard Tool**
 
 While FASTA established the fundamental framework for heuristic similarity search, further improvements were needed to increase sensitivity without sacrificing speed. This led to the development of **BLAST**, which has become the standard tool for sequence similarity search in molecular biology.

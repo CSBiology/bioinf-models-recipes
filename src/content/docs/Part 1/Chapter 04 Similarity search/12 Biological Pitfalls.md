@@ -1,3 +1,8 @@
+---
+title: "Biological Pitfalls: Low Complexity Sequences"
+description: Show how low complexity regions can mislead similarity search and how masking helps interpretation.
+---
+
 ## **4.12 Biological Pitfalls: Low Complexity Sequences**
 
 So far, similarity search has appeared as a powerful and broadly reliable tool. However, like all inference methods, it has limitations. One of the most important and frequently encountered sources of error arises from **low complexity sequences**.

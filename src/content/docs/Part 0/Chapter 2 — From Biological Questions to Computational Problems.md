@@ -1,3 +1,8 @@
+---
+title: Chapter 2
+description: From Biological Questions to Computational Problems
+---
+
 # Chapter 2 — From Biological Questions to Computational Problems
 
 ## Learning Goals

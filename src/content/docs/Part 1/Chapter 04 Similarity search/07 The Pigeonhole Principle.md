@@ -1,3 +1,8 @@
+---
+title: "Why This Works: The Pigeonhole Principle"
+description: Connect the pigeonhole principle to seed matches and efficient sequence search algorithms.
+---
+
 ## **4.7 Why This Works: The Pigeonhole Principle**
 
 The seed-and-extend strategy may at first seem almost too optimistic. How can we rely on short exact matches to detect longer, potentially noisy similarities between sequences?

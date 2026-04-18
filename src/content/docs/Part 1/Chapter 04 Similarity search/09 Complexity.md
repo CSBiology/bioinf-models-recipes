@@ -1,3 +1,8 @@
+---
+title: "Complexity: Why FASTA Is Fast"
+description: Analyze the computational steps that make FASTA faster than exhaustive alignment.
+---
+
 ## **4.9 Complexity: Why FASTA Is Fast**
 
 The design of FASTA is not only conceptually elegant but also computationally efficient. To understand why, we need to examine how its different steps scale with the size of the input.

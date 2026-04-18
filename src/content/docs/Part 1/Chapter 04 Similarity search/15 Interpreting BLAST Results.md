@@ -1,3 +1,8 @@
+---
+title: Interpreting BLAST Results
+description: Guide interpretation of BLAST hit lists, alignments, statistics, and biological evidence.
+---
+
 ## **4.15 Interpreting BLAST Results**
 
 Running a search with BLAST produces a structured output that combines sequence alignments, scores, and statistical measures. Interpreting this output correctly is essential, as the results represent **predictions**, not definitive conclusions.

@@ -1,3 +1,8 @@
+---
+title: From Biological Questions to a Formal Problem
+description: Translate biological sequence questions into formal similarity, distance, and optimization problems.
+---
+
 # 3. From Biological Questions to a Formal Problem
 
 ## Learning Objectives

@@ -1,3 +1,8 @@
+---
+title: Alignment Is Not Obvious
+description: Explore why sequence alignment requires gaps, models, and careful biological interpretation.
+---
+
 # 2. Alignment Is Not Obvious
 
 ## Learning Objectives

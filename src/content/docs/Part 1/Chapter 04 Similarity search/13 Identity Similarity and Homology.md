@@ -1,3 +1,8 @@
+---
+title: "Identity, Similarity, and Homology"
+description: Clarify the differences between exact identity, biological similarity, and evolutionary homology.
+---
+
 ## **4.13 Identity, Similarity, and Homology**
 
 Similarity search produces numerical scores, alignments, and rankings. However, interpreting these results correctly requires careful use of terminology. In particular, the terms **identity**, **similarity**, and **homology** are often confused, even though they describe fundamentally different concepts.

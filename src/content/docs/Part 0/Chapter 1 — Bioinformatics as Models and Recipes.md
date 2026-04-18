@@ -1,3 +1,8 @@
+---
+title: Chapter 1
+description: "Introduction: Bioinformatics as Models and Recipes"
+---
+
 # Chapter 1 — Introduction: Bioinformatics as Models and Recipes
 
 ## Learning Goals

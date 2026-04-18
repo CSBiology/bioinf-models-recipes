@@ -1,3 +1,8 @@
+---
+title: "FASTA: First Practical Heuristic"
+description: Introduce FASTA as an early heuristic method for fast biological sequence similarity search.
+---
+
 ## **4.8 FASTA: First Practical Heuristic**
 
 The ideas developed so far lead naturally to the first widely used heuristic algorithm for sequence similarity search: **FASTA**.

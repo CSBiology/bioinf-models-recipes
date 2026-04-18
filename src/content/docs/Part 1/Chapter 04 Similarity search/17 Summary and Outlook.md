@@ -1,3 +1,8 @@
+---
+title: "Summary and Outlook: From Heuristics to Probabilistic Models"
+description: Summarize heuristic similarity search and introduce the move toward probabilistic sequence models.
+---
+
 ## **4.17 Summary and Outlook: From Heuristics to Probabilistic Models**
 
 In this chapter, we developed similarity search as a practical solution to a fundamental problem in computational biology:
