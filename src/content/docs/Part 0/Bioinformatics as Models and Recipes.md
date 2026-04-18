@@ -1,9 +1,11 @@
 ---
-title: Chapter 1
-description: "Introduction: Bioinformatics as Models and Recipes"
+title: "Chapter 1 — Introduction: Bioinformatics as Models and Recipes"
+sidebar:
+  label: "1 - From Biological Questions to Computational Problems"
+  order: 1
+  group: "Part 0"
+  part: "Part 0"
 ---
-
-# Chapter 1 — Introduction: Bioinformatics as Models and Recipes
 
 ## Learning Goals
 

@@ -1,20 +1,12 @@
 ---
-title: From Molecular Function to Sequence Comparison
-description: Connect molecular function, NRPS biology, and sequence comparison as a computational problem.
+title: "3.1 From Molecular Function to Sequence Comparison"
+sidebar:
+  label: "1. From Molecular Function to Sequence Comparison"
+  order: 2
+  group: "Chapter 3"
+  part: "Part 1"
 ---
 
-# 1. From Molecular Function to Sequence Comparison
-
-## Learning Objectives
-
-After this section, you should be able to:
-
-- describe the difference between ribosomal and non-ribosomal peptide synthesis  
-- explain how NRPS systems function as molecular assembly lines  
-- understand why sequence comparison is essential for linking sequence to function  
-- formulate biological questions that lead to computational sequence analysis  
-
----
 
 ## 1.1 How Cells Build Molecules
 
@@ -39,7 +31,7 @@ A useful mental model is:
 
 > **Non-ribosomal peptide synthetases are molecular assembly lines.**
 
----
+
 
 ## 1.2 Different Organisms, Different Molecules
 
@@ -59,7 +51,7 @@ This immediately raises a biological question:
 
 > **Why do closely related organisms produce different molecules?**
 
----
+
 
 ## 1.3 The Assembly Line Inside the Cell
 
@@ -77,7 +69,7 @@ This leads to a crucial insight:
 
 > **The sequence of modules determines the structure of the final molecule.**
 
----
+
 
 ## 1.4 Where Is the Specificity Encoded?
 
@@ -99,7 +91,7 @@ This suggests:
 
 > **Small sequence patterns can determine biological function.**
 
----
+
 
 ## 1.5 From Biology to Computation
 
@@ -119,7 +111,7 @@ This leads to a fundamental question:
 
 > **How can we systematically compare sequences to detect functionally relevant similarities?**
 
----
+
 
 ## 1.6 Transition: Toward a Model of Similarity
 
@@ -134,9 +126,18 @@ This is the central topic of this chapter:
 
 > **Sequence alignment as a model of biological similarity.**
 
----
 
-## Self-Check Questions
+### Learning Objectives
+
+After this section, you should be able to:
+
+- describe the difference between ribosomal and non-ribosomal peptide synthesis  
+- explain how NRPS systems function as molecular assembly lines  
+- understand why sequence comparison is essential for linking sequence to function  
+- formulate biological questions that lead to computational sequence analysis  
+
+
+### Self-Check Questions
 
 - What is the key difference between ribosomal and non-ribosomal peptide synthesis?  
 - Why can NRPS systems be viewed as assembly lines?  

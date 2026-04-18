@@ -1,9 +1,11 @@
 ---
-title: "Scoring Schemes: Encoding Biological Assumptions"
-description: Explain how substitution scores and gap penalties encode biological assumptions in alignments.
+title: "3.5 Scoring Schemes: Encoding Biological Assumptions"
+sidebar:
+  label: "5. Scoring Schemes: Encoding Biological Assumptions"
+  order: 5
+  group: "Chapter 3"
+  part: "Part 1"
 ---
-
-# 5. Scoring Schemes: Encoding Biological Assumptions
 
 ## Learning Objectives
 

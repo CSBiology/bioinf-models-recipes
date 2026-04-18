@@ -1,9 +1,12 @@
 ---
-title: Alignment Is Not Obvious
-description: Explore why sequence alignment requires gaps, models, and careful biological interpretation.
+title: "3.2 Alignment Is Not Obvious"
+sidebar:
+  label: "2. Alignment Is Not Obvious"
+  order: 2
+  group: "Chapter 3"
+  part: "Part 1"
 ---
 
-# 2. Alignment Is Not Obvious
 
 ## Learning Objectives
 
@@ -14,7 +17,7 @@ After this section, you should be able to:
 - interpret gaps as biological events  
 - explain why alignment requires a formal scoring model  
 
----
+
 
 ## 2.1 A First Attempt: Comparing Sequences by Eye
 
@@ -31,7 +34,7 @@ A natural conclusion might be:
 
 But this conclusion is misleading.
 
----
+
 
 ## 2.2 Shifting the Perspective
 
@@ -51,7 +54,7 @@ This reveals a first key insight:
 
 > **Similarity depends on how sequences are aligned, not just on the sequences themselves.**
 
----
+
 
 ## 2.3 Introducing Gaps: A Crucial Step
 
@@ -70,7 +73,7 @@ Now something remarkable happens:
 
 This is the moment where structure appears out of apparent noise.
 
----
+
 
 ## 2.4 From Visual Trick to Biological Meaning
 
@@ -87,7 +90,7 @@ This leads to a deeper interpretation:
 We are no longer just “lining things up”.  
 We are proposing an **evolutionary explanation**.
 
----
+
 
 ## 2.5 The Key Insight
 
@@ -105,7 +108,7 @@ This raises a fundamental question:
 
 > **How do we decide which alignment is the “best”?**
 
----
+
 
 ## 2.6 The Need for a Model
 
@@ -123,7 +126,7 @@ This is where the chapter transitions from:
 → to  
 - mathematical modeling and algorithms  
 
----
+
 
 ## Transition to the Next Section
 
@@ -137,7 +140,7 @@ This leads directly to:
 
 > **Sequence alignment as an optimization problem**
 
----
+
 
 ## Self-Check Questions
 

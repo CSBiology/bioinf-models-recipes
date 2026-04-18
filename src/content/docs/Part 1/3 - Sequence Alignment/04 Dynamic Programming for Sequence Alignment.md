@@ -1,9 +1,11 @@
 ---
-title: Dynamic Programming for Sequence Alignment
-description: Introduce the Needleman-Wunsch algorithm and dynamic programming for global sequence alignment.
+title: "3.4 Dynamic Programming for Sequence Alignment (Needleman–Wunsch)"
+sidebar:
+  label: "4. Dynamic Programming for Sequence Alignment (Needleman–Wunsch)"
+  order: 4
+  group: "Chapter 3"
+  part: "Part 1"
 ---
-
-# 4. Dynamic Programming for Sequence Alignment (Needleman–Wunsch)
 
 ## Learning Objectives
 

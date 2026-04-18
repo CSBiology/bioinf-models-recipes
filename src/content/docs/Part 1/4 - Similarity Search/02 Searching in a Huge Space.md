@@ -1,6 +1,10 @@
 ---
-title: "The Core Problem: Searching in a Huge Space"
-description: Explain why exhaustive sequence search is impractical and motivates heuristic filtering.
+title: "4.2 The Core Problem: Searching in a Huge Space"
+sidebar:
+  label: "2. Why Similarity Search Matters"
+  order: 2
+  group: "Chapter 4"
+  part: "Part 1"
 ---
 
 # **4.2 The Core Problem: Searching in a Huge Space**

@@ -1,19 +1,10 @@
 ---
-title: From Biological Questions to a Formal Problem
-description: Translate biological sequence questions into formal similarity, distance, and optimization problems.
----
-
-# 3. From Biological Questions to a Formal Problem
-
-## Learning Objectives
-
-After this section, you should be able to:
-
-- represent biological sequences in a formal mathematical way  
-- define sequence similarity as an optimization problem  
-- distinguish between distance-based and score-based formulations  
-- understand the limitations of naive similarity measures  
-
+title: "3.3 From Biological Questions to a Formal Problem"
+sidebar:
+  label: "3. From Biological Questions to a Formal Problem"
+  order: 3
+  group: "Chapter 3"
+  part: "Part 1"
 ---
 
 ## 3.1 Representing Sequences Formally
@@ -189,9 +180,15 @@ This leads us to one of the central techniques in bioinformatics:
 
 > **Dynamic programming**
 
----
+### Learning Objectives
 
-## Self-Check Questions
+After this section, you should be able to:
+
+- represent biological sequences in a formal mathematical way  
+- define sequence similarity as an optimization problem  
+- distinguish between distance-based and score-based formulations  
+- understand the limitations of naive similarity measures  
+### Self-Check Questions
 
 - Why is it useful to represent sequences as strings over an alphabet?  
 - What are the limitations of Hamming distance?  

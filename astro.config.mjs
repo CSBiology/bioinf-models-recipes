@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightAutoSidebar from 'starlight-auto-sidebar';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,21 +15,39 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Bioinformatics - Models and Recipes',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/CSBiology/bioinf-models-recipes' }],
+
+			social: [
+				{
+					icon: 'github',
+					label: 'GitHub',
+					href: 'https://github.com/CSBiology/bioinf-models-recipes',
+				},
+			],
+
+			// Enable auto sidebar plugin
+			plugins: [
+				starlightAutoSidebar(),
+			],
+
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Part 0',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+					{
+						label: '1 - Bioinformatics as Models and Recipes',
+						slug: 'part-0/bioinformatics-as-models-and-recipes',
+					},
+					{
+						label: '2 - Models and Recipes in Bioinformatics',
+						slug: 'part-0/from-biological-questions-to-computational-problems',
+					},
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Part 1',
+					autogenerate: { directory: 'Part 1' },
 				},
 			],
 		}),
 	],
 });
-

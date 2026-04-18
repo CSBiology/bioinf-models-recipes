@@ -1,6 +1,10 @@
 ---
-title: Why Similarity Search Matters
-description: Show how similarity search connects sequence data to biological function and computational discovery.
+title: "4.1 Why Similarity Search Matters"
+sidebar:
+  label: "1. Why Similarity Search Matters"
+  order: 1
+  group: "Chapter 4"
+  part: "Part 1"
 ---
 
 # **4.1 Why Similarity Search Matters**

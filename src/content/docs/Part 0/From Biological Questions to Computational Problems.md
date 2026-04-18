@@ -1,9 +1,11 @@
 ---
-title: Chapter 2
-description: From Biological Questions to Computational Problems
+title: "Chapter 2 — From Biological Questions to Computational Problems"
+sidebar:
+  label: "2 - From Biological Questions to Computational Problems"
+  order: 2
+  group: "Part 0"
+  part: "Part 0"
 ---
-
-# Chapter 2 — From Biological Questions to Computational Problems
 
 ## Learning Goals
 
