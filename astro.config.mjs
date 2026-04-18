@@ -4,6 +4,13 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://username.github.io/bioinf-models-recipes',
+
+	// ONLY apply base in production (GitHub Pages)
+	base: import.meta.env.PROD
+		? '/bioinf-models-recipes/'
+		: '/',
+
 	integrations: [
 		starlight({
 			title: 'Bioinformatics - Models and Recipes',
