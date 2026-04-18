@@ -1,35 +1,41 @@
-name: Deploy Astro to GitHub Pages
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # future-proof GitHub Actions Node version
+name: Deploy Astro Starlight to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main   # replace with your default branch
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: 'npm'
 
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # 4. Build the Astro site
       - name: Build site
         run: npm run build
 
+      # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist        # Astro output folder
+          branch: gh-pages           # branch where site will be deployed
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy Astro Starlight site: ${{ github.sha }}"
