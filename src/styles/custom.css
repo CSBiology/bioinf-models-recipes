@@ -1,15 +1,33 @@
 /* Light theme */
 :root,
 :root[data-theme='light'] {
-  --sl-color-text: #1d2c50;
+  --sl-color-text: #3C5667;
   
-  --sl-color-accent: #fb923c;       /* main orange */
-  --sl-color-accent-low: #fed7aa;   /* light orange (replaces #b3c7ff-like tones) */
+  --sl-color-accent: #FFA252;       /* main orange #FFA252 */
+  --sl-color-accent-low: #FFC797;   /* light orange (replaces #b3c7ff-like tones) */
   --sl-color-accent-high: #f97316;  /* darker orange */--page-title-color: #fb923c;
 
   --page-title-color: #fb923c;
   --section-title-color: #fb923c;
-  --sidebar-section-title-color: #fb923c;
+  --sidebar-section-title-color: #507289;
+
+/*
+  dark-blue 3C5667
+  blue 507289
+  light blue 90ACBE
+
+  dark-grey 525252
+  grey 7C7C7C
+  light-grey 1D2C36 
+
+  orange FFA252;       
+  light-orange FFC797;   
+  dark-orange f97316;
+
+  white ffffff
+
+*/
+
 
   /* --heading-color: #1d2c50;
   --sl-color-text: #1d2c50;
