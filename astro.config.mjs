@@ -14,7 +14,10 @@ export default defineConfig({
 
 	integrations: [
 		starlight({
-			title: 'Bioinformatics - Models and Recipes',
+			title: {
+				en: 'Bioinformatics - Models and Recipes',
+				de: 'Bioinformatik - Modelle und Rezepte',
+			},
 
 			customCss: [
 				'./src/styles/custom.css',
@@ -41,21 +44,54 @@ export default defineConfig({
 
 			sidebar: [
 				{
-					label: 'Part 0',
+					label: 'Part I | Foundations of Bioinformatics Thinking',
+					translations: {
+						de: 'Teil I | Grundlagen des bioinformatischen Denkens',
+				},
 					items: [
 					{
 						label: '1 - Bioinformatics as Models and Recipes',
-						slug: 'part-0/bioinformatics-as-models-and-recipes',
+						translations: {
+							de: '1 - Bioinformatik als Modelle und Rezepte',
+						},
+						slug: 'part-1/bioinformatics-as-models-and-recipes',
 					},
 					{
-						label: '2 - Models and Recipes in Bioinformatics',
-						slug: 'part-0/from-biological-questions-to-computational-problems',
+						label: '2 - From Biological Questions to Computational Problems',
+						translations: {
+							de: '2 - Von biologischen Fragen zu computationalen Problemen',
+						},
+						slug: 'part-1/from-biological-questions-to-computational-problems',
 					},
 					],
 				},
 				{
-					label: 'Part 1',
-					autogenerate: { directory: 'Part 1' },
+					label: 'Part II | Sequence Models - From Similarity to Evolution',
+					translations: {
+						de: 'Teil II | Sequenzmodelle – Von Ähnlichkeit zu Evolution',
+					},
+					autogenerate: { directory: 'Part 2' },
+				},
+				{		
+					label: 'Part III | Learning from Biological Data',
+					translations: {
+						de: 'Teil III | Lernen aus biologischen Daten',
+					},
+					autogenerate: { directory: 'Part 3' },
+				},
+				{
+					label: 'Part IV | Systems Biology - Structure and Dynamics',
+					translations: {
+						de: 'Teil IV | Systembiologie - Struktur und Dynamik',
+					},
+					autogenerate: { directory: 'Part 4' },
+				},
+				{
+					label: 'Part V | Stochastic Biology - From Noise to Function',
+					translations: {
+						de: 'Teil V | Stochastische Biologie - Von Rauschen zu Funktion',
+					},
+					autogenerate: { directory: 'Part 5' },
 				},
 			],
 		}),

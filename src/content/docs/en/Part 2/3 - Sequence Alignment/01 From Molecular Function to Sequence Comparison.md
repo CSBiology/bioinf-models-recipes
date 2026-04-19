@@ -1,14 +1,14 @@
 ---
 title: "3.1 From Molecular Function to Sequence Comparison"
 sidebar:
-  label: "1. From Molecular Function to Sequence Comparison"
+  label: "3.1. From Molecular Function to Sequence Comparison"
   order: 2
   group: "Chapter 3"
   part: "Part 1"
 ---
 
 
-## 1.1 How Cells Build Molecules
+## 3.1.1 How Cells Build Molecules
 
 Living cells constantly produce molecules. The most familiar pathway is described by the central dogma of molecular biology:
 
@@ -33,7 +33,7 @@ A useful mental model is:
 
 
 
-## 1.2 Different Organisms, Different Molecules
+## 3.1.2 Different Organisms, Different Molecules
 
 Different bacteria use NRPS systems to produce different molecules:
 
@@ -53,7 +53,7 @@ This immediately raises a biological question:
 
 
 
-## 1.3 The Assembly Line Inside the Cell
+## 3.1.3 The Assembly Line Inside the Cell
 
 An NRPS enzyme consists of a sequence of modules arranged in a linear fashion.
 
@@ -71,7 +71,7 @@ This leads to a crucial insight:
 
 
 
-## 1.4 Where Is the Specificity Encoded?
+## 3.1.4 Where Is the Specificity Encoded?
 
 If each module selects a specific amino acid, then the key question becomes:
 
@@ -93,7 +93,7 @@ This suggests:
 
 
 
-## 1.5 From Biology to Computation
+## 3.1.5 From Biology to Computation
 
 We now arrive at a central challenge:
 
@@ -113,7 +113,7 @@ This leads to a fundamental question:
 
 
 
-## 1.6 Transition: Toward a Model of Similarity
+## 3.1.6 Transition: Toward a Model of Similarity
 
 To answer this question, we need more than intuition.
 

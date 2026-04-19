@@ -1,24 +1,10 @@
 ---
-title: "Chapter 1 — Introduction: Bioinformatics as Models and Recipes"
+title: "1 - Bioinformatics as Models and Recipes"
 sidebar:
   label: "1 - From Biological Questions to Computational Problems"
   order: 1
   group: "Part 0"
   part: "Part 0"
----
-
-## Learning Goals
-
-After working through this chapter, you should be able to:
-
-- explain why modern biology requires computational approaches  
-- describe bioinformatics as an intersection of multiple disciplines  
-- distinguish between **observation, model, and algorithm**  
-- understand how biological questions are translated into computational problems  
-- follow a running example from raw data to computational reasoning  
-- explain why there is no universally best algorithm  
-- recognize bioinformatics as a way to develop **algorithmic thinking**
-
 ---
 
 ## 1.1 The Data Explosion in Biology
@@ -36,7 +22,7 @@ This imbalance leads to a fundamental bottleneck:
 
 Bioinformatics emerges as a response to this challenge. It provides the tools and concepts needed to transform raw data into biological understanding.
 
----
+
 
 ## 1.2 Bioinformatics as an Interdisciplinary Field
 
@@ -50,7 +36,7 @@ Rather than being a standalone field, bioinformatics acts as a **bridge**:
 
 > It translates biological questions into computational problems and connects results back to biological meaning.
 
----
+
 
 ## 1.3 A Running Example: Finding the Origin of Replication (ORIC)
 
@@ -75,7 +61,7 @@ This problem captures the essence of bioinformatics:
 - the answer is not directly visible  
 - a computational approach is required  
 
----
+
 
 ## 1.4 From Observation to Model to Algorithm
 
@@ -88,7 +74,7 @@ We begin with biological data.
 In our running example:
 - a genome sequence composed of nucleotides (A, C, G, T)
 
----
+
 
 ### Abstraction → Model
 
@@ -103,7 +89,7 @@ We may further enrich this model by deriving additional quantities, such as:
 
 This step is called **abstraction**. It determines which aspects of reality we retain and which we ignore.
 
----
+
 
 ### Transformation → Algorithm
 
@@ -116,7 +102,7 @@ For the ORIC problem, this might involve:
 
 An algorithm is a **precise, step-by-step procedure** that transforms input into output.
 
----
+
 
 ### Interpretation → Insight
 
@@ -128,7 +114,7 @@ For example:
 
 This often leads to new experiments or refined models, closing the cycle.
 
----
+
 
 ## 1.5 A Simple Micro-Example: Sequence Similarity
 
@@ -152,7 +138,7 @@ This example illustrates the same principle as the ORIC problem in a simpler set
 
 We will return to more sophisticated versions of such comparisons later in the book.
 
----
+
 
 ## 1.6 Models and Recipes
 
@@ -198,7 +184,6 @@ In the ORIC example:
 
 This loop will reappear throughout the book in increasingly sophisticated forms.
 
----
 
 ## 1.8 There Is No Single Best Algorithm
 
@@ -230,7 +215,6 @@ In intuitive terms:
 - algorithms are not magic  
 - they work only when they match the structure of the problem  
 
----
 
 ## 1.9 Learning Bioinformatics: Thinking in Algorithms
 
@@ -261,7 +245,6 @@ This way of thinking is transferable and allows you to approach new problems ind
 
 > We do not study algorithms because of the problems we already know, but because of the problems we have not yet encountered.
 
----
 
 ## 1.10 How to Read This Book
 
@@ -274,9 +257,20 @@ Each chapter follows a consistent structure:
 
 The ORIC example introduced here will be revisited and refined in later chapters.
 
----
 
-## Self-Check Questions
+### Learning Goals
+
+After working through this chapter, you should be able to:
+
+- explain why modern biology requires computational approaches  
+- describe bioinformatics as an intersection of multiple disciplines  
+- distinguish between **observation, model, and algorithm**  
+- understand how biological questions are translated into computational problems  
+- follow a running example from raw data to computational reasoning  
+- explain why there is no universally best algorithm  
+- recognize bioinformatics as a way to develop **algorithmic thinking**
+
+### Self-Check Questions
 
 1. Why is data interpretation the central challenge in modern biology?  
 2. What roles do biology, computer science, and mathematics play in bioinformatics?  

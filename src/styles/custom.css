@@ -1,38 +1,51 @@
 /* Light theme */
 :root,
 :root[data-theme='light'] {
-  --sl-color-accent-low: #fed7aa;   /* light orange (replaces #b3c7ff-like tones) */
-  --sl-color-accent: #fb923c;       /* main orange */
-  --sl-color-accent-high: #f97316;  /* darker orange */
-
-  --heading-color: #1d2c50;
   --sl-color-text: #1d2c50;
-  --sl-color-text-muted: #334155;
+  
+  --sl-color-accent: #fb923c;       /* main orange */
+  --sl-color-accent-low: #fed7aa;   /* light orange (replaces #b3c7ff-like tones) */
+  --sl-color-accent-high: #f97316;  /* darker orange */--page-title-color: #fb923c;
 
+  --page-title-color: #fb923c;
   --section-title-color: #fb923c;
   --sidebar-section-title-color: #fb923c;
 
-  --page-title-color: #fb923c;
+  /* --heading-color: #1d2c50;
+  --sl-color-text: #1d2c50;
+  --sl-color-text-muted: #334155;
+
+
+
+   */
 
 }
 
-/* h1[data-page-title] {
-  color: var(--heading-color);
-} */
+/* Dark theme */
+:root[data-theme="dark"] {
+  --sl-color-text: #ffffff;
+  --sl-color-accent: #fb923c;
+  --sl-color-accent-low: #f97316;
+  --sl-color-accent-high: #fdba74;
+  
+  --page-title-color: #fb923c;
+}  
 
+/* 
+This is a custom CSS file to override some of the default styles of the 
+Starlight theme. You can add your own styles here to customize the appearance
+*/
 
+html[data-theme='light'] h1#_top,
+html[data-theme='light'] h1[data-page-title] {
+  color: #1d2c50 !important;
+}
 
-/* .sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)),
-h1[data-page-title],
-[data-page-title] {
-  color: var(--heading-color);
-} */
+html[data-theme='dark'] h1#_top,
+html[data-theme='dark'] h1[data-page-title] {
+  color: #fb923c !important;
+}
 
-
-/* h1[data-page-title],
-[data-page-title] {
-  color: var(--heading-color);
-} */
 
 .sl-markdown-content :is(h2, h3, h4, h5, h6):not(:where(.not-content *)) {
   color: var(--section-title-color);
@@ -43,10 +56,3 @@ h1[data-page-title],
 }
 
 
-/* Dark theme */
-:root[data-theme="dark"] {
-  --sl-color-text: #ffffff;
-  --sl-color-accent: #fb923c;
-  --sl-color-accent-low: #f97316;
-  --sl-color-accent-high: #fdba74;
-}  

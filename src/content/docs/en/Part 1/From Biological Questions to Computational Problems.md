@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2 — From Biological Questions to Computational Problems"
+title: "2 - From Biological Questions to Computational Problems"
 sidebar:
   label: "2 - From Biological Questions to Computational Problems"
   order: 2
@@ -7,18 +7,6 @@ sidebar:
   part: "Part 0"
 ---
 
-## Learning Goals
-
-After working through this chapter, you should be able to:
-
-- translate biological questions into precise computational problems  
-- identify inputs, outputs, and constraints of a problem  
-- distinguish between informal reasoning and formal problem definitions  
-- understand how modeling choices affect problem formulation  
-- recognize that multiple valid formulations may exist for the same biological question  
-- prepare a problem in a way that enables algorithmic solutions  
-
----
 
 ## 2.1 From Curiosity to Computation
 
@@ -40,7 +28,7 @@ The central challenge is therefore:
 
 > How do we transform a biological question into something a computer can solve?
 
----
+
 
 ## 2.2 Running Example: Refining the ORIC Problem
 
@@ -56,7 +44,7 @@ At this stage, the question is still vague:
 
 To make progress, we must **refine the question**.
 
----
+
 
 ### Step 1: Define the Input
 
@@ -67,7 +55,7 @@ We begin by specifying the available data:
 
 This step connects directly to the **modeling step** from Chapter 1.
 
----
+
 
 ### Step 2: Define the Output
 
@@ -81,7 +69,7 @@ Possible answers include:
 
 Each choice leads to a **different computational problem**.
 
----
+
 
 ### Step 3: Define the Criterion
 
@@ -97,7 +85,7 @@ This is the most critical step:
 
 > The criterion defines what the algorithm will optimize.
 
----
+
 
 ## 2.3 Multiple Valid Problem Formulations
 
@@ -119,7 +107,7 @@ Each formulation:
 
 This is not a flaw, but a fundamental property of modeling.
 
----
+
 
 ## 2.4 A Simpler Example: Sequence Comparison
 
@@ -129,7 +117,7 @@ Before continuing with ORIC, consider a simpler case:
 
 We can formalize this in multiple ways.
 
----
+
 
 ### Formulation 1: Exact Matching
 
@@ -139,7 +127,7 @@ We can formalize this in multiple ways.
 
 This is simple but biologically unrealistic.
 
----
+
 
 ### Formulation 2: Similarity Score
 
@@ -149,13 +137,13 @@ This is simple but biologically unrealistic.
 
 This formulation is more flexible and leads directly to **alignment algorithms**.
 
----
+
 
 ### Insight
 
 Even for a simple question, different formulations lead to very different computational approaches.
 
----
+
 
 ## 2.5 The Role of Modeling Choices
 
@@ -178,7 +166,7 @@ In the ORIC example:
 - a statistical model allows detecting significant deviations  
 - a structural model may capture replication mechanisms  
 
----
+
 
 ## 2.6 Constraints and Assumptions
 
@@ -199,7 +187,7 @@ This connects back to Chapter 1:
 
 > There is no universally best method, only methods that are appropriate under certain assumptions.
 
----
+
 
 ## 2.7 From Problem to Algorithm
 
@@ -222,7 +210,7 @@ For example:
 - pattern detection → motif discovery  
 - probabilistic modeling → HMMs  
 
----
+
 
 ## 2.8 Revisiting the ORIC Problem
 
@@ -240,7 +228,7 @@ This formulation is still flexible, but now:
 
 We will revisit this problem later with increasingly sophisticated models.
 
----
+
 
 ## 2.9 Learning to Formulate Problems
 
@@ -255,7 +243,7 @@ This involves:
 
 This skill is transferable across domains and essential for working with new types of biological data.
 
----
+
 
 ## 2.10 Bridge to Sequence Models
 
@@ -273,9 +261,19 @@ This leads us to the first major topic:
 
 - **Sequence alignment as a model of similarity**
 
----
+### Learning Goals
 
-## Self-Check Questions
+After working through this chapter, you should be able to:
+
+- translate biological questions into precise computational problems  
+- identify inputs, outputs, and constraints of a problem  
+- distinguish between informal reasoning and formal problem definitions  
+- understand how modeling choices affect problem formulation  
+- recognize that multiple valid formulations may exist for the same biological question  
+- prepare a problem in a way that enables algorithmic solutions  
+
+
+### Self-Check Questions
 
 1. Why are biological questions not immediately suitable for computation?  
 2. What are the key components of a formal computational problem?  
