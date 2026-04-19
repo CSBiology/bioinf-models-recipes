@@ -5,7 +5,7 @@ import starlightAutoSidebar from 'starlight-auto-sidebar';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://username.github.io/bioinf-models-recipes',
+	site: 'https://csbiology.github.io/bioinf-models-recipes',
 
 	// ONLY apply base in production (GitHub Pages)
 	base: import.meta.env.PROD
@@ -97,5 +97,4 @@ export default defineConfig({
 		}),
 	],
 });
-
 
