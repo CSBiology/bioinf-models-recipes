@@ -1,10 +1,10 @@
 ---
-title: "3.2 Alignment Is Not Obvious"
+title: "2.2 Alignment Is Not Obvious"
 sidebar:
-  label: "2. Alignment Is Not Obvious"
+  label: "2.2 Alignment Is Not Obvious"
   order: 2
   group: "Chapter 3"
-  part: "Part 1"
+  part: "Part 2"
 ---
 
 

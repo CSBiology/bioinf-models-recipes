@@ -1,10 +1,10 @@
 ---
-title: "2 - Vom biologischen Problem zur algorithmischen Lösung"
+title: "2. Vom biologischen Problem zur algorithmischen Lösung"
 sidebar:
-  label: "2 - Vom biologischen Problem zur algorithmischen Lösung"
-  order: 1
-  group: "Part 0"
-  part: "Part 0"
+  label: "2. Vom biologischen Problem zur algorithmischen Lösung"
+  order: 2
+  group: "Part 1"
+  part: "Part 1"
 ---
 
 ## 2.1 Die biologische Fragestellung als Ausgangspunkt des algorithmischen Problems

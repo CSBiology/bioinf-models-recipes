@@ -1,10 +1,10 @@
 ---
-title: "2 - From Biological Questions to Computational Problems"
+title: "2. From Biological Questions to Computational Problems"
 sidebar:
-  label: "2 - From Biological Questions to Computational Problems"
+  label: "2. From Biological Questions to Computational Problems"
   order: 2
-  group: "Part 0"
-  part: "Part 0"
+  group: "Part 1"
+  part: "Part 1"
 ---
 
 ## 2.1 From Biological Question to Computational Problem

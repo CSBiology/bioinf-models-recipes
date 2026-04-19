@@ -1,10 +1,10 @@
 ---
-title: "1 - Bioinformatik als Modelle und Rezepte"
+title: "1. Bioinformatik als Modelle und Rezepte"
 sidebar:
-  label: "1 - Bioinformatik als Modelle und Rezepte"
-  order: 0
-  group: "Part 0"
-  part: "Part 0"
+  label: "1. Bioinformatik als Modelle und Rezepte"
+  order: 1
+  group: "Part 1"
+  part: "Part 1"
 ---
 
 ## 1.1 Die Datenexplosion in der Biologie
