@@ -16,6 +16,10 @@ export default defineConfig({
 		starlight({
 			title: 'Bioinformatics - Models and Recipes',
 
+			customCss: [
+				'./src/styles/custom.css',
+			],			
+
 			social: [
 				{
 					icon: 'github',
@@ -51,3 +55,5 @@ export default defineConfig({
 		}),
 	],
 });
+
+
