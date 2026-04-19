@@ -1,13 +1,11 @@
 ---
-title: "1 - Bioinformatics as Models and Recipes"
+title: "Chapter 1 - Bioinformatics as Models and Recipes"
 sidebar:
   label: "1 - Bioinformatics as Models and Recipes"
   order: 1
   group: "Part 0"
   part: "Part 0"
 ---
-
-# Chapter 1 — Bioinformatics as Models and Recipes
 
 ## 1.1 The Data Explosion in Biology
 
