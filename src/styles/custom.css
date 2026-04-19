@@ -2,37 +2,37 @@
 :root,
 :root[data-theme='light'] {
   --sl-color-accent-low: #fed7aa;   /* light orange (replaces #b3c7ff-like tones) */
-  --sl-color-accent: #f97316;       /* main orange */
-  --sl-color-accent-high: #c2410c;  /* darker orange */
+  --sl-color-accent: #fb923c;       /* main orange */
+  --sl-color-accent-high: #f97316;  /* darker orange */
 
   --heading-color: #1d2c50;
   --sl-color-text: #1d2c50;
   --sl-color-text-muted: #334155;
 
-  --section-title-color: #c2410c;
-  --sidebar-section-title-color: #7f1d1d;
+  --section-title-color: #fb923c;
+  --sidebar-section-title-color: #fb923c;
 
-  --page-title-color: #7f1d1d;
+  --page-title-color: #fb923c;
 
 }
 
-h1[data-page-title] {
+/* h1[data-page-title] {
   color: var(--heading-color);
-}
+} */
 
 
 
-.sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)),
+/* .sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)),
 h1[data-page-title],
 [data-page-title] {
   color: var(--heading-color);
-}
+} */
 
 
-h1[data-page-title],
+/* h1[data-page-title],
 [data-page-title] {
   color: var(--heading-color);
-}
+} */
 
 .sl-markdown-content :is(h2, h3, h4, h5, h6):not(:where(.not-content *)) {
   color: var(--section-title-color);
@@ -47,6 +47,6 @@ h1[data-page-title],
 :root[data-theme="dark"] {
   --sl-color-text: #ffffff;
   --sl-color-accent: #fb923c;
-  --sl-color-accent-low: #7c2d12;
+  --sl-color-accent-low: #f97316;
   --sl-color-accent-high: #fdba74;
 }  

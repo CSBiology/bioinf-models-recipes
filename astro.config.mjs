@@ -20,6 +20,12 @@ export default defineConfig({
 				'./src/styles/custom.css',
 			],			
 
+			locales: {
+					en: { label: 'English' },
+					de: { label: 'Deutsch' },
+				},
+				defaultLocale: 'en', // fallback locale
+
 			social: [
 				{
 					icon: 'github',
