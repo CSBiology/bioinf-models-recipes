@@ -2,23 +2,10 @@
 title: "1 - Bioinformatik als Modelle und Rezepte"
 sidebar:
   label: "1 - Bioinformatik als Modelle und Rezepte"
-  order: 1
+  order: 0
   group: "Part 0"
   part: "Part 0"
 ---
-
-## Lernziele
-
-Nach diesem Kapitel sollten Sie in der Lage sein:
-
-- die zentrale Herausforderung moderner Biologie als Problem der Dateninterpretation zu beschreiben  
-- die Rolle der Bioinformatik als verbindende Disziplin zu erklären  
-- den Unterschied zwischen Beobachtung, Modell und Algorithmus zu verstehen  
-- den Modell–Algorithmus-Zyklus zu erläutern  
-- die Bedeutung von Abstraktion und Annahmen in der Modellierung einzuordnen  
-- zu begründen, warum es keinen universell besten Algorithmus gibt  
-- bioinformatische Probleme in der Form *biologische Fragestellung → Modell → Algorithmus → Interpretation* zu strukturieren  
-
 
 ## 1.1 Die Datenexplosion in der Biologie
 

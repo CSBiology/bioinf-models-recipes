@@ -2,7 +2,7 @@
 title: "2 - Vom biologischen Problem zur algorithmischen Lösung"
 sidebar:
   label: "2 - Vom biologischen Problem zur algorithmischen Lösung"
-  order: 2
+  order: 1
   group: "Part 0"
   part: "Part 0"
 ---
