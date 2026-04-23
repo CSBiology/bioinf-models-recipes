@@ -1,7 +1,7 @@
 ---
-title: "5.6 Die EM-Idee (konzeptionell)"
+title: "5.6 Die EM-Idee"
 sidebar:
-  label: "5.6 Die EM-Idee (konzeptionell)"
+  label: "5.6 Die EM-Idee"
   order: 6
   group: "Part 2"
   part: "Part 2"

@@ -7,8 +7,6 @@ sidebar:
   part: "Part 2"
 ---
 
-# **3.1 Von biologischer Funktion zum Sequenzvergleich**
-
 ## **Lernziele**
 
 Nach der Bearbeitung dieses Abschnitts sollten Sie in der Lage sein:
