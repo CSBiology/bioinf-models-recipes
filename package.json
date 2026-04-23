@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.38.3",
     "astro": "^6.0.1",
     "sharp": "^0.34.2",
-    "starlight-auto-sidebar": "^0.2.0"
+    "starlight-auto-sidebar": "^0.2.0",
+    "starlight-katex": "^0.0.4"
   }
 }
