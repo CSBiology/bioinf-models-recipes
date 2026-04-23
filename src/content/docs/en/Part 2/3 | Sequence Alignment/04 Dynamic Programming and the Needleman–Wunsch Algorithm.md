@@ -279,13 +279,3 @@ The algorithm transforms an intractable search problem into a structured computa
 3. What is the purpose of the initialization step?
 4. Why is traceback necessary after filling the matrix?
 5. Why does the algorithm run in $O(mn)$ time?
-
----
-
-If you're happy with this, the next section:
-
-👉 **3.5 Local Alignment and the Smith–Waterman Algorithm**
-
-will introduce a crucial conceptual shift:
-
-from aligning **entire sequences** → to detecting **locally conserved regions**, which connects beautifully back to the biological motivation.
