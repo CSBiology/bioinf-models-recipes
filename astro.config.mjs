@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightAutoSidebar from 'starlight-auto-sidebar';
+import { starlightKatex } from "starlight-katex";
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,6 +41,7 @@ export default defineConfig({
 			// Enable auto sidebar plugin
 			plugins: [
 				starlightAutoSidebar(),
+				starlightKatex(),
 			],
 
 			sidebar: [
