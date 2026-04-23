@@ -7,7 +7,6 @@ sidebar:
   part: "Part 2"
 ---
 
-Perfect, that’s exactly the right refinement. I’ll **keep all concepts and structure**, but expand the exposition to a more **gradual, explanatory, graduate-level narrative style** with more connective tissue and interpretation.
 # **6.3 Structure and Components of Hidden Markov Models**
 
 In the previous section, we introduced the Markov assumption as a principled way to incorporate dependencies between neighboring positions in a sequence. This already represents a substantial improvement over position-specific models, which treat all positions as independent. However, we also observed a crucial limitation: in a standard Markov chain, the states of the model are directly tied to the observed symbols. As a consequence, such models cannot distinguish between different underlying biological contexts that may produce identical observations.
