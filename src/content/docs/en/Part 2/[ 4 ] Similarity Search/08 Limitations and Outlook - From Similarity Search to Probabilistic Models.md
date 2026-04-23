@@ -9,9 +9,19 @@ sidebar:
 
 ## **4.8 Limitations and Outlook: From Similarity Search to Probabilistic Models**
 
-The development of similarity search methods such as BLAST represents a major step in making sequence comparison computationally feasible at scale. By combining heuristic filtering with local alignment and statistical evaluation, these methods allow us to rapidly identify related sequences in vast databases. In many practical situations, they provide exactly what is needed: fast, reliable detection of clear similarity signals.
+### **Learning Objectives**
 
-However, as with any heuristic approach, this success is accompanied by important limitations. These limitations are not merely technical details. They reveal deeper aspects of biological sequence variation and point toward the need for more expressive models.
+After reading this section, you should be able to:
+
+* explain why heuristic similarity search can miss weak or highly diverged relationships
+* describe the difficulty of detecting distributed or fragmented sequence signals
+* understand how parameter choices influence sensitivity and specificity
+* identify the conceptual limits of purely comparison-based approaches
+* explain why these limitations motivate the move toward probabilistic sequence models
+
+The development of similarity search methods such as BLAST represents a major step in making sequence comparison computationally feasible at scale. By combining heuristic filtering with local alignment and statistical evaluation, these methods allow us to rapidly identify related sequences in vast databases. In many practical settings, they provide exactly what is needed: fast, reliable detection of clear similarity signals.
+
+However, as with any heuristic approach, this success comes with important limitations. These limitations are not merely technical details. They reveal deeper aspects of biological sequence variation and point toward the need for more expressive models.
 
 ---
 
@@ -21,7 +31,7 @@ The effectiveness of similarity search relies on a key assumption: that related 
 
 Yet, as evolutionary distance increases, this signal begins to deteriorate. Mutations accumulate, insertions and deletions disrupt local structure, and substitutions obscure exact matches. As a result, the short substrings required for seeding may no longer be present.
 
-In such cases, a true biological relationship may exist, but remain undetected.
+In such cases, a true biological relationship may exist and yet remain undetected.
 
 This leads to an important limitation:
 
@@ -43,7 +53,7 @@ In these situations, no single local alignment may achieve a sufficiently high s
 
 Heuristic methods such as BLAST are primarily designed to detect **local peaks of similarity**. They are less suited to integrating **distributed evidence** across a sequence.
 
-This highlights a conceptual gap:
+This reveals a conceptual gap:
 
 > **Similarity search detects strong local signals, but struggles to aggregate weak global evidence.**
 
@@ -60,7 +70,7 @@ Another limitation lies in the dependence on algorithmic parameters:
 
 These parameters influence sensitivity and specificity, and their optimal choice may vary depending on the biological context.
 
-While default settings work well in many cases, they implicitly encode assumptions about sequence composition and evolutionary processes. When these assumptions are violated, the performance of the method may degrade.
+While default settings work well in many cases, they implicitly encode assumptions about sequence composition and evolutionary processes. When those assumptions are violated, performance may degrade.
 
 Thus, similarity search is not entirely model-free. It relies on **implicit models encoded in its parameters**, even if these models are not made explicit.
 
@@ -110,7 +120,7 @@ This leads to a new type of problem:
 
 ### **A New Direction**
 
-The limitations of similarity search do not diminish its importance. Rather, they delineate its scope and motivate the development of more powerful approaches.
+The limitations of similarity search do not diminish its importance. Rather, they clarify its scope and motivate the development of more expressive approaches.
 
 The next step is to introduce **probabilistic models**, which allow us to:
 
@@ -130,7 +140,7 @@ This challenge leads us to a fundamental concept in statistical learning:
 
 In the next chapter, we will explore how probabilistic thinking changes the way we approach biological sequence analysis. We will begin with the Expectation Maximization algorithm, which provides a general framework for learning from incomplete or partially observed data.
 
-Rather than searching for similarity directly, we will start to **infer the models that make sequences likely**.
+Rather than searching for similarity directly, we will begin to **infer the models that make sequences likely**.
 
 ---
 

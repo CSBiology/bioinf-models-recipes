@@ -9,13 +9,23 @@ sidebar:
 
 ## **4.1 From Pairwise Alignment to Database Search**
 
-In the previous chapter, we developed sequence alignment as a formal model for comparing biological sequences. Given two sequences, we were able to compute an optimal alignment, interpret similarity scores, and reason about potential evolutionary relationships. This framework provided both a conceptual and algorithmic foundation: similarity was no longer an intuitive notion, but a quantity defined through scoring systems, substitution matrices, and dynamic programming.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* explain how similarity search differs conceptually from pairwise alignment
+* describe why exact alignment becomes computationally infeasible for large databases
+* relate similarity search to the biological task of identifying homologous sequences
+* distinguish between measurable sequence similarity and inferred homology
+* motivate why efficient database search methods are essential in bioinformatics
+
+In the previous chapter, we developed sequence alignment as a formal model for comparing biological sequences. Given two sequences, we were able to compute an optimal alignment, interpret similarity scores, and reason about possible evolutionary relationships. Similarity was no longer an intuitive impression, but a quantity defined through scoring systems, substitution matrices, and dynamic programming.
 
 However, a crucial shift occurs when we move from controlled comparison to real biological practice. In most applications, we are not given two sequences with the instruction to compare them. Instead, we are given a single sequence, often newly obtained from an experiment, and asked a fundamentally different question:
 
 > **Where does this sequence belong in the known universe of biological sequences?**
 
-This change in perspective transforms the problem entirely.
+This shift in perspective changes the problem in a fundamental way.
 
 ---
 
@@ -27,7 +37,7 @@ The researcher is therefore not interested in aligning this sequence to a single
 
 This is the essence of **similarity search**.
 
-The conceptual transition can be summarized as follows:
+The conceptual transition can be summarized in a simple contrast:
 
 * **Pairwise alignment** asks: *How similar are two given sequences?*
 * **Similarity search** asks: *Which sequences in a large collection are similar to a given query?*
@@ -46,9 +56,9 @@ $$
 \mathcal{O}(N \cdot m \cdot n).
 $$
 
-Even for moderate values of $m$ and $n$, this quickly becomes infeasible when $N$ reaches millions or billions of sequences, as is common in modern databases.
+Even for moderate values of $m$ and $n$, this quickly becomes infeasible once $N$ reaches millions or billions of sequences, as is common in modern databases.
 
-This observation is not merely a technical inconvenience. It fundamentally limits the applicability of exact alignment methods in large-scale biological analysis.
+This is not merely a technical inconvenience. It fundamentally limits the applicability of exact alignment methods in large-scale biological analysis.
 
 The challenge is therefore clear:
 
@@ -58,7 +68,7 @@ The challenge is therefore clear:
 
 ### **Biological Motivation: Finding Homologs**
 
-The importance of this problem becomes evident when we consider what similarity search reveals biologically.
+The biological importance of this problem becomes clear when we ask what similarity search is actually used for.
 
 When a query sequence is compared against a database, we are not merely looking for high-scoring alignments. We are searching for **homologous sequences**, that is, sequences that share a common evolutionary origin. Such relationships allow us to transfer knowledge:
 
@@ -66,7 +76,7 @@ When a query sequence is compared against a database, we are not merely looking 
 * A match to a conserved domain may indicate structural properties.
 * A match across species may reveal evolutionary conservation.
 
-In practice, similarity search serves as one of the most powerful tools for **functional annotation** and **hypothesis generation** in molecular biology.
+In practice, similarity search is one of the central tools for **functional annotation** and **hypothesis generation** in molecular biology.
 
 At the same time, it is important to recall a key insight from Chapter 3:
 
@@ -78,9 +88,9 @@ A high alignment score suggests, but does not prove, a shared evolutionary origi
 
 ### **A First Glimpse of the Computational Challenge**
 
-To build intuition, it is helpful to visualize the search problem.
+To see why new algorithmic ideas are needed, it is helpful to look more closely at where the computation goes.
 
-Imagine aligning a query sequence against many target sequences. Each alignment corresponds to exploring a large dynamic programming matrix. However, as already hinted in the lecture material, much of this search space is effectively irrelevant. Only a small fraction of possible alignments leads to meaningful similarity. 
+Imagine aligning a query sequence against many target sequences. Each alignment requires exploring a large dynamic programming matrix. Yet only a small fraction of this search space contributes to meaningful similarity.
 
 This observation suggests a key idea that will guide the entire chapter:
 
@@ -102,7 +112,7 @@ Instead of exhaustively evaluating all possible alignments, we aim to:
 2. **Refine these candidates** using more precise alignment methods.
 3. **Discard the vast majority of irrelevant comparisons.**
 
-This strategy introduces a fundamental shift in thinking. In pairwise alignment, optimality was the guiding principle. In similarity search, **efficiency under uncertainty** becomes the central concern.
+This strategy introduces a fundamental shift in thinking. In pairwise alignment, optimality was the guiding principle. In similarity search, **efficiency under uncertainty** becomes central.
 
 We accept that:
 
@@ -115,7 +125,7 @@ but in return, we gain the ability to search enormous databases in realistic tim
 
 ### **Summary**
 
-The transition from pairwise alignment to similarity search represents a shift from **exact comparison** to **scalable discovery**. While the mathematical foundation remains rooted in alignment theory, the computational strategy must change fundamentally to cope with the size of modern biological data.
+The transition from pairwise alignment to similarity search represents a shift from **exact comparison** to **scalable discovery**. The mathematical foundation remains rooted in alignment theory, but the computational strategy must change in order to cope with the scale of modern biological data.
 
 Similarity search therefore builds directly on alignment, but extends it into a new domain where:
 

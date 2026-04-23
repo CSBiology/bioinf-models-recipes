@@ -9,165 +9,175 @@ sidebar:
 
 ## **4.5 Der BLAST-Algorithmus**
 
-Das Seed-and-Extend-Paradigma liefert eine allgemeine Strategie für effiziente Ähnlichkeitssuche. Das **Basic Local Alignment Search Tool (BLAST)** ist eine seiner einflussreichsten und am weitesten verbreiteten Realisierungen. Seit seiner Einführung im Jahr 1990 ist BLAST zu einer Standardmethode für die Abfrage biologischer Sequenzdatenbanken geworden, gerade weil es einen sorgfältigen Ausgleich zwischen rechnerischer Effizienz und biologischer Sensitivität erreicht.
+### **Lernziele**
 
-Anstatt zu versuchen, optimale Alignments erschöpfend zu berechnen, setzt BLAST die Idee praktisch um, dass **hoch bewertete Alignments über kurze lokale Signale erkannt** und nur dort weiter verfeinert werden müssen, wo dies nötig ist.
+Nach diesem Abschnitt sollten Sie in der Lage sein:
+
+* die zentralen Schritte des BLAST-Algorithmus zu skizzieren
+* zu erklären, wie Wortgenerierung und Nachbarschaftsbildung die Sensitivität der Suche erhöhen
+* zu beschreiben, wie BLAST Seed-Detektion und Extension kombiniert, um Kandidatenalignments zu identifizieren
+* die Rolle ungegappter und gegappter Erweiterung im BLAST-Ablauf zu verstehen
+* zu erläutern, warum BLAST einen praktikablen Kompromiss zwischen Geschwindigkeit und biologischer Sensitivität darstellt
+
+Das Seed-and-Extend-Paradigma liefert eine allgemeine Strategie für effiziente Ähnlichkeitssuche. Das **Basic Local Alignment Search Tool (BLAST)** ist eine seiner einflussreichsten und am weitesten verbreiteten Realisierungen. Seit seiner Einführung im Jahr 1990 hat sich BLAST als Standardmethode für die Abfrage biologischer Sequenzdatenbanken etabliert, weil es rechnerische Effizienz mit biologischer Sensitivität in überzeugender Weise verbindet.
+
+BLAST versucht nicht, alle möglichen Alignments erschöpfend zu berechnen. Stattdessen setzt es die Idee praktisch um, dass **hoch bewertete Alignments durch kurze lokale Signale erkannt und nur dort weiter untersucht werden müssen, wo diese Signale tatsächlich vorhanden sind**.
 
 ---
 
 ### **Konzeptioneller Überblick**
 
-Im Kern folgt BLAST der Logik des vorherigen Abschnitts:
+Im Kern folgt BLAST der im vorherigen Abschnitt entwickelten Logik:
 
-1. Zerlege die Query in kurze Wörter
-2. Identifiziere Matches dieser Wörter in der Datenbank
-3. Erweitere diese Matches zu längeren Alignments
-4. Bewerte ihre statistische Signifikanz
+1. Die Query wird in kurze Wörter zerlegt.
+2. Diese Wörter oder ihre ähnlichen Varianten werden in der Datenbank gesucht.
+3. Gefundene Treffer werden zu längeren Alignments erweitert.
+4. Die resultierenden Alignments werden statistisch bewertet.
 
-Dieser Ablauf folgt einer gestuften Strategie:
+Diese Abfolge bildet eine gestufte Strategie:
 
-* **schnelles Filtern** am Anfang,
-* **zunehmend detailliertere Berechnung** in späteren Phasen.
+* zu Beginn steht **schnelles Filtern**,
+* später folgt **zunehmend detaillierte Berechnung**.
 
-Jeder Schritt reduziert die Zahl der Kandidatenregionen und erhöht gleichzeitig die Genauigkeit der Bewertung.
+Jeder Schritt verringert die Zahl der Kandidaten und erhöht zugleich die Präzision der Bewertung.
 
 ---
 
-### **Schritt 1: Erzeugung von Wörtern**
+### **Schritt 1: Wortgenerierung**
 
-Gegeben eine Query-Sequenz $Q$, zerlegt BLAST sie zunächst in überlappende Wörter fester Länge $w$.
+BLAST beginnt damit, eine Query-Sequenz $Q$ in überlappende Wörter fester Länge $w$ zu zerlegen.
 
-Für Proteinsequenzen ist eine typische Wahl $w = 3$, für Nukleotidsequenzen ist $w$ oft größer. Für
+Für Proteinsequenzen ist $w = 3$ ein typischer Wert, für Nukleotidsequenzen werden meist größere Wortlängen verwendet. Für
 
 $$
-Q = \texttt{IKMQRHIKW},
+Q = \texttt{IKMQRHIKW}
 $$
 
-ergeben sich etwa die Wörter:
+ergeben sich beispielsweise die Wörter
 
 $$
 \texttt{IKM}, \quad \texttt{KMQ}, \quad \texttt{MQR}, \quad \dots
 $$
 
-Diese Wörter bilden die Grundlage der initialen Suche.
+Diese Wörter bilden den Ausgangspunkt der Suche.
 
-BLAST geht jedoch über exaktes Matching hinaus. Anstatt nur identische Wörter zu betrachten, konstruiert es für jedes Wort eine **Nachbarschaft**: eine Menge ähnlicher Wörter, deren Alignment-Score mit dem ursprünglichen Wort einen Schwellenwert $T$ überschreitet.
+BLAST geht jedoch über exakte Worttreffer hinaus. Zu jedem Wort wird eine **Nachbarschaft** konstruiert, also eine Menge ähnlicher Wörter, deren Alignment-Score mit dem ursprünglichen Wort einen vorgegebenen Schwellenwert $T$ überschreitet.
 
-Dadurch kann BLAST biologisch bedeutsame Ähnlichkeiten erkennen, selbst wenn kein exakter Match vorliegt.
-
----
-
-### **Schritt 2: Durchsuchen der Datenbank und Seed-Erkennung**
-
-Im nächsten Schritt durchsucht BLAST die Datenbank nach Vorkommen dieser Wörter oder ihrer Nachbarn.
-
-Jedes gefundene Vorkommen definiert einen **Seed**, also eine Position, an der Query und Datenbanksequenz eine kurze Region von Ähnlichkeit teilen. Weil Wortsuche mithilfe von Indexierung oder Hashing sehr effizient implementiert werden kann, ist diese Phase rechnerisch schnell.
-
-Wichtig ist, dass dieser Schritt als **Filter** wirkt:
-
-* Regionen ohne Wort-Matches werden ignoriert,
-* nur Regionen mit Seeds werden für die weitere Analyse berücksichtigt.
-
-Dadurch verringert sich die Zahl der Kandidatenregionen drastisch.
+Gerade dadurch wird BLAST sensitiv gegenüber biologisch relevanten Ähnlichkeiten, selbst wenn kein exakter Treffer vorliegt.
 
 ---
 
-### **Schritt 3: Lückenfreie Erweiterung**
+### **Schritt 2: Datenbanksuche und Seed-Detektion**
 
-Sobald Seeds identifiziert wurden, versucht BLAST, sie zu längeren Alignments zu erweitern.
+Im nächsten Schritt wird die Datenbank nach Vorkommen dieser Wörter oder ihrer Nachbarschaft durchsucht.
 
-Die erste Erweiterung ist typischerweise **lückenfrei**, das heißt, Insertionen und Deletionen werden zunächst noch nicht zugelassen. Ausgehend vom Seed erweitert der Algorithmus das Alignment in beide Richtungen entlang der Diagonalen und aktualisiert dabei in jedem Schritt den Score.
+Jedes Vorkommen definiert einen **Seed**, also eine Position, an der Query und Zielsequenz eine kurze Region lokaler Ähnlichkeit teilen. Weil Wortsuche mit geeigneten Index- oder Hash-Strukturen sehr effizient realisiert werden kann, ist diese Phase rechnerisch vergleichsweise günstig.
 
-Die Erweiterung wird fortgesetzt, solange sich der Score verbessert oder nicht unter eine Schwelle relativ zum bisher besten beobachteten Score fällt. Dadurch entstehen sogenannte **High-Scoring Segment Pairs (HSPs)**.
+Wesentlich ist ihre Funktion als **Filter**:
 
-Die Kernidee lautet: Nur Seeds, die sich zu hinreichend hoch bewerteten Segmenten erweitern lassen, werden beibehalten.
+* Regionen ohne Worttreffer werden sofort verworfen.
+* Nur Regionen mit Seeds gelangen in die nächste Stufe der Analyse.
 
----
-
-### **Schritt 4: Erweiterung mit Lücken (Verfeinerung)**
-
-In weiterentwickelten Versionen von BLAST werden vielversprechende lückenfreie Alignments anschließend durch **Erweiterung mit Lücken** weiter verfeinert, sodass Insertionen und Deletionen berücksichtigt werden können.
-
-In dieser Phase wird ein aufwendigeres Alignment-Verfahren angewendet, jedoch nur auf eine kleine Zahl aussichtsreicher Kandidatenregionen. Dadurch nähert sich das Ergebnis stärker einem echten lokalen Alignment an, ohne die Kosten vollständiger dynamischer Programmierung über die gesamte Sequenz tragen zu müssen.
+Damit reduziert BLAST die Zahl der zu untersuchenden Kandidaten drastisch.
 
 ---
 
-### **Schritt 5: Bewertung und Ranking**
+### **Schritt 3: Ungegapte Erweiterung**
 
-Jedes resultierende Alignment erhält einen Score auf der Grundlage von:
+Nachdem Seeds identifiziert wurden, versucht BLAST, sie in längere Alignments zu überführen.
 
-* Substitutionsmatrizen, etwa für Aminosäureähnlichkeit,
+Zunächst geschieht dies meist **ungegappt**, also ohne Insertionen oder Deletionen. Ausgehend vom Seed wird das Alignment entlang der Diagonalen in beide Richtungen erweitert, und der Score wird dabei fortlaufend aktualisiert.
+
+Die Erweiterung wird so lange fortgesetzt, wie der Score wächst oder nicht zu weit unter den bisher besten Wert fällt. Auf diese Weise entstehen sogenannte **high-scoring segment pairs (HSPs)**.
+
+Die zugrunde liegende Idee ist einfach: Nur solche Seeds, die sich zu ausreichend starken lokalen Segmenten ausbauen lassen, sind biologisch interessant genug, um weiterverfolgt zu werden.
+
+---
+
+### **Schritt 4: Gegappte Erweiterung**
+
+Neuere BLAST-Varianten beschränken sich nicht auf ungegappte Segmente. Vielversprechende HSPs werden anschließend durch **gegappte Erweiterung** verfeinert, bei der auch Insertionen und Deletionen zugelassen sind.
+
+Diese Phase ist rechenintensiver, wird aber nur auf eine kleine Zahl ausgewählter Kandidaten angewandt. Dadurch nähert sich das Ergebnis einem echten lokalen Alignment an, ohne dass der gesamte Suchraum mit vollständiger dynamischer Programmierung durchmustert werden müsste.
+
+---
+
+### **Schritt 5: Scoring und Rangordnung**
+
+Die resultierenden Alignments werden schließlich anhand ihres Scores bewertet. In diese Bewertung gehen insbesondere ein:
+
+* Substitutionsmatrizen,
 * Gap-Strafen,
-* Alignment-Länge.
+* und die Länge des Alignments.
 
-Anschließend werden die Datenbanksequenzen anhand dieser Scores sortiert. Wie wir im nächsten Abschnitt sehen werden, reichen rohe Scores allein jedoch nicht aus, um die biologische Relevanz zu beurteilen.
-
----
-
-### **Warum ist BLAST schnell?**
-
-Die Effizienz von BLAST beruht auf mehreren wichtigen Entwurfsentscheidungen:
-
-* **Frühes Filtern** durch Wort-Matching eliminiert den Großteil des Suchraums
-* **Selektive Erweiterung** konzentriert die Berechnung auf vielversprechende Regionen
-* **Schrittweise Verfeinerung** vermeidet teure Alignments, solange sie nicht nötig sind
-
-Im Gegensatz zur dynamischen Programmierung, die alle möglichen Alignments auswertet, betrachtet BLAST nur einen sorgfältig ausgewählten Teil des Suchraums.
-
-Die Lehrmaterialien betonen diesen Zielkonflikt ausdrücklich:
-
-> Ähnlichkeitssuche reduziert den Suchraum, um Geschwindigkeit zu gewinnen, auf Kosten eines Teils der Sensitivität.
+Auf dieser Grundlage werden die Datenbanksequenzen geordnet. Allerdings sind rohe Scores allein noch nicht ausreichend, um biologische Relevanz zu beurteilen. Dazu benötigen wir zusätzlich eine statistische Einordnung, auf die der nächste Abschnitt eingeht.
 
 ---
 
-### **Eine konzeptionelle Interpretation**
+### **Warum ist BLAST so schnell?**
 
-BLAST lässt sich als Algorithmus verstehen, der nach **Evidenz für Ähnlichkeit** sucht und nicht nach Ähnlichkeit selbst.
+Die Effizienz von BLAST beruht auf mehreren gezielten Entwurfsentscheidungen:
 
-* Wort-Matches liefern erste Evidenz.
-* Die Erweiterung prüft, ob diese Evidenz verstärkt werden kann.
-* Bewertung und Statistik entscheiden, ob diese Evidenz bedeutsam ist.
+* **Frühes Filtern** durch Worttreffer eliminiert den größten Teil des Suchraums.
+* **Selektive Erweiterung** konzentriert die Berechnung auf vielversprechende Regionen.
+* **Schrittweise Verfeinerung** vermeidet aufwendige Alignments, solange diese nicht notwendig sind.
 
-Dieser gestufte Ansatz spiegelt ein allgemeines Prinzip der Computational Biology wider:
+Während dynamische Programmierung alle Möglichkeiten systematisch prüft, betrachtet BLAST nur einen kleinen, sorgfältig ausgewählten Ausschnitt des Suchraums.
 
-> **Starke biologische Signale lassen sich oft über schwache, aber konsistente lokale Muster erkennen.**
+Der grundlegende Kompromiss lässt sich so formulieren:
+
+> **Ähnlichkeitssuche gewinnt Geschwindigkeit, indem sie den Suchraum einschränkt, und bezahlt dafür mit einem gewissen Verlust an Sensitivität.**
+
+---
+
+### **Eine konzeptionelle Lesart von BLAST**
+
+BLAST kann man als Verfahren verstehen, das zunächst nach **Evidenz für Ähnlichkeit** sucht, bevor es vollständiger rechnet.
+
+* Worttreffer liefern eine erste Evidenz.
+* Die Extension prüft, ob sich diese Evidenz verstärken lässt.
+* Scoring und Statistik entscheiden, ob sie biologisch ernst zu nehmen ist.
+
+Diese gestufte Struktur entspricht einem allgemeinen Prinzip der computergestützten Biologie:
+
+> **Starke biologische Signale lassen sich häufig über schwache, aber konsistente lokale Muster aufspüren.**
 
 ---
 
 ### **Grenzen**
 
-Trotz seines Erfolgs besitzt BLAST inhärente Einschränkungen:
+Trotz seines Erfolgs besitzt BLAST charakteristische Einschränkungen:
 
 * **Heuristischer Charakter**
-  Einige echte Alignments können übersehen werden, wenn kein geeigneter Seed gefunden wird.
+  Fehlt ein geeigneter Seed, kann ein biologisch relevanter Treffer übersehen werden.
 
-* **Abhängigkeit von Parametern**
-  Die Ergebnisse hängen von Entscheidungen wie Wortlänge und Schwellenwert $T$ ab.
+* **Parameterabhängigkeit**
+  Ergebnisse hängen von Entscheidungen wie Wortlänge oder Schwellenwert $T$ ab.
 
-* **Empfindlichkeit gegenüber Sequenzzusammensetzung**
-  Regionen niedriger Komplexität können irreführende Matches erzeugen.
+* **Empfindlichkeit gegenüber Sequenzkomposition**
+  Regionen geringer Komplexität können irreführende Treffer erzeugen.
 
-Diese Grenzen machen deutlich, dass BLAST kein perfekter Ersatz für exaktes Alignment ist, sondern ein praxisnaher Kompromiss.
+BLAST ist daher kein Ersatz für exakte Alignment-Verfahren im strengen Sinn, sondern ein äußerst erfolgreicher praktischer Kompromiss.
 
 ---
 
 ### **Zusammenfassung**
 
-BLAST setzt das Seed-and-Extend-Paradigma in einen konkreten und effizienten Algorithmus um:
+BLAST setzt das Seed-and-Extend-Paradigma in einem konkreten und effizienten Algorithmus um:
 
-* Es identifiziert kurze ähnliche Wörter,
-* verwendet sie als Seeds,
-* erweitert sie zu hoch bewerteten Segmenten,
-* und ordnet die Ergebnisse anhand von Alignment-Scores.
+* Es identifiziert kurze ähnliche Wörter.
+* Diese Wörter dienen als Seeds.
+* Seeds werden zu hoch bewerteten Segmenten erweitert.
+* Die resultierenden Treffer werden bewertet und geordnet.
 
-Sein Erfolg beruht darauf, dass es den Suchraum drastisch reduziert und zugleich Sensitivität für biologisch bedeutsame Ähnlichkeit bewahrt.
+Sein Erfolg beruht darauf, dass es den Suchraum drastisch verkleinert und zugleich ausreichend sensitiv für biologisch relevante Ähnlichkeit bleibt.
 
 ---
 
 ### **Fragen zur Selbstkontrolle**
 
-1. Wozu dient die Erzeugung von Wort-Nachbarschaften in BLAST?
-2. Warum führt BLAST zunächst eine lückenfreie Erweiterung und erst danach eine Verfeinerung mit Lücken durch?
-3. Wie hängen High-Scoring Segment Pairs (HSPs) mit lokalem Alignment zusammen?
-4. Warum ist frühes Filtern für die Effizienz von BLAST unverzichtbar?
-5. Welche Arten von Alignments könnte BLAST übersehen?
+1. Welchen Zweck erfüllt die Bildung von Wortnachbarschaften in BLAST?
+2. Warum wird ungegappte Erweiterung vor gegappter Verfeinerung durchgeführt?
+3. Wie verhalten sich HSPs zum Konzept des lokalen Alignments?
+4. Warum ist frühes Filtern entscheidend für die Effizienz von BLAST?
+5. Welche Arten biologischer Beziehungen kann BLAST potenziell übersehen?

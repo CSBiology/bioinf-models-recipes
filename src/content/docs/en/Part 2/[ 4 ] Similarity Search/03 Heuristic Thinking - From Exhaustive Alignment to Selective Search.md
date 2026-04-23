@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.3 Heuristic Thinking: From Exhaustive Alignment to Selective Search**
 
-The formulation of the search problem in the previous section leads to a fundamental impasse. On the one hand, the biological question demands sensitivity: we wish to detect even subtle similarities that may indicate shared function or evolutionary origin. On the other hand, the computational cost of exact local alignment across large databases is prohibitive. The question is therefore not whether we can compute optimal alignments, but whether we can avoid computing most of them.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* explain why heuristic methods are needed for large-scale similarity search
+* interpret dot matrices as visual representations of sequence similarity
+* distinguish random matches from meaningful diagonal patterns
+* describe how short exact matches can serve as anchors for approximate similarity
+* explain the idea of filtering the search space before detailed alignment
+
+The formulation of the search problem in the previous section leads to a fundamental impasse. On the one hand, the biological question demands sensitivity: we would like to detect even subtle similarities that may indicate shared function or evolutionary origin. On the other hand, the computational cost of exact local alignment across large databases is prohibitive. The question is therefore not whether optimal alignments can be computed in principle, but whether most of that computation can be avoided in practice.
 
 This tension gives rise to a new mode of algorithmic thinking. Instead of insisting on optimality everywhere, we ask:
 
@@ -21,7 +31,7 @@ This question marks the beginning of **heuristic search**.
 
 ### **A Change in Perspective**
 
-In dynamic programming, the alignment matrix is treated uniformly. Every cell is evaluated, and the optimal path is guaranteed to be found. This exhaustive strategy ensures correctness, but it comes at a high cost. As already suggested in the lecture material, large portions of this matrix contribute nothing to the final alignment. 
+In dynamic programming, the alignment matrix is treated uniformly. Every cell is evaluated, and the optimal path is guaranteed to be found. This exhaustive strategy ensures correctness, but it comes at a high cost. Large portions of the matrix contribute nothing to the final alignment.
 
 Heuristic methods take a fundamentally different approach. They assume that meaningful alignments are not arbitrary, but exhibit **recognizable structure**. If such structure can be detected early, it becomes possible to restrict computation to a small subset of the search space.
 
@@ -50,11 +60,11 @@ This observation leads to a crucial insight:
 
 Real biological sequences are rarely identical. Mutations, insertions, and deletions disrupt perfect matches. As a result, diagonals in the dot matrix are often fragmented. However, even in the presence of noise, related sequences tend to share **short exact or highly similar substrings**.
 
-The lecture material emphasizes this point clearly:
+This observation can be stated more precisely:
 
-> Approximately matching sequences typically contain short perfectly matching substrings. 
+> **Approximately matching sequences typically contain short perfectly matching substrings.**
 
-This statement is deceptively simple, but it has far-reaching consequences. It suggests that instead of searching directly for approximate matches, which is computationally difficult, we can search for **exact matches**, which are much easier to detect.
+This statement is simple, but its consequences are far-reaching. Instead of searching directly for approximate matches, which is computationally difficult, we can first search for **exact matches**, which are much easier to detect.
 
 These short exact matches act as **anchors** or **signals** indicating potential regions of similarity.
 
@@ -82,7 +92,7 @@ This approach dramatically reduces the search space. Instead of exploring all $m
 
 At this point, one might ask why such a drastic reduction of the search space does not completely destroy sensitivity.
 
-The answer lies in a simple combinatorial argument, often referred to as a form of the **pigeonhole principle**, which is also hinted at in the lecture material. 
+The answer lies in a simple combinatorial argument, often described as a form of the **pigeonhole principle**.
 
 If two sequences share a sufficiently long region of similarity, then this region must contain at least one short exact match. Otherwise, the number of mismatches would exceed what is compatible with a high alignment score.
 
@@ -90,7 +100,7 @@ In other words:
 
 > **Strong alignments cannot be entirely composed of mismatches; they must contain short exact or highly similar segments.**
 
-This provides the theoretical justification for using short matches as entry points into the alignment process.
+This is the underlying justification for using short matches as entry points into the alignment process.
 
 ---
 
@@ -107,7 +117,7 @@ This approach introduces approximation at two levels:
 * Some true alignments may be missed if they lack detectable seeds.
 * Some detected regions may not lead to high-quality alignments.
 
-However, these limitations are acceptable in practice, because the computational gains are enormous. Indeed, without such heuristics, large-scale similarity search would be infeasible.
+However, these limitations are acceptable in practice because the computational gains are enormous. Without such heuristics, large-scale similarity search would remain infeasible.
 
 ---
 
@@ -115,7 +125,7 @@ However, these limitations are acceptable in practice, because the computational
 
 The ideas developed in this section form the conceptual foundation for all modern similarity search algorithms.
 
-The key principles are:
+The key principles can now be stated explicitly:
 
 * meaningful similarity is structured,
 * exact matches provide reliable signals,

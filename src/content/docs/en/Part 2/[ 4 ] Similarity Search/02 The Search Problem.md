@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.2 The Search Problem**
 
-The transition from pairwise alignment to similarity search introduces not only a change in scale, but also a change in how we conceptualize the problem itself. In alignment, the task is well-defined and symmetric: two sequences are given, and we seek an optimal alignment between them. In contrast, similarity search is inherently asymmetric and embedded in a much larger computational context.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* formalize similarity search as a query-against-database problem
+* explain why local alignment is the natural basis for similarity search
+* derive the computational complexity of exhaustive database search
+* describe how large search spaces contain substantial redundancy
+* articulate why exact optimal alignment is impractical at database scale
+
+The transition from pairwise alignment to similarity search involves not only a change in scale, but also a change in how the problem itself is formulated. In pairwise alignment, the task is symmetric: two sequences are given, and we seek an optimal alignment between them. In similarity search, by contrast, one sequence is singled out as the query, and it must be compared against a much larger collection.
 
 To understand this shift, we must first formalize what it means to “search” for similar sequences.
 
@@ -20,7 +30,7 @@ To understand this shift, we must first formalize what it means to “search” 
 At the core of similarity search lies a simple idea. We are given:
 
 * a **query sequence** $Q$ of length $m$,
-* and a **database** $\mathcal{D} = {S_1, S_2, \dots, S_N}$ consisting of $N$ sequences, each of varying length.
+* and a **database** $\mathcal{D} = \{S_1, S_2, \dots, S_N\}$ consisting of $N$ sequences, each of varying length.
 
 The goal is to identify those sequences $S_i$ in the database that are “similar” to $Q$, typically in the sense of achieving a high local alignment score.
 
@@ -45,7 +55,7 @@ This makes **local alignment**, as formalized by the Smith–Waterman algorithm,
 Conceptually, for each database sequence $S_i$, we are interested in
 
 $$
-\max_{\text{local alignments}} ; \text{score}(Q, S_i),
+\max_{\text{local alignments}} \; \text{score}(Q, S_i),
 $$
 
 that is, the highest scoring local alignment between the query and the target.
@@ -72,7 +82,7 @@ $$
 
 In modern databases, $N$ may be on the order of millions, and both $m$ and $n$ may be in the hundreds or thousands. The resulting computational cost is prohibitive.
 
-This is not merely a matter of efficiency. It fundamentally prevents the direct application of exact alignment algorithms in large-scale settings.
+Again, this is not merely a matter of efficiency. It prevents the direct use of exact alignment algorithms in large-scale settings.
 
 ---
 
@@ -80,7 +90,7 @@ This is not merely a matter of efficiency. It fundamentally prevents the direct 
 
 To understand why this computation is wasteful, it is helpful to revisit the structure of alignment algorithms.
 
-Dynamic programming explores a matrix of size $m \times n$ for each pair $(Q, S_i)$. However, as already hinted in the lecture material, only a small fraction of this matrix contributes to meaningful alignments. Most cells correspond to combinations of positions that do not participate in any high-scoring alignment. 
+Dynamic programming explores a matrix of size $m \times n$ for each pair $(Q, S_i)$. Yet only a small fraction of this matrix contributes to meaningful alignments. Most cells correspond to combinations of positions that do not participate in any high-scoring alignment.
 
 This leads to an important insight:
 
@@ -94,7 +104,7 @@ In other words, the problem is not only large, but also highly sparse in terms o
 
 Another defining feature of similarity search is the asymmetry between query and database.
 
-The query sequence is typically:
+In practice, the query sequence is typically:
 
 * short,
 * fixed,
@@ -143,7 +153,7 @@ We can now summarize the similarity search problem more abstractly:
 4. However, computing all alignments exactly is infeasible.
 5. Therefore, we must approximate the search by focusing only on promising regions.
 
-This abstraction highlights the central tension of the problem:
+This abstraction makes the central tension visible:
 
 * **Accuracy** demands thorough exploration of the alignment space.
 * **Efficiency** demands aggressive reduction of that space.
@@ -163,7 +173,7 @@ By introducing filtering and selective computation, we accept that:
 
 However, these trade-offs are not arbitrary. They are guided by biological insight: meaningful similarities tend to exhibit certain patterns, such as conserved substrings, which can be exploited algorithmically.
 
-The success of similarity search methods therefore depends on how well these assumptions reflect biological reality.
+The success of similarity search methods therefore depends on how well these assumptions capture the structure of real biological sequences.
 
 ---
 
@@ -176,7 +186,7 @@ The search problem extends sequence alignment into a large-scale setting charact
 * prohibitive computational cost for exact methods,
 * and the necessity of filtering to reduce the search space.
 
-This formulation prepares the ground for the next step: developing **heuristic strategies** that make similarity search feasible in practice.
+This formulation prepares the ground for the next step: developing **heuristic strategies** that make database search feasible in practice.
 
 ---
 

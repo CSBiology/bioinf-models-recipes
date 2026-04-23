@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.5 The BLAST Algorithm**
 
-The seed-and-extend paradigm provides a general strategy for efficient similarity search. The **Basic Local Alignment Search Tool (BLAST)** is one of its most influential and widely used realizations. Since its introduction in 1990, BLAST has become a standard method for querying biological sequence databases, precisely because it achieves a careful balance between computational efficiency and biological sensitivity.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* outline the main stages of the BLAST algorithm
+* explain how word generation and neighborhood construction increase search sensitivity
+* describe how BLAST uses seed detection and extension to identify candidate alignments
+* understand the role of ungapped and gapped extension in the BLAST workflow
+* explain why BLAST achieves a practical balance between speed and biological sensitivity
+
+The seed-and-extend paradigm provides a general strategy for efficient similarity search. The **Basic Local Alignment Search Tool (BLAST)** is one of its most influential and widely used realizations. Since its introduction in 1990, BLAST has become a standard method for querying biological sequence databases because it achieves a careful balance between computational efficiency and biological sensitivity.
 
 Rather than attempting to compute optimal alignments exhaustively, BLAST operationalizes the idea that **high-scoring alignments can be detected through short local signals** and refined only where necessary.
 
@@ -88,7 +98,7 @@ The key idea is that only seeds that can be extended into sufficiently high-scor
 
 In more advanced versions of BLAST, promising ungapped alignments are further refined using **gapped extension**, which allows insertions and deletions.
 
-At this stage, a more expensive alignment procedure is applied, but only to a small number of candidate regions. This step brings the result closer to a true local alignment, while still avoiding the cost of full dynamic programming across the entire sequence.
+At this stage, a more expensive alignment procedure is applied, but only to a small number of candidate regions. This brings the result closer to a true local alignment while still avoiding the cost of full dynamic programming across the entire search space.
 
 ---
 
@@ -114,15 +124,15 @@ The efficiency of BLAST arises from several key design choices:
 
 In contrast to dynamic programming, which evaluates all possible alignments, BLAST evaluates only a carefully chosen subset.
 
-The lecture material emphasizes this trade-off:
+The trade-off can be stated directly:
 
-> Similarity search reduces the search space to gain speed, at the cost of some sensitivity. 
+> **Similarity search reduces the search space to gain speed, at the cost of some sensitivity.**
 
 ---
 
 ### **A Conceptual Interpretation**
 
-BLAST can be understood as an algorithm that searches for **evidence of similarity** rather than similarity itself.
+BLAST can be understood as an algorithm that searches for **evidence of similarity** before investing in full alignment.
 
 * Word matches provide initial evidence.
 * Extension tests whether this evidence can be strengthened.

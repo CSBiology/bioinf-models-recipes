@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.4 The Seed-and-Extend Paradigm**
 
-The heuristic principles developed in the previous section provide a clear conceptual direction: instead of searching for full alignments everywhere, we should first identify short signals of similarity and then focus computational effort on promising regions. The question that remains is how to turn this idea into a concrete and systematic algorithmic strategy.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* describe the two phases of the seed-and-extend paradigm
+* explain how short words or k-mers are used as seeds in similarity search
+* distinguish between seed detection and alignment extension
+* understand why seed-based filtering can reduce computational cost
+* relate the seed-and-extend strategy to the broader heuristic search framework
+
+The heuristic principles developed in the previous section provide a clear conceptual direction: instead of searching for full alignments everywhere, we should first identify short signals of similarity and then focus computation on promising regions. The remaining question is how to turn this idea into a concrete and systematic algorithmic strategy.
 
 The answer is given by the **seed-and-extend paradigm**, which lies at the heart of virtually all modern similarity search methods.
 
@@ -38,9 +48,9 @@ $$
 Q[i:i+k-1], \quad i = 1, \dots, m-k+1.
 $$
 
-These substrings serve as candidate **seeds**. The algorithm then searches for occurrences of these seeds within the database sequences.
+These substrings serve as candidate **seeds**. The algorithm then searches for occurrences of these seeds within database sequences.
 
-The crucial point is that this operation can be performed efficiently using lookup tables, hashing, or indexing structures. Unlike dynamic programming, which requires $\mathcal{O}(m \cdot n)$ time per comparison, seed detection can often be performed in near-linear time with respect to the database size.
+The crucial point is that this operation can be carried out efficiently using lookup tables, hashing, or indexing structures. Unlike dynamic programming, which requires $\mathcal{O}(m \cdot n)$ time per comparison, seed detection can often be performed in near-linear time with respect to database size.
 
 In the simplest case, seeds correspond to **exact matches**. More sophisticated methods allow for **similar words**, defined through scoring matrices, thereby increasing sensitivity.
 
@@ -78,7 +88,7 @@ $$
 
 Each of these words is searched in the database. Suppose we find a match for the word $\texttt{KMQ}$ in a database sequence.
 
-This match serves as a **seed**. Rather than aligning the entire sequences, we now focus only on the region surrounding this match. We attempt to extend it:
+This match serves as a **seed**. Rather than aligning the entire sequences, we now focus on the region surrounding this match and attempt to extend it:
 
 * If neighboring residues also match or are similar, the alignment grows.
 * If mismatches accumulate, the score decreases and extension stops.
@@ -93,9 +103,9 @@ The power of the seed-and-extend paradigm lies in its ability to drastically red
 
 Instead of evaluating all possible alignments, the algorithm only considers regions that contain seeds. Since short exact matches are relatively rare in unrelated sequences, this acts as an effective filter.
 
-The lecture material highlights this idea succinctly:
+The core idea can be expressed succinctly:
 
-> Short identical or highly similar fragments serve as anchors for alignment extension. 
+> **Short identical or highly similar fragments serve as anchors for alignment extension.**
 
 As a result, the computational complexity is no longer dominated by the full alignment matrix, but by the number of detected seeds and the cost of extending them.
 
@@ -127,7 +137,7 @@ Balancing this trade-off is a central design decision in similarity search algor
 
 ### **From Local Signals to Global Insight**
 
-An important conceptual point is that the seed-and-extend paradigm does not attempt to reconstruct the full alignment space. Instead, it relies on the assumption that **local signals are sufficient to detect global relationships**.
+An important conceptual point is that the seed-and-extend paradigm does not attempt to reconstruct the full alignment space. Instead, it relies on the assumption that **local signals are sufficient to detect broader biological relationships**.
 
 In biological terms, this means that:
 

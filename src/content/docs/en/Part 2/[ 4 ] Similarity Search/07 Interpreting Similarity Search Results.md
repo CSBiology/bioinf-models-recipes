@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.7 Interpreting Similarity Search Results**
 
-After performing a similarity search and evaluating statistical significance, we arrive at a list of candidate matches. At first glance, this output may appear straightforward: sequences are ranked by score or E-value, and the top hits are presumed to be the most relevant. However, the interpretation of these results requires careful reasoning.
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* interpret ranked similarity search hits in both statistical and biological terms
+* explain why the top hit alone may be insufficient for robust biological inference
+* evaluate how alignment length, gaps, and conserved residues affect interpretation
+* distinguish between sequence identity and sequence similarity
+* assess similarity search output as evidence rather than definitive proof of homology
+
+After performing a similarity search and evaluating statistical significance, we obtain a list of candidate matches. At first glance, this output may appear straightforward: sequences are ranked by score or E-value, and the top hits seem to be the most relevant. In practice, however, interpretation requires careful reasoning.
 
 Similarity search does not produce definitive answers. It produces **evidence**, which must be evaluated in a biological and statistical context.
 
@@ -23,7 +33,7 @@ A typical search result consists of:
 * associated **scores and E-values**,
 * and one or more **alignments** for each hit.
 
-The ranking reflects the statistical strength of similarity, with lower E-values indicating more significant matches. However, interpreting this ranking requires more than simply selecting the top hit.
+The ranking reflects the statistical strength of similarity, with lower E-values indicating more significant matches. Yet interpreting this ranking requires more than simply selecting the top hit.
 
 A central question is:
 
@@ -65,7 +75,7 @@ Several aspects are particularly informative:
 * **Conservation of key residues**
   Functionally important positions are often highly conserved.
 
-These features provide context that cannot be captured by a single number.
+These features provide context that no single score can capture.
 
 ---
 
@@ -76,9 +86,7 @@ Two commonly reported quantities are:
 * **Sequence identity**: the fraction of exactly matching residues
 * **Sequence similarity**: the fraction of residues with favorable substitution scores
 
-These measures depend on the alignment and the scoring system. 
-
-While they are useful summaries, they must be interpreted with care.
+These measures are useful summaries, but they must be interpreted with care.
 
 For example:
 
@@ -118,7 +126,7 @@ Suppose:
 
 It does not necessarily follow that $B$ is similar to $C$.
 
-This situation arises because alignments may involve different regions of the sequences. As highlighted in the lecture material, two sequences may each share similarity with a third sequence, but not with each other. 
+This situation arises because alignments may involve different regions of the sequences. Two sequences may each share similarity with a third sequence, but not with each other.
 
 This observation reinforces an important conceptual distinction:
 
@@ -137,7 +145,7 @@ A typical reasoning process is:
 3. Functional or structural features are conserved.
 4. Multiple related sequences support the relationship.
 
-Only when these pieces of evidence align can we confidently infer homology.
+Only when these pieces of evidence point in the same direction can we confidently infer homology.
 
 This highlights a key point:
 

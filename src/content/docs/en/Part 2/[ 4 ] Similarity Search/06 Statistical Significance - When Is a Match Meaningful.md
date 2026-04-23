@@ -9,7 +9,17 @@ sidebar:
 
 ## **4.6 Statistical Significance: When Is a Match Meaningful?**
 
-At this point, we have developed a powerful mechanism for identifying similar sequences in large databases. Algorithms such as BLAST return alignments together with associated scores, and these scores allow us to rank candidate matches. However, a fundamental question remains:
+### **Learning Objectives**
+
+After reading this section, you should be able to:
+
+* explain why raw alignment scores are insufficient for interpreting search results
+* describe the role of a null model in assessing similarity by chance
+* understand why extreme value statistics arise in database search
+* interpret p-values and E-values as measures of statistical significance
+* explain how sequence length and database size affect the significance of a match
+
+At this point, we have developed a powerful mechanism for identifying similar sequences in large databases. Algorithms such as BLAST return alignments together with associated scores, and these scores allow us to rank candidate matches. Yet a fundamental question remains:
 
 > **How do we know whether a high-scoring alignment is biologically meaningful, or simply a result of chance?**
 
@@ -25,7 +35,7 @@ $$
 S = \sum \text{substitution scores} + \sum \text{gap penalties}.
 $$
 
-While this score reflects the quality of an alignment under a chosen scoring system, it lacks an important reference point. A score of, say, $50$ may be highly significant in one context and entirely unremarkable in another.
+While this score reflects the quality of an alignment under a chosen scoring system, it lacks a crucial reference point. A score of, say, $50$ may be highly significant in one context and entirely unremarkable in another.
 
 Two key factors influence this:
 
@@ -47,19 +57,19 @@ Under this null hypothesis, any observed alignment is purely accidental. The que
 
 > **How likely is it to observe an alignment score at least as high as the one we obtained, purely by chance?**
 
-This probability provides a natural measure of significance.
+That probability provides a natural measure of significance.
 
 ---
 
 ### **Extreme Values and Alignment Scores**
 
-An important insight from statistical theory, also reflected in the lecture material, is that alignment scores behave in a characteristic way under the null model. 
+An important insight from statistical theory is that alignment scores behave in a characteristic way under the null model.
 
 While individual comparisons may resemble familiar distributions, the **maximum score** over many comparisons follows an **extreme value distribution**, often approximated by a Gumbel distribution.
 
 Intuitively, this arises because similarity search does not consider just one alignment, but many possible alignments across many sequences. We are effectively asking about the **maximum** of many random variables, and maxima behave differently from individual observations.
 
-This leads to a characteristic distribution of high scores, where extreme values occur more frequently than one might expect from a normal distribution.
+This leads to a characteristic distribution of high scores in which extreme values occur more frequently than one might expect under a normal distribution.
 
 ---
 
@@ -109,7 +119,7 @@ This formula reflects two important dependencies:
 
 ### **Interpreting the E-Value**
 
-The interpretation of the E-value is straightforward and practical:
+The interpretation of the E-value is both straightforward and practical:
 
 * $E \approx 1$
   → one such match is expected by chance
@@ -145,7 +155,7 @@ This is not a flaw, but a natural consequence of statistical reasoning.
 
 Statistical significance provides a critical filter between computational output and biological interpretation.
 
-A high alignment score is not sufficient. Only when the score is **unlikely under the null model** can we begin to consider biological explanations such as homology.
+A high alignment score is not enough on its own. Only when the score is **unlikely under the null model** can we begin to consider biological explanations such as homology.
 
 At the same time, significance does not guarantee biological relevance. Additional factors must be considered:
 
