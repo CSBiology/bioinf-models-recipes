@@ -48,13 +48,13 @@ These two models play roles analogous to the two coins in the coin toss example.
 
 ### **Evaluating Candidate Positions**
 
-Given a sequence, we consider all possible subsequences of length ( w ), obtained by sliding a window along the sequence. Each of these is a candidate motif instance.
+Given a sequence, we consider all possible subsequences of length $w$, obtained by sliding a window along the sequence. Each of these is a candidate motif instance.
 
 For each candidate subsequence ( x ), we compute its probability under the motif model:
-[
+$$
 P(x \mid \text{motif}) = \prod_{j=1}^{w} p_j(x_j),
-]
-where ( p_j(x_j) ) is the probability of observing symbol ( x_j ) at position ( j ) in the motif model .
+$$
+where $p_j(x_j)$ is the probability of observing symbol $x_j$ at position $j$ in the motif model .
 
 We also compute its probability under the background model, which is typically based on overall nucleotide frequencies in the genome.
 
@@ -126,3 +126,5 @@ At the same time, its success depends on factors such as the quality of the data
 4. What is computed in the E-step for motif discovery?
 5. How are model parameters updated in the M-step?
 6. How does the EM algorithm refine motif structure over iterations?
+
+

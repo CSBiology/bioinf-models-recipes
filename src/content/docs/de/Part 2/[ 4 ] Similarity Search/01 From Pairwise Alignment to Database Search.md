@@ -31,7 +31,7 @@ Mit diesem Perspektivwechsel ändert sich die Natur des Problems in entscheidend
 
 ### **Vom Vergleich zur Entdeckung**
 
-Betrachten wir ein typisches biologisches Szenario. Eine Forscherin sequenziert ein Genfragment aus einem Organismus. Zunächst ist diese Sequenz lediglich eine Zeichenkette über dem Alphabet ${A, C, G, T}$ oder, nach der Translation, eine Proteinsequenz aus Aminosäuren. Für sich genommen besitzt diese Zeichenkette nur begrenzte Aussagekraft. Biologische Bedeutung entsteht erst durch den Vergleich mit bereits charakterisierten Sequenzen.
+Betrachten wir ein typisches biologisches Szenario. Eine Forscherin sequenziert ein Genfragment aus einem Organismus. Zunächst ist diese Sequenz lediglich eine Zeichenkette über dem Alphabet $\{A, C, G, T\}$ oder, nach der Translation, eine Proteinsequenz aus Aminosäuren. Für sich genommen besitzt diese Zeichenkette nur begrenzte Aussagekraft. Biologische Bedeutung entsteht erst durch den Vergleich mit bereits charakterisierten Sequenzen.
 
 Die Forscherin interessiert sich daher nicht für den Abgleich mit einer einzigen bekannten Referenz. Ziel ist vielmehr die Suche nach ähnlichen Sequenzen in einer großen Datenbank, etwa in einem Genom- oder Proteinkatalog. Werden solche Sequenzen gefunden, können sie Hinweise auf Funktion, Struktur oder evolutionären Ursprung liefern.
 

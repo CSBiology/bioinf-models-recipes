@@ -166,16 +166,16 @@ $$
 
 wobei:
 
-* $( A )$ die Strafe für das Öffnen einer Lücke ist
-* $( B )$ die Strafe für die Verlängerung einer Lücke ist
-* $( L )$ die Länge der Lücke ist
+* $$A$$ die Strafe für das Öffnen einer Lücke ist
+* $$B$$ die Strafe für die Verlängerung einer Lücke ist
+* $$L$$ die Länge der Lücke ist
 
 Diese Formulierung erfasst eine wichtige biologische Intuition:
 
 * das Öffnen einer Lücke ist selten und sollte stark bestraft werden
 * die Verlängerung einer bestehenden Lücke ist wahrscheinlicher und sollte schwächer bestraft werden
 
-Indem wir $( A )$ und $( B )$ variieren, können wir steuern, ob der Algorithmus eher lange zusammenhängende Lücken oder viele kurze Lücken erzeugt.
+Indem wir $$A$$ und $$B$$ variieren, können wir steuern, ob der Algorithmus eher lange zusammenhängende Lücken oder viele kurze Lücken erzeugt.
 
 ---
 
@@ -210,3 +210,4 @@ Gemeinsam definieren diese Komponenten, was wir unter Ähnlichkeit verstehen. Di
 3. Wie lassen sich Substitutionsscores probabilistisch interpretieren?
 4. Warum sind affine Gap-Strafen realistischer als konstante Gap-Strafen?
 5. Wie beeinflusst die Wahl des Bewertungssystems die Alignment-Ergebnisse?
+

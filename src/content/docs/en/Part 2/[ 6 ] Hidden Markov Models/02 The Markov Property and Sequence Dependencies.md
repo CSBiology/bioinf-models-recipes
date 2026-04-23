@@ -17,11 +17,11 @@ To overcome this, we now move toward models that explicitly capture **dependenci
 
 ## **From Full Dependency to Tractable Models**
 
-A natural starting point is to consider the most general case. Suppose we want to model a biological sequence ( X = (X_1, X_2, \dots, X_n) ). In full generality, the probability of observing a symbol at position ( n ) could depend on the entire preceding sequence:
+A natural starting point is to consider the most general case. Suppose we want to model a biological sequence $X = (X_1, X_2, \dots, X_n)$. In full generality, the probability of observing a symbol at position $n$ could depend on the entire preceding sequence:
 
-[
+$$
 P(X_n \mid X_{n-1}, X_{n-2}, \dots, X_1)
-]
+$$
 
 From a biological perspective, this is not unreasonable. In proteins, for example, interactions between amino acids can span long distances along the sequence due to folding. Similarly, regulatory elements in DNA may exhibit complex dependencies.
 
@@ -35,9 +35,9 @@ We therefore introduce a simplifying assumption.
 
 The central idea is that the dependence of a position on its full history can be approximated by considering only a limited context. The simplest and most widely used version is the **first-order Markov assumption**:
 
-[
+$$
 P(X_n \mid X_{n-1}, \dots, X_1) = P(X_n \mid X_{n-1})
-]
+$$
 
 In words:
 
@@ -72,9 +72,9 @@ Consider a DNA sequence and a simple first-order Markov model defined by transit
 
 Given such a model, the probability of a sequence ( X = (x_1, x_2, \dots, x_n) ) can be written as:
 
-[
+$$
 P(X) = P(x_1) \cdot \prod_{i=2}^{n} P(x_i \mid x_{i-1})
-]
+$$
 
 This resembles the likelihood computation we encountered earlier, but with an important difference:
 
@@ -158,4 +158,5 @@ In the next section, we will formalize this model and describe its components in
 3. How does a Markov chain differ from a position probability matrix?
 4. Why are observable Markov models insufficient for modeling biological sequence structure?
 5. What conceptual step leads from Markov chains to Hidden Markov Models?
+
 

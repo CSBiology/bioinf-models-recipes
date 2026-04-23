@@ -25,9 +25,9 @@ In the previous sections, we developed a probabilistic framework for describing 
 
 In practice, we are not given aligned motif instances. Instead, we are provided with a collection of sequences in which motif occurrences are embedded at unknown positions. The task is therefore not merely to describe a motif, but to *discover it* from raw sequence data.
 
-To make this problem more concrete, consider a set of DNA sequences that are believed to share a common regulatory element. Each sequence may contain a motif of length ( w ), but we do not know where it begins. A natural approach is to systematically examine all possible subsequences of length ( w ) within each sequence. This can be achieved by sliding a window of length ( w ) along the sequence and extracting all candidate substrings .
+To make this problem more concrete, consider a set of DNA sequences that are believed to share a common regulatory element. Each sequence may contain a motif of length $w$, but we do not know where it begins. A natural approach is to systematically examine all possible subsequences of length $w$ within each sequence. This can be achieved by sliding a window of length $w$ along the sequence and extracting all candidate substrings .
 
-For a sequence of length ( L ), this procedure yields ( L - w + 1 ) candidate subsequences. Each of these is a potential instance of the motif. If we knew which of these candidates were true motif occurrences, we could align them and construct a probabilistic model as described in Section 5.2. Conversely, if we already had a reliable motif model, we could score each candidate subsequence and identify those that best match the motif.
+For a sequence of length $L$, this procedure yields $L - w + 1$ candidate subsequences. Each of these is a potential instance of the motif. If we knew which of these candidates were true motif occurrences, we could align them and construct a probabilistic model as described in Section 5.2. Conversely, if we already had a reliable motif model, we could score each candidate subsequence and identify those that best match the motif.
 
 ### **A Circular Dependency**
 
@@ -70,3 +70,4 @@ This insight provides the conceptual bridge to the next section. To resolve the 
 3. What is meant by the “chicken-and-egg” problem in motif discovery?
 4. Why do naive approaches based on guessing or exhaustive search fail?
 5. In what sense can motif discovery be viewed as a problem with hidden variables?
+

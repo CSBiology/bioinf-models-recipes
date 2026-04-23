@@ -41,7 +41,7 @@ As the number of sequences increases, the algorithm gains more evidence, and rec
 
 ### **Sequence Length and Search Space**
 
-The length of the sequences also plays a critical role. For a sequence of length ( L ), the number of candidate motif positions grows with ( L - w + 1 ), where ( w ) is the motif length.
+The length of the sequences also plays a critical role. For a sequence of length $L$, the number of candidate motif positions grows with $L - w + 1$, where $w$ is the motif length.
 
 Longer sequences therefore introduce a larger search space, increasing the number of potential false positives. Although they provide more opportunities to observe motif instances, they also increase the amount of background noise that must be filtered out.
 
@@ -108,3 +108,4 @@ This motivates the transition to the next chapter, where we will introduce **Hid
 5. Why is the choice of background model important?
 6. How does initialization affect the EM algorithm?
 7. What are the limitations of assuming independence between motif positions?
+

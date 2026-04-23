@@ -24,17 +24,17 @@ After reading this section, you should be able to:
 The probabilistic representation of motifs provides a framework for describing sequence patterns in terms of position-specific preferences. However, not all motifs are equally informative. Some exhibit strong, highly conserved patterns that stand out clearly from background sequence, while others are diffuse and difficult to distinguish from random variation. To make this distinction precise, we require a quantitative measure of how much “signal” a motif carries.
 
 At an intuitive level, information is associated with surprise. Observing an event that is highly unlikely conveys more information than observing an event that is expected. This idea can be formalized by assigning to an event with probability ( p ) a quantity of information defined as
-[
+$$
 I(p) = -\log(p),
-]
+$$
 so that rare events yield larger values, while events that occur with certainty contribute no information .
 
 In the context of sequence motifs, this notion captures an important biological intuition. If a particular nucleotide is almost always observed at a given position, then observing that nucleotide is not surprising and therefore contributes little information. In contrast, if a rare nucleotide appears at that position, it is highly informative, as it deviates from the expected pattern.
 
 While this definition applies to individual events, motifs are characterized by distributions of symbols at each position. To summarize the overall uncertainty at a position, we introduce the concept of *entropy*. Entropy measures the expected amount of information obtained when sampling from a probability distribution. For a position with probabilities ( p_A, p_C, p_G, p_T ), the entropy is defined as
-[
+$$
 H = - \sum_{k} p_k \log_2 p_k,
-]
+$$
 where the sum runs over all possible symbols .
 
 Positions with high entropy are highly variable and therefore less informative, whereas positions with low entropy are more constrained and contribute more strongly to defining the motif.
@@ -43,22 +43,22 @@ Positions with high entropy are highly variable and therefore less informative, 
 
 ### **Example Box: Entropy as Expected Information**
 
-To develop an intuition for entropy, consider a simple experiment. Suppose we repeatedly draw a ball from a container that contains balls of three different colors: red, yellow, and blue. The probabilities of drawing each color are not equal. For example, assume that red occurs with probability ( \frac{4}{9} ), blue with probability ( \frac{3}{9} ), and yellow with probability ( \frac{2}{9} ) .
+To develop an intuition for entropy, consider a simple experiment. Suppose we repeatedly draw a ball from a container that contains balls of three different colors: red, yellow, and blue. The probabilities of drawing each color are not equal. For example, assume that red occurs with probability $\frac{4}{9}$, blue with probability $\frac{3}{9}$, and yellow with probability $\frac{2}{9}$ .
 
 If we observe a red ball, the information gained is
-[
+$$
 I(\text{red}) = -\log_2\left(\frac{4}{9}\right) \approx 1.17 \text{ bits}.
-]
+$$
 In contrast, observing a yellow ball, which is less likely, yields more information:
-[
+$$
 I(\text{yellow}) = -\log_2\left(\frac{2}{9}\right) \approx 2.17 \text{ bits}.
-]
+$$
 This reflects the general principle that rare events are more informative than common ones.
 
 Entropy combines these values into a single measure that represents the *expected* information obtained per draw:
-[
+$$
 H = -\left( \frac{4}{9} \log_2 \frac{4}{9} + \frac{3}{9} \log_2 \frac{3}{9} + \frac{2}{9} \log_2 \frac{2}{9} \right) \approx 1.53 \text{ bits}.
-]
+$$
 
 This value quantifies the uncertainty of the experiment. If all outcomes were equally likely, the entropy would be higher, reflecting greater unpredictability. Conversely, if one outcome dominated completely, the entropy would approach zero.
 
@@ -66,7 +66,7 @@ This value quantifies the uncertainty of the experiment. If all outcomes were eq
 
 This example captures the central idea: entropy measures how predictable a system is. In the context of sequence motifs, it allows us to quantify how strongly a position constrains the possible symbols.
 
-To interpret entropy biologically, it is useful to compare it to a background model. For DNA sequences, a natural reference is a uniform distribution over the four nucleotides, where each occurs with probability ( \frac{1}{4} ). This distribution has maximal entropy, equal to 2 bits, reflecting complete uncertainty . A motif position that resembles this background provides little information, as it does not distinguish motif instances from random sequence.
+To interpret entropy biologically, it is useful to compare it to a background model. For DNA sequences, a natural reference is a uniform distribution over the four nucleotides, where each occurs with probability $\frac{1}{4}$. This distribution has maximal entropy, equal to 2 bits, reflecting complete uncertainty . A motif position that resembles this background provides little information, as it does not distinguish motif instances from random sequence.
 
 The *information content* of a motif position is therefore defined as the reduction in uncertainty relative to the background. Positions where one nucleotide dominates will have low entropy and high information content, while positions with nearly uniform distributions contribute little information. This aligns closely with biological intuition: conserved positions are often functionally important, whereas variable positions are less critical.
 
@@ -86,4 +86,5 @@ This observation brings us back to the central challenge of motif discovery. Eve
 4. What is the entropy of a uniform DNA distribution, and why is it maximal?
 5. How is information content defined for a motif position?
 6. Why are weak motifs more difficult to detect than strong motifs?
+
 

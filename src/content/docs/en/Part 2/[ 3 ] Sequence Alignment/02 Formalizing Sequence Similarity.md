@@ -45,7 +45,7 @@ A sequence can be viewed as a string over a finite alphabet. For example:
 
 * DNA sequences use the alphabet
   $$
-  \mathcal{A} = {A, C, G, T}
+  \mathcal{A} = \{A, C, G, T\}
   $$
 * Protein sequences use an alphabet of 20 amino acids
 

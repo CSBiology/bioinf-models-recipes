@@ -232,7 +232,7 @@ Für den Promotorzustand berechnen wir:
 
 $$
 v_2(P) = \max \Bigl(
-v_1(P)t_{PP}e_P(C),\;
+v_1(P)t_{PP}e_P(C), 
 v_1(B)t_{BP}e_P(C)
 \Bigr)
 $$
@@ -241,13 +241,13 @@ Einsetzen der Zahlen ergibt:
 
 $$
 v_2(P) = \max \Bigl(
-0.015 \cdot 0.55 \cdot 0.43,\;
+0.015 \cdot 0.55 \cdot 0.43, 
 0.27 \cdot 0.35 \cdot 0.43
 \Bigr)
 $$
 
 $$
-= \max(0.00355,\;0.04064) = 0.04064
+= \max(0.00355, 0.04064) = 0.04064
 $$
 
 Der beste Vorgänger ist also $B$.
@@ -256,20 +256,20 @@ Für den Hintergrundzustand gilt:
 
 $$
 v_2(B) = \max \Bigl(
-v_1(P)t_{PB}e_B(C),\;
+v_1(P)t_{PB}e_B(C), 
 v_1(B)t_{BB}e_B(C)
 \Bigr)
 $$
 
 $$
 v_2(B) = \max \Bigl(
-0.015 \cdot 0.45 \cdot 0.20,\;
+0.015 \cdot 0.45 \cdot 0.20, 
 0.27 \cdot 0.65 \cdot 0.20
 \Bigr)
 $$
 
 $$
-= \max(0.00135,\;0.03510) = 0.03510
+= \max(0.00135, 0.03510) = 0.03510
 $$
 
 Wieder ist der beste Vorgänger $B$.
@@ -286,20 +286,20 @@ Für den Promotorzustand:
 
 $$
 v_3(P) = \max \Bigl(
-v_2(P)t_{PP}e_P(C),\;
+v_2(P)t_{PP}e_P(C), 
 v_2(B)t_{BP}e_P(C)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.04064 \cdot 0.55 \cdot 0.43,\;
+0.04064 \cdot 0.55 \cdot 0.43, 
 0.03510 \cdot 0.35 \cdot 0.43
 \Bigr)
 $$
 
 $$
-= \max(0.00961,\;0.00528) = 0.00961
+= \max(0.00961, 0.00528) = 0.00961
 $$
 
 Der beste Vorgänger ist also $P$.
@@ -308,20 +308,20 @@ Für den Hintergrundzustand:
 
 $$
 v_3(B) = \max \Bigl(
-v_2(P)t_{PB}e_B(C),\;
+v_2(P)t_{PB}e_B(C), 
 v_2(B)t_{BB}e_B(C)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.04064 \cdot 0.45 \cdot 0.20,\;
+0.04064 \cdot 0.45 \cdot 0.20, 
 0.03510 \cdot 0.65 \cdot 0.20
 \Bigr)
 $$
 
 $$
-= \max(0.00366,\;0.00456) = 0.00456
+= \max(0.00366, 0.00456) = 0.00456
 $$
 
 Der beste Vorgänger ist also $B$.
@@ -338,20 +338,20 @@ Für den Promotorzustand:
 
 $$
 v_4(P) = \max \Bigl(
-v_3(P)t_{PP}e_P(T),\;
+v_3(P)t_{PP}e_P(T), 
 v_3(B)t_{BP}e_P(T)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.00961 \cdot 0.55 \cdot 0.12,\;
+0.00961 \cdot 0.55 \cdot 0.12, 
 0.00456 \cdot 0.35 \cdot 0.12
 \Bigr)
 $$
 
 $$
-= \max(0.000634,\;0.000192) = 0.000634
+= \max(0.000634, 0.000192) = 0.000634
 $$
 
 Der beste Vorgänger ist also $P$.
@@ -360,20 +360,20 @@ Für den Hintergrundzustand:
 
 $$
 v_4(B) = \max \Bigl(
-v_3(P)t_{PB}e_B(T),\;
+v_3(P)t_{PB}e_B(T), 
 v_3(B)t_{BB}e_B(T)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.00961 \cdot 0.45 \cdot 0.30,\;
+0.00961 \cdot 0.45 \cdot 0.30, 
 0.00456 \cdot 0.65 \cdot 0.30
 \Bigr)
 $$
 
 $$
-= \max(0.001297,\;0.000889) = 0.001297
+= \max(0.001297, 0.000889) = 0.001297
 $$
 
 Der beste Vorgänger ist also $P$.
@@ -390,20 +390,20 @@ Für den Promotorzustand:
 
 $$
 v_5(P) = \max \Bigl(
-v_4(P)t_{PP}e_P(A),\;
+v_4(P)t_{PP}e_P(A), 
 v_4(B)t_{BP}e_P(A)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.000634 \cdot 0.55 \cdot 0.15,\;
+0.000634 \cdot 0.55 \cdot 0.15, 
 0.001297 \cdot 0.35 \cdot 0.15
 \Bigr)
 $$
 
 $$
-= \max(0.0000523,\;0.0000681) = 0.0000681
+= \max(0.0000523, 0.0000681) = 0.0000681
 $$
 
 Der beste Vorgänger ist also $B$.
@@ -412,20 +412,20 @@ Für den Hintergrundzustand:
 
 $$
 v_5(B) = \max \Bigl(
-v_4(P)t_{PB}e_B(A),\;
+v_4(P)t_{PB}e_B(A), 
 v_4(B)t_{BB}e_B(A)
 \Bigr)
 $$
 
 $$
 = \max \Bigl(
-0.000634 \cdot 0.45 \cdot 0.30,\;
+0.000634 \cdot 0.45 \cdot 0.30, 
 0.001297 \cdot 0.65 \cdot 0.30
 \Bigr)
 $$
 
 $$
-= \max(0.0000856,\;0.0002529) = 0.0002529
+= \max(0.0000856, 0.0002529) = 0.0002529
 $$
 
 Der beste Vorgänger ist also $B$.

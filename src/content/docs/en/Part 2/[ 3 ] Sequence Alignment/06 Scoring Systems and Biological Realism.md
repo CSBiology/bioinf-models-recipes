@@ -103,9 +103,9 @@ Both PAM and BLOSUM matrices are constructed from observed alignments of real pr
 
 Conceptually, these scores can be interpreted as **log-odds ratios**:
 
-[
+$$
 s(a,b) = \log \frac{P(\text{a aligns with b in related sequences})}{P(\text{a aligns with b by chance})}
-]
+$$
 
 Although we do not derive this formally here, the interpretation is important. A positive score indicates that a substitution occurs more frequently than expected by chance, suggesting biological plausibility. A negative score indicates the opposite.
 
@@ -160,15 +160,15 @@ To address this, we introduce **affine gap penalties**, which separate the cost 
 
 The penalty takes the form:
 
-[
+$$
 \text{gap penalty} = A + B \cdot L
-]
+$$
 
 where:
 
-* ( A ) is the gap opening penalty
-* ( B ) is the gap extension penalty
-* ( L ) is the length of the gap
+* $A$ is the gap opening penalty
+* $B$ is the gap extension penalty
+* $L$ is the length of the gap
 
 
 
@@ -177,7 +177,7 @@ This formulation captures an important biological intuition:
 * starting a gap is rare and should be penalized strongly
 * extending an existing gap is more likely and should be penalized less
 
-By adjusting ( A ) and ( B ), we can control the tendency of the algorithm to produce long contiguous gaps versus many short ones.
+By adjusting $A$ and $B$, we can control the tendency of the algorithm to produce long contiguous gaps versus many short ones.
 
 ---
 
@@ -212,4 +212,5 @@ Together, these components define what we mean by similarity. The alignment algo
 3. How can substitution scores be interpreted probabilistically?
 4. Why are affine gap penalties more realistic than constant gap penalties?
 5. How does the choice of scoring system influence alignment results?
+
 

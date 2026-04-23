@@ -29,9 +29,9 @@ However, this efficiency comes at a cost.
 
 The algorithm requires storing the entire dynamic programming matrix of size:
 
-[
+$$
 (m+1) \times (n+1)
-]
+$$
 
 For short sequences, this is unproblematic. But in real biological applications, sequences can be very long. As highlighted in the context of non-ribosomal peptide synthetases, proteins may contain tens of thousands of amino acids. 
 
@@ -145,9 +145,9 @@ An important aspect of this method is that it does not reduce the time complexit
 
 The total running time remains:
 
-[
+$$
 O(mn)
-]
+$$
 
 This can be understood intuitively: although we split the problem into subproblems, the total work across all recursive calls sums to approximately twice the area of the original matrix. 
 

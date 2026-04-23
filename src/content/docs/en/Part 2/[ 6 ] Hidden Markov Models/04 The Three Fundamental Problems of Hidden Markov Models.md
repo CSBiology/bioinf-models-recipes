@@ -28,15 +28,15 @@ We begin with the decoding problem.
 Given:
 
 * an observed sequence ( X = (x_1, x_2, \dots, x_n) )
-* a model ( M ) defined by transition, emission, and initial probabilities
+* a model $M$ defined by transition, emission, and initial probabilities
 
 we seek the hidden state sequence ( S = (s_1, s_2, \dots, s_n) ) that best explains the data.
 
 Formally, we want to compute:
 
-[
+$$
 S^* = \arg\max_S P(X, S \mid M)
-]
+$$
 
 That is, we search for the state sequence that maximizes the **joint probability** of the observed sequence and the hidden states.
 
@@ -48,7 +48,7 @@ In biological terms, this corresponds to assigning a label to each position in t
 
 For example, in the promoter-background model:
 
-* each position is classified as either promoter (( P )) or background (( B ))
+* each position is classified as either promoter ($P$) or background ($B$)
 * the result is a segmentation of the sequence into functional regions
 
 This turns HMM decoding into a **sequence classification problem**.
@@ -57,7 +57,7 @@ This turns HMM decoding into a **sequence classification problem**.
 
 ### **Why this is non-trivial**
 
-The difficulty arises from the fact that the number of possible state sequences grows exponentially with sequence length. For a model with ( k ) states and a sequence of length ( n ), there are ( k^n ) possible paths.
+The difficulty arises from the fact that the number of possible state sequences grows exponentially with sequence length. For a model with $k$ states and a sequence of length $n$, there are $k^n$ possible paths.
 
 Exhaustively evaluating all paths is therefore infeasible.
 
@@ -81,7 +81,7 @@ In this way, the algorithm constructs the optimal path incrementally.
 
 ### **Conceptual summary**
 
-* Input: sequence ( X ), model ( M )
+* Input: sequence $X$, model $M$
 * Output: most likely hidden state sequence ( S^* )
 * Method: dynamic programming
 
@@ -97,9 +97,9 @@ Instead of asking for the *best explanation*, we ask:
 
 Formally, we compute:
 
-[
+$$
 P(X \mid M)
-]
+$$
 
 ---
 
@@ -107,9 +107,9 @@ P(X \mid M)
 
 Unlike the decoding problem, we do not select a single state sequence. Instead, we must consider **all possible hidden paths**:
 
-[
+$$
 P(X \mid M) = \sum_S P(X, S \mid M)
-]
+$$
 
 Each path contributes to the total probability, weighted by how likely it is.
 
@@ -127,11 +127,11 @@ The **forward algorithm** addresses this problem using dynamic programming.
 
 Instead of enumerating paths explicitly, it computes intermediate quantities:
 
-[
+$$
 \alpha_n(i)
-]
+$$
 
-which represent the probability of observing the first ( n ) symbols and ending in state ( s_i ).
+which represent the probability of observing the first $n$ symbols and ending in state $s_i$.
 
 These values can be computed recursively:
 
@@ -139,7 +139,7 @@ These values can be computed recursively:
 * propagate forward using transition and emission probabilities
 * sum over all final states
 
-This allows us to compute ( P(X \mid M) ) efficiently.
+This allows us to compute $P(X \mid M)$ efficiently.
 
 ---
 
@@ -260,4 +260,5 @@ They transform the conceptual model of Hidden Markov Models into a practical com
 3. What does the forward algorithm compute at each step?
 4. Why is parameter estimation difficult when states are hidden?
 5. How does the Baum–Welch algorithm relate to the EM principle?
+
 

@@ -75,7 +75,7 @@ These core positions correspond to **match states** in the HMM.
 
 ### **Step 2: Define match states**
 
-Each conserved column in the alignment becomes a **match state** ( M_i ).
+Each conserved column in the alignment becomes a **match state** $M_i$.
 
 For each match state, we estimate emission probabilities by counting how often each symbol appears in that column and normalizing the counts.
 
@@ -250,4 +250,5 @@ As a result, they form the basis of many modern tools for sequence analysis and 
 With this, we have completed the development of Hidden Markov Models as a framework for sequence modeling.
 
 In the next chapter, we will extend these ideas further and explore how probabilistic models can be used to reconstruct evolutionary relationships between sequences.
+
 

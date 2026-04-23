@@ -25,7 +25,7 @@ After reading this section, you should be able to:
 
 To understand how the EM idea operates in practice, it is helpful to examine a simple example in which all calculations can be followed explicitly. Although this example is not biological, it captures the essential structure of the motif discovery problem.
 
-Imagine that we are given two coins, which we will call coin A and coin B. Each coin has its own probability of producing heads, denoted by ( \theta_A ) and ( \theta_B ). These probabilities are unknown, and our goal is to estimate them.
+Imagine that we are given two coins, which we will call coin A and coin B. Each coin has its own probability of producing heads, denoted by $\theta_A$ and $\theta_B$. These probabilities are unknown, and our goal is to estimate them.
 
 We perform a series of experiments. In each experiment, one of the two coins is selected, and then tossed multiple times. The outcome of each experiment is a sequence of heads and tails. After repeating this process several times, we obtain a collection of such sequences.
 
@@ -39,10 +39,10 @@ Let us first consider the simpler case in which this information is available. S
 
 In this setting, parameter estimation is straightforward. We simply count how many heads and tails were produced by each coin and compute the fraction of heads. This corresponds to *maximum likelihood estimation*, where we choose parameter values that maximize the probability of the observed data .
 
-For example, if coin A produces ( h_A ) heads and ( t_A ) tails, the maximum likelihood estimate is
-[
+For example, if coin A produces $h_A$ heads and $t_A$ tails, the maximum likelihood estimate is
+$$
 \hat{\theta}_A = \frac{h_A}{h_A + t_A}.
-]
+$$
 An analogous expression holds for coin B.
 
 The key point is that this procedure works because the data are *complete*. Each observation can be assigned unambiguously to one of the two coins.
@@ -61,12 +61,12 @@ This situation closely mirrors the motif discovery problem. There, we observe se
 
 ### **Evaluating Possible Explanations**
 
-To proceed, we introduce a probabilistic model. Suppose a sequence consists of ( n ) tosses with ( k ) heads. The probability of observing this outcome given a coin with parameter ( \theta ) is described by the binomial distribution:
-[
+To proceed, we introduce a probabilistic model. Suppose a sequence consists of $n$ tosses with $k$ heads. The probability of observing this outcome given a coin with parameter $\theta$ is described by the binomial distribution:
+$$
 P(k \mid \theta) = \binom{n}{k} \theta^k (1 - \theta)^{n-k}.
-]
+$$
 
-Using this expression, we can evaluate how likely a given sequence is under coin A and coin B, given current estimates of ( \theta_A ) and ( \theta_B ) .
+Using this expression, we can evaluate how likely a given sequence is under coin A and coin B, given current estimates of $\theta_A$ and $\theta_B$ .
 
 However, rather than making a hard decision about which coin generated the sequence, we compare these likelihoods and convert them into probabilities. This gives us a *soft assignment* that reflects how strongly each coin is supported by the data.
 
@@ -87,9 +87,9 @@ This step corresponds to the *Expectation step*, or E-step.
 ### **The Maximization Step**
 
 Once we have these expected counts, we update the parameter estimates. For each coin, we compute the fraction of expected heads among the total expected tosses:
-[
+$$
 \hat{\theta}_A^{\text{new}} = \frac{\text{expected heads for A}}{\text{expected total tosses for A}}.
-]
+$$
 
 This step is identical in form to maximum likelihood estimation, except that we now use *expected counts* instead of observed counts. It produces new parameter values that better explain the data under the current probabilistic assignments.
 
@@ -131,3 +131,4 @@ In the next section, we will formalize this procedure mathematically and general
 4. What is meant by a *soft assignment* in the E-step?
 5. How are parameter estimates updated in the M-step?
 6. How does the coin toss example relate to motif discovery?
+

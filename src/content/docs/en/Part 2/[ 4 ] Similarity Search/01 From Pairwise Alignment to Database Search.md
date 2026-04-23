@@ -31,7 +31,7 @@ This shift in perspective changes the problem in a fundamental way.
 
 ### **From Comparison to Discovery**
 
-Consider a typical biological scenario. A researcher sequences a gene fragment from an organism. The sequence itself is simply a string over the alphabet ${A, C, G, T}$ or, after translation, a protein sequence over amino acids. On its own, this string carries very limited meaning. Its biological interpretation emerges only through comparison to previously characterized sequences.
+Consider a typical biological scenario. A researcher sequences a gene fragment from an organism. The sequence itself is simply a string over the alphabet $\{A, C, G, T\}$ or, after translation, a protein sequence over amino acids. On its own, this string carries very limited meaning. Its biological interpretation emerges only through comparison to previously characterized sequences.
 
 The researcher is therefore not interested in aligning this sequence to a single known reference. Instead, the goal is to search for similar sequences in a large database, such as a genome repository or a protein database. If similar sequences are found, they may provide clues about function, structure, or evolutionary origin.
 

@@ -25,10 +25,10 @@ After reading this section, you should be able to:
 
 In the previous section, we introduced the EM algorithm as an iterative procedure that alternates between estimating hidden variables and updating model parameters. A natural question now arises: why does this procedure work? More specifically, why does repeating these two steps lead to a meaningful solution?
 
-A central property of the EM algorithm is that the likelihood of the observed data does not decrease from one iteration to the next. If we denote the parameter estimate at iteration ( t ) by ( \theta^{(t)} ), then the sequence
-[
+A central property of the EM algorithm is that the likelihood of the observed data does not decrease from one iteration to the next. If we denote the parameter estimate at iteration $t$ by $\theta^{(t)}$, then the sequence
+$$
 \log P(X \mid \theta^{(t)})
-]
+$$
 is monotonically increasing .
 
 This property ensures that each iteration improves, or at least maintains, the quality of the model in terms of how well it explains the observed data.
@@ -37,11 +37,11 @@ This property ensures that each iteration improves, or at least maintains, the q
 
 ### **A Lower-Bound Perspective**
 
-To understand why this improvement occurs, it is helpful to revisit the function ( Q(\theta \mid \theta^{(t)}) ) introduced earlier.
+To understand why this improvement occurs, it is helpful to revisit the function $Q(\theta \mid \theta^{(t)})$ introduced earlier.
 
 This function can be interpreted as defining a *lower bound* on the true log-likelihood. At each iteration, the E-step constructs such a bound based on the current parameter estimate. The M-step then selects new parameters that maximize this bound.
 
-One can think of this process geometrically. At the current parameter value ( \theta^{(t)} ), we construct a function that touches the true log-likelihood and lies below it everywhere else. By maximizing this auxiliary function, we move to a new parameter value ( \theta^{(t+1)} ) that improves the true log-likelihood.
+One can think of this process geometrically. At the current parameter value $\theta^{(t)}$, we construct a function that touches the true log-likelihood and lies below it everywhere else. By maximizing this auxiliary function, we move to a new parameter value $\theta^{(t+1)}$ that improves the true log-likelihood.
 
 This viewpoint explains why EM makes consistent progress: each step optimizes a function that is guaranteed to be a valid approximation of the true objective.
 
@@ -99,4 +99,5 @@ In the next section, we will return fully to the biological setting and apply th
 4. Why is EM not guaranteed to find the global optimum?
 5. What are soft assignments, and why are they important?
 6. How do these properties relate to motif discovery?
+
 

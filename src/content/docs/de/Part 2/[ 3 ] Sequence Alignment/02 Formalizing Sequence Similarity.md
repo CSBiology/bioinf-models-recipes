@@ -45,7 +45,7 @@ Eine Sequenz kann als Zeichenkette über einem endlichen Alphabet aufgefasst wer
 
 * DNA-Sequenzen verwenden das Alphabet
   $$
-  \mathcal{A} = {A, C, G, T}
+  \mathcal{A} = \{A, C, G, T\}
   $$
 * Proteinsequenzen verwenden ein Alphabet aus 20 Aminosäuren
 

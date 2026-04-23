@@ -23,25 +23,25 @@ This is known as the **evaluation problem**.
 
 Recall that in the decoding problem, we searched for
 
-[
+$$
 \max_S P(X, S \mid M)
-]
+$$
 
 that is, the *single most likely* hidden path.
 
 In contrast, the evaluation problem requires us to compute
 
-[
+$$
 P(X \mid M)
-]
+$$
 
 the total probability of observing the sequence under the model.
 
 This requires summing over **all possible hidden state sequences**:
 
-[
+$$
 P(X \mid M) = \sum_S P(X, S \mid M)
-]
+$$
 
 This distinction is crucial.
 
@@ -66,9 +66,9 @@ Even if no single path has very high probability, the sum over many moderately l
 
 ## **6.6.2 Why Direct Computation Is Infeasible**
 
-At first glance, computing ( P(X \mid M) ) appears even harder than the decoding problem. Instead of selecting one path, we must consider all possible paths.
+At first glance, computing $P(X \mid M)$ appears even harder than the decoding problem. Instead of selecting one path, we must consider all possible paths.
 
-For a sequence of length ( n ) and ( k ) states, this again involves ( k^n ) terms.
+For a sequence of length $n$ and $k$ states, this again involves $k^n$ terms.
 
 For realistic sequences, direct summation is impossible.
 
@@ -80,20 +80,20 @@ However, as in the Viterbi case, the structure of the model allows us to reuse i
 
 We define the **forward variable**
 
-[
+$$
 \alpha_i(j)
-]
+$$
 
-as the probability of observing the first ( i ) symbols and ending in state ( s_j ):
+as the probability of observing the first $i$ symbols and ending in state $s_j$:
 
-[
+$$
 \alpha_i(j) = P(x_1, x_2, \dots, x_i, S_i = s_j \mid M)
-]
+$$
 
 This quantity aggregates all paths that:
 
 * generate the prefix ( x_1, \dots, x_i )
-* end in state ( s_j )
+* end in state $s_j$
 
 Thus, instead of tracking individual paths, we summarize all relevant paths into a single value per state and position.
 
@@ -109,9 +109,9 @@ As with Viterbi, the algorithm proceeds in three stages.
 
 For the first observation:
 
-[
-\alpha_1(j) = \pi_j , e_j(x_1)
-]
+$$
+\alpha_1(j) = \pi_j e_j(x_1)
+$$
 
 This is identical to the Viterbi initialization, since at the first position there is only one possible path per state.
 
@@ -121,17 +121,17 @@ This is identical to the Viterbi initialization, since at the first position the
 
 For each subsequent position:
 
-[
-\alpha_{i+1}(j) = \sum_k \alpha_i(k) , t_{kj} , e_j(x_{i+1})
-]
+$$
+\alpha_{i+1}(j) = \sum_k \alpha_i(k)\, t_{kj}\, e_j(x_{i+1})
+$$
 
 This equation has a clear interpretation.
 
-To reach state ( s_j ) at position ( i+1 ), we must:
+To reach state $s_j$ at position $i+1$, we must:
 
-1. come from some previous state ( s_k )
-2. transition from ( s_k ) to ( s_j )
-3. emit symbol ( x_{i+1} )
+1. come from some previous state $s_k$
+2. transition from $s_k$ to $s_j$
+3. emit symbol $x_{i+1}$
 
 Unlike the Viterbi algorithm, we do not select the best predecessor. Instead, we **sum over all possible predecessors**.
 
@@ -141,9 +141,9 @@ Unlike the Viterbi algorithm, we do not select the best predecessor. Instead, we
 
 After processing the entire sequence, we obtain the total likelihood by summing over all final states:
 
-[
+$$
 P(X \mid M) = \sum_j \alpha_n(j)
-]
+$$
 
 ---
 
@@ -170,27 +170,27 @@ This duality is central to understanding HMMs.
 
 Let us revisit the sequence:
 
-[
+$$
 X = \text{A C C T A}
-]
+$$
 
-and the two-state model with states ( P ) (promoter) and ( B ) (background).
+and the two-state model with states $P$ (promoter) and $B$ (background).
 
 At the first position:
 
-[
+$$
 \alpha_1(P) = \pi_P e_P(A), \quad \alpha_1(B) = \pi_B e_B(A)
-]
+$$
 
 At the second position, we compute:
 
-[
+$$
 \alpha_2(P) = \alpha_1(P)t_{PP}e_P(C) + \alpha_1(B)t_{BP}e_P(C)
-]
+$$
 
-[
+$$
 \alpha_2(B) = \alpha_1(P)t_{PB}e_B(C) + \alpha_1(B)t_{BB}e_B(C)
-]
+$$
 
 The key difference from Viterbi is visible here:
 
@@ -222,9 +222,9 @@ As with the Viterbi algorithm, the forward algorithm must be implemented in log-
 
 However, the recursion now involves sums, which become:
 
-[
+$$
 \log \alpha_{i+1}(j) = \log \sum_k \exp\bigl( \log \alpha_i(k) + \log t_{kj} + \log e_j(x_{i+1}) \bigr)
-]
+$$
 
 This expression is known as the **log-sum-exp** operation.
 
@@ -234,15 +234,15 @@ This expression is known as the **log-sum-exp** operation.
 
 To compute this expression stably, we use:
 
-[
+$$
 \log \sum_k e^{a_k} = m + \log \sum_k e^{a_k - m}
-]
+$$
 
 where
 
-[
+$$
 m = \max_k a_k
-]
+$$
 
 This prevents numerical overflow or underflow when dealing with exponentials.
 
@@ -276,7 +276,8 @@ It provides:
 
 1. What is the difference between summing over all paths and selecting the best path?
 2. What does the forward variable ( \alpha_i(j) ) represent?
-3. Why is direct computation of ( P(X \mid M) ) infeasible?
+3. Why is direct computation of $P(X \mid M)$ infeasible?
 4. What role does the log-sum-exp operation play?
 5. Why is the forward algorithm important for biological sequence analysis?
+
 
