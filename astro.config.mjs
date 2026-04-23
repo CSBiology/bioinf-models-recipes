@@ -44,20 +44,20 @@ export default defineConfig({
 
 			sidebar: [
 				{
-					label: '[ Part I ] Foundations of Bioinformatics Thinking',
+					label: 'Part ONE | Foundations of Bioinformatics Thinking',
 					translations: {
-						de: '[ Teil I ] Grundlagen des bioinformatischen Denkens',
+						de: 'Teil EINS | Grundlagen des bioinformatischen Denkens',
 				},
 					items: [
 					{
-						label: '1 | Bioinformatics as Models and Recipes',
+						label: '[ 1 ] Bioinformatics as Models and Recipes',
 						translations: {
-							de: '1 | Bioinformatik als Modelle und Rezepte',
+							de: '[ 1 ] Bioinformatik als Modelle und Rezepte',
 						},
 						slug: 'part-1/bioinformatics-as-models-and-recipes',
 					},
 					{
-						label: '2 | From Biological Questions to Computational Problems',
+						label: '[ 2 ] From Biological Questions to Computational Problems',
 						translations: {
 							de: '2 | Von biologischen Fragen zu computationalen Problemen',
 						},
@@ -66,35 +66,35 @@ export default defineConfig({
 					],
 				},
 				{
-					label: '[ Part II ] Sequence Models - From Similarity to Evolution',
+					label: 'Part TWO | Sequence Models - From Similarity to Evolution',
 					translations: {
-						de: '[ Teil II ] Sequenzmodelle – Von Ähnlichkeit zu Evolution',
+						de: 'Teil ZWEI | Sequenzmodelle – Von Ähnlichkeit zu Evolution',
 					},
 					autogenerate: { directory: 'Part 2' },
 				},
 				{		
-					label: '[ Part III ] Learning from Biological Data',
+					label: 'Part THREE | Learning from Biological Data',
 					translations: {
-						de: '[ Teil III ] Lernen aus biologischen Daten',
+						de: 'Teil DREI | Lernen aus biologischen Daten',
 					},
 					autogenerate: { directory: 'Part 3' },
 				},
 				{
-					label: '[ Part IV ] Systems Biology - Structure and Dynamics',
+					label: 'Part FOUR | Systems Biology - Structure and Dynamics',
 					translations: {
-						de: '[ Teil IV ] Systembiologie - Struktur und Dynamik',
+						de: 'Teil VIER | Systembiologie - Struktur und Dynamik',
 					},
 					autogenerate: { directory: 'Part 4' },
 				},
 				{
-					label: '[ Part V ] Stochastic Biology - From Noise to Function',
+					label: 'Part FIVE | Stochastic Biology - From Noise to Function',
 					translations: {
-						de: '[ Teil V ] Stochastische Biologie - Von Rauschen zu Funktion',
+						de: 'Teil FÜNF | Stochastische Biologie - Von Rauschen zu Funktion',
 					},
 					autogenerate: { directory: 'Part 5' },
 				},
 			],
 		}),
 	],
-});
+});E
 
