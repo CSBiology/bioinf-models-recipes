@@ -61,7 +61,7 @@ Der Gesamtscore eines Baums ergibt sich durch Aufsummieren über alle Charaktere
 
 Betrachten wir eine einzelne Alignment-Spalte für vier Taxa:
 
-[
+$$
 \begin{array}{c|c}
 \text{Taxon} & \text{Zustand} \
 \hline
@@ -70,7 +70,7 @@ B & G \
 C & T \
 D & T \
 \end{array}
-]
+$$
 
 Wir vergleichen zwei mögliche Baumtopologien.
 

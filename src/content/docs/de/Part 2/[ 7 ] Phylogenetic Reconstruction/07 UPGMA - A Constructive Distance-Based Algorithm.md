@@ -61,7 +61,7 @@ Dieser Schritt wird iterativ wiederholt, bis nur noch ein einziger Cluster übri
 
 Betrachten wir eine Distanzmatrix für fünf Taxa:
 
-[
+$$
 \begin{array}{c|ccccc}
 & a & b & c & d & e \
 \hline
@@ -71,7 +71,7 @@ c &   &    & 0  & 28 & 39 \
 d &   &    &    & 0  & 43 \
 e &   &    &    &    & 0 \
 \end{array}
-]
+$$
 
 Die kleinste Distanz ist ( D_{ab} = 17 ). Die Taxa ( a ) und ( b ) werden daher zu einem neuen Cluster zusammengefasst.
 
@@ -79,9 +79,9 @@ Die Astlänge von ( a ) und ( b ) zum gemeinsamen Knoten beträgt jeweils ( 17/2
 
 Anschließend werden die Distanzen zwischen dem neuen Cluster ( (a,b) ) und den verbleibenden Taxa berechnet. Für ( c ) ergibt sich beispielsweise:
 
-[
+$$
 D_{(a,b),c} = \frac{21 + 30}{2} = 25{,}5
-]
+$$
 
 Durch wiederholtes Anwenden dieses Prinzips entsteht schrittweise der vollständige Baum.
 
@@ -93,9 +93,9 @@ Bei der Zusammenführung zweier Cluster ist es wichtig, die Größe der Cluster 
 
 Enthält Cluster ( A ) ( n_A ) Elemente und Cluster ( B ) ( n_B ) Elemente, so ergibt sich die Distanz zu einem dritten Cluster ( C ) als:
 
-[
+$$
 D_{(A,B),C} = \frac{n_A D_{A,C} + n_B D_{B,C}}{n_A + n_B}
-]
+$$
 
 Dieses gewichtete Mittel stellt sicher, dass größere Cluster entsprechend stärker in die Berechnung eingehen.
 

@@ -57,15 +57,15 @@ Eine natürliche Beschreibung liefert der **Poisson-Prozess**, der die Anzahl vo
 
 Sei ( \lambda ) die erwartete Anzahl von Substitutionen pro Position. Dann gilt für die Wahrscheinlichkeit, genau ( k ) Substitutionen zu beobachten:
 
-[
+$$
 P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!}
-]
+$$
 
 Von besonderer Bedeutung ist der Fall, dass keine Substitution auftritt:
 
-[
+$$
 P(X = 0) = e^{-\lambda}
-]
+$$
 
 Diese Wahrscheinlichkeit beschreibt, dass eine Position unverändert bleibt.
 
@@ -75,9 +75,9 @@ Diese Wahrscheinlichkeit beschreibt, dass eine Position unverändert bleibt.
 
 Die Wahrscheinlichkeit, dass mindestens eine Substitution stattgefunden hat, ergibt sich als
 
-[
+$$
 1 - e^{-\lambda}
-]
+$$
 
 Dies scheint zunächst dem beobachteten Anteil an Unterschieden zu entsprechen. Allerdings ist diese Gleichsetzung nicht korrekt, da nicht jede Substitution zu einem beobachtbaren Unterschied führt.
 
@@ -95,21 +95,21 @@ Unter diesen Annahmen lässt sich die Wahrscheinlichkeit berechnen, dass ein Nuk
 
 Das Ergebnis lautet:
 
-[
+$$
 P(\text{gleich}) = \frac{1}{4} + \frac{3}{4} e^{- \frac{4}{3} \lambda}
-]
+$$
 
 Die Wahrscheinlichkeit für eine beobachtbare Differenz ergibt sich daraus als
 
-[
+$$
 P(\text{verschieden}) = \frac{3}{4} \left(1 - e^{- \frac{4}{3} \lambda} \right)
-]
+$$
 
 Diese Größe entspricht dem beobachteten Anteil an Unterschieden, den wir mit ( d ) bezeichnen:
 
-[
+$$
 d = \frac{3}{4} \left(1 - e^{- \frac{4}{3} \lambda} \right)
-]
+$$
 
 ---
 
@@ -119,38 +119,38 @@ Nun lösen wir diese Gleichung nach ( \lambda ) auf, das die erwartete Anzahl vo
 
 Ausgehend von
 
-[
+$$
 d = \frac{3}{4} \left(1 - e^{- \frac{4}{3} \lambda} \right)
-]
+$$
 
 erhalten wir
 
-[
+$$
 \frac{4}{3} d = 1 - e^{- \frac{4}{3} \lambda}
-]
+$$
 
-[
+$$
 e^{- \frac{4}{3} \lambda} = 1 - \frac{4}{3} d
-]
+$$
 
 Durch Logarithmieren folgt
 
-[
+$$
 
 * \frac{4}{3} \lambda = \ln\left(1 - \frac{4}{3} d\right)
-  ]
+  $$
 
 und schließlich
 
-[
+$$
 \lambda = - \frac{3}{4} \ln\left(1 - \frac{4}{3} d\right)
-]
+$$
 
 Dies ist die **Jukes–Cantor-korrigierte Distanz**:
 
-[
+$$
 D = - \frac{3}{4} \ln\left(1 - \frac{4}{3} d\right)
-]
+$$
 
 ---
 

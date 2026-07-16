@@ -43,9 +43,9 @@ In der Statistik beschreibt die Likelihood die Wahrscheinlichkeit der beobachtet
 
 Übertragen auf die Phylogenetik bedeutet dies:
 
-[
+$$
 L = P(\text{Daten} \mid \text{Baum}, \text{Modell})
-]
+$$
 
 Die Daten sind die beobachteten Sequenzen. Das Modell besteht aus der Baumtopologie, den Astlängen und den Parametern eines Substitutionsmodells.
 
@@ -108,15 +108,15 @@ Ein Alignment besteht aus vielen Positionen, die im Modell als unabhängig angen
 
 Die Gesamt-Likelihood ergibt sich daher als Produkt der Likelihoods einzelner Positionen:
 
-[
+$$
 L = \prod_{k=1}^{n} L_k
-]
+$$
 
 In der Praxis arbeitet man meist mit dem Logarithmus der Likelihood:
 
-[
+$$
 \log L = \sum_{k=1}^{n} \log L_k
-]
+$$
 
 Dies ist numerisch stabiler und erleichtert die Optimierung.
 

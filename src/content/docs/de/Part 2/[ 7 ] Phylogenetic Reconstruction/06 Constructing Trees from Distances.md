@@ -63,9 +63,9 @@ Die Schwierigkeit liegt darin, dass die Zielfunktion über einen enorm großen R
 
 Die Anzahl unverwurzelter binärer Bäume für ( n ) Taxa ergibt sich zu:
 
-[
+$$
 (2n - 5)!!
-]
+$$
 
 Diese Größe wächst extrem schnell. Bereits bei wenigen zusätzlichen Taxa steigt die Zahl möglicher Bäume um Größenordnungen an.
 

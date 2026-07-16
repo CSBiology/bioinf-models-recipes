@@ -63,7 +63,7 @@ Daraus ergibt sich eine wichtige praktische Konsequenz. In realen Analysen werde
 
 Betrachten Sie die folgenden Alignment-Spalten:
 
-[
+$$
 \begin{array}{c|cccc}
 & A & B & C & D \
 \hline
@@ -71,7 +71,7 @@ Betrachten Sie die folgenden Alignment-Spalten:
 \text{Spalte 2} & A & G & C & T \
 \text{Spalte 3} & A & A & G & G \
 \end{array}
-]
+$$
 
 Spalte 1 ist vollständig konserviert und enthält keine Information über Verwandtschaftsverhältnisse.
 

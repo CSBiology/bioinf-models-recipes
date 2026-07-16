@@ -81,9 +81,9 @@ Die zentrale Idee besteht darin, die Sequenz als Quelle eines entlang des Genoms
 
 Ein naheliegender Ausgangspunkt ist die Beziehung zwischen den Nukleotiden G und C. Empirische Beobachtungen in vielen bakteriellen Genomen zeigen, dass diese häufig replikationsbedingte Strangbiases aufweisen. Dies motiviert die Einführung eines einfachen Maßes:
 
-[
+$$
 \text{GC-Skew} = \frac{G - C}{G + C}
-]
+$$
 
 Dabei bezeichnen (G) und (C) die Anzahl von Guanin bzw. Cytosin in einem betrachteten Genombereich. Diese Größe misst den relativen Überschuss eines Nukleotids gegenüber dem anderen.
 

@@ -73,9 +73,9 @@ Daher wird das Problem als Optimierungsaufgabe formuliert. Wir suchen einen Baum
 
 Ein häufig verwendetes Kriterium ist die Summe der quadrierten Abweichungen:
 
-[
+$$
 Q = \sum_{i < j} (D_{ij} - d_{ij})^2
-]
+$$
 
 Je kleiner dieser Wert ist, desto besser passt der Baum zu den Daten.
 
@@ -85,9 +85,9 @@ Je kleiner dieser Wert ist, desto besser passt der Baum zu den Daten.
 
 Die Größe
 
-[
+$$
 Q = \sum_{i < j} (D_{ij} - d_{ij})^2
-]
+$$
 
 misst für jedes Sequenzpaar die Differenz zwischen beobachteter und durch den Baum erklärter Distanz.
 
