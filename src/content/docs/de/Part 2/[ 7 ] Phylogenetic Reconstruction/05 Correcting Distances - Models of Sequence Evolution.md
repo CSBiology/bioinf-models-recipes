@@ -115,7 +115,7 @@ $$
 
 ### **Herleitung der korrigierten Distanz**
 
-Nun lösen wir diese Gleichung nach ( \lambda ) auf, das die erwartete Anzahl von Substitutionen beschreibt.
+Nun lösen wir diese Gleichung nach ( \lambda ) auf, der erwarteten Anzahl von Substitutionen pro Position.
 
 Ausgehend von
 
@@ -133,12 +133,11 @@ $$
 e^{- \frac{4}{3} \lambda} = 1 - \frac{4}{3} d
 $$
 
-Durch Logarithmieren folgt
+Durch Logarithmieren erhalten wir
 
 $$
-
-* \frac{4}{3} \lambda = \ln\left(1 - \frac{4}{3} d\right)
-  $$
+- \frac{4}{3} \lambda = \ln\left(1 - \frac{4}{3} d\right)
+$$
 
 und schließlich
 
