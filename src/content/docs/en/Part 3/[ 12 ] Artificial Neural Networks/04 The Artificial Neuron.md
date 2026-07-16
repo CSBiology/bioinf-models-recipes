@@ -1,3 +1,12 @@
+---
+title: "12.4 The Artificial Neuron"
+sidebar:
+  label: "12.4 The Artificial Neuron"
+  order: 4
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.4 The Artificial Neuron
 
 ## The fundamental building block of a neural network

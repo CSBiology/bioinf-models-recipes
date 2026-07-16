@@ -1,3 +1,12 @@
+---
+title: "10.4 Underfitting and Overfitting"
+sidebar:
+  label: "10.4 Underfitting and Overfitting"
+  order: 4
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.4 Underfitting and Overfitting
 
 ## When simple models fail

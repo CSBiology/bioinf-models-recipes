@@ -1,3 +1,12 @@
+---
+title: "18.4 A Biological Example: Chaos in a Food Chain"
+sidebar:
+  label: "18.4 A Biological Example: Chaos in a Food Chain"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.4 A Biological Example: Chaos in a Food Chain
 
 The concept of deterministic chaos may still appear somewhat abstract.

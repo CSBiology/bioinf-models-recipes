@@ -1,3 +1,12 @@
+---
+title: "16.5 When Equilibria Appear and Disappear"
+sidebar:
+  label: "16.5 When Equilibria Appear and Disappear"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.5 When Equilibria Appear and Disappear
 
 In the previous section, we developed a minimal mathematical model of the lac operon by balancing two competing biological processes: activation through positive feedback and degradation through dilution and protein turnover.

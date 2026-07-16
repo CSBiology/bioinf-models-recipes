@@ -1,3 +1,12 @@
+---
+title: "9.6 Gradient Descent"
+sidebar:
+  label: "9.6 Gradient Descent"
+  order: 6
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9.6 Gradient Descent
 
 ## From optimization to an algorithm

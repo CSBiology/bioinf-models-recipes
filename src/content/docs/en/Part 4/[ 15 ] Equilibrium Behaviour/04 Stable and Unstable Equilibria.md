@@ -1,3 +1,12 @@
+---
+title: "15.4 Stable and Unstable Equilibria"
+sidebar:
+  label: "15.4 Stable and Unstable Equilibria"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.4 Stable and Unstable Equilibria
 
 In the previous section, we learned that equilibrium points are states in which the system no longer changes. However, simply identifying an equilibrium does not tell us whether that state is biologically relevant.

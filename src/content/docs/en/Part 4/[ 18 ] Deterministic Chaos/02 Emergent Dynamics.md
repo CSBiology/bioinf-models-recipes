@@ -1,3 +1,12 @@
+---
+title: "18.2 Emergent Dynamics"
+sidebar:
+  label: "18.2 Emergent Dynamics"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.2 Emergent Dynamics
 
 In the previous chapters, we encountered two fundamentally different kinds of long-term behavior in biological systems.

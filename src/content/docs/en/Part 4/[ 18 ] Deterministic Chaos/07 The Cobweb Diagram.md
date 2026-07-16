@@ -1,3 +1,12 @@
+---
+title: "18.7 Understanding Iteration: The Cobweb Diagram"
+sidebar:
+  label: "18.7 Understanding Iteration: The Cobweb Diagram"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.7 Understanding Iteration: The Cobweb Diagram
 
 The logistic map differs fundamentally from the differential equation models studied in the previous chapters.

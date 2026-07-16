@@ -1,3 +1,12 @@
+---
+title: "10.2 Building Flexible Models"
+sidebar:
+  label: "10.2 Building Flexible Models"
+  order: 2
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.2 Building Flexible Models
 
 ## From straight lines to flexible functions

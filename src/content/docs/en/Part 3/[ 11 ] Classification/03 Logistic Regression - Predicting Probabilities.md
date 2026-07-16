@@ -1,3 +1,12 @@
+---
+title: "11.3 Logistic Regression: Predicting Probabilities"
+sidebar:
+  label: "11.3 Logistic Regression: Predicting Probabilities"
+  order: 3
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.3 Logistic Regression: Predicting Probabilities
 
 ## Extending linear regression to classification

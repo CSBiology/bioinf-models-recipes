@@ -1,3 +1,12 @@
+---
+title: "17.2 Static versus Dynamic Equilibrium"
+sidebar:
+  label: "17.2 Static versus Dynamic Equilibrium"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.2 Static versus Dynamic Equilibrium
 
 In the previous chapter, we introduced the concept of **equilibrium points**. A stable equilibrium point represents a state toward which a dynamical system naturally evolves. Once the system reaches this point, its state no longer changes over time.

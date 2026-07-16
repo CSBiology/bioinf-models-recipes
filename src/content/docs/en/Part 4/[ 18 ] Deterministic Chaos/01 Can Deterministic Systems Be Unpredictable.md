@@ -1,3 +1,12 @@
+---
+title: "18.1 Can Deterministic Systems Be Unpredictable?"
+sidebar:
+  label: "18.1 Can Deterministic Systems Be Unpredictable?"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.1 Can Deterministic Systems Be Unpredictable?
 
 Throughout this book, we have developed mathematical models to understand and predict the behavior of biological systems. Once a model has been constructed, the underlying equations uniquely determine how the system evolves over time. Given the initial state of the system and the values of all model parameters, there should be only one possible future.

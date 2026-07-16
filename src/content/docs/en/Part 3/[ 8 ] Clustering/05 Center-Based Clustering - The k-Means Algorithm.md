@@ -1,3 +1,12 @@
+---
+title: "8.5 Center-Based Clustering: The k-Means Algorithm"
+sidebar:
+  label: "8.5 Center-Based Clustering: The k-Means Algorithm"
+  order: 5
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.5 Center-Based Clustering: The k-Means Algorithm
 
 ### Learning Goals

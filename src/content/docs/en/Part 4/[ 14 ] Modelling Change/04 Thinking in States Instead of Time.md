@@ -1,3 +1,12 @@
+---
+title: "14.4 Thinking in States Instead of Time"
+sidebar:
+  label: "14.4 Thinking in States Instead of Time"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.4 Thinking in States Instead of Time
 
 So far, we have described biological dynamics by plotting individual variables as functions of time. Such **time-series plots** are intuitive and widely used in biology because they directly show how the abundance of a molecule changes during an experiment.

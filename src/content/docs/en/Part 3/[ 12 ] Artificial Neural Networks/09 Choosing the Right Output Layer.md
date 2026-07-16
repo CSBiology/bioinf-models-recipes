@@ -1,3 +1,12 @@
+---
+title: "12.9 Choosing the Right Output Layer"
+sidebar:
+  label: "12.9 Choosing the Right Output Layer"
+  order: 9
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.9 Choosing the Right Output Layer
 
 ## Different prediction problems require different outputs

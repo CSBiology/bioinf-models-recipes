@@ -1,3 +1,12 @@
+---
+title: "9.4 Measuring Prediction Quality"
+sidebar:
+  label: "9.4 Measuring Prediction Quality"
+  order: 4
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9.4 Measuring Prediction Quality
 
 ## When is one model better than another?

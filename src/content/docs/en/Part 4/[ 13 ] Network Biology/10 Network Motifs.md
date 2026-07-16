@@ -1,3 +1,12 @@
+---
+title: "13.10 Network Motifs: The Building Blocks of Biological Networks"
+sidebar:
+  label: "13.10 Network Motifs: The Building Blocks of Biological Networks"
+  order: 10
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.10 Network Motifs: The Building Blocks of Biological Networks
 
 Large biological networks may appear overwhelmingly complex. However, closer inspection reveals that many networks are constructed from a relatively small number of recurring interaction patterns. These patterns, known as **network motifs**, perform characteristic regulatory functions and can be regarded as the elementary building blocks of biological information processing. Just as electronic circuits are assembled from simple logic components, biological regulatory networks are composed of small interaction motifs that are repeatedly reused throughout evolution.

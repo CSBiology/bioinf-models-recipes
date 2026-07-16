@@ -1,3 +1,12 @@
+---
+title: "13.2 Biological Systems as Networks"
+sidebar:
+  label: "13.2 Biological Systems as Networks"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.2 Biological Systems as Networks
 
 Biological systems consist of thousands of interacting components. To understand how these components collectively give rise to cellular behaviour, we need a representation that captures not only the components themselves but also the relationships between them. Network representations provide such a framework. They reduce complex biological systems to their essential interaction structure while preserving the information required to study system-level organization.

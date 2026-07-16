@@ -1,3 +1,12 @@
+---
+title: "11.9 Ensemble Learning: Why Many Trees Are Better Than One"
+sidebar:
+  label: "11.9 Ensemble Learning: Why Many Trees Are Better Than One"
+  order: 9
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.9 Ensemble Learning: Why Many Trees Are Better Than One
 
 ## The limitations of individual decision trees

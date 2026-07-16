@@ -1,3 +1,12 @@
+---
+title: "12.5 Why Activation Functions Matter"
+sidebar:
+  label: "12.5 Why Activation Functions Matter"
+  order: 5
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.5 Why Activation Functions Matter
 
 ## Linear models have a fundamental limitation

@@ -1,3 +1,12 @@
+---
+title: "19.2 Where Does Biological Randomness Come From?"
+sidebar:
+  label: "19.2 Where Does Biological Randomness Come From?"
+  order: 2
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.2 Where Does Biological Randomness Come From?
 
 The previous section showed that genetically identical cells can exhibit remarkably different behaviors. Before developing mathematical models of this variability, we first need to understand its biological origin.

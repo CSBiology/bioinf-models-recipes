@@ -1,3 +1,12 @@
+---
+title: "13.11 From Network Structure to System Dynamics"
+sidebar:
+  label: "13.11 From Network Structure to System Dynamics"
+  order: 11
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.11 From Network Structure to System Dynamics
 
 Throughout this chapter, we have represented biological systems as networks. This perspective has allowed us to identify hubs, modules, communication pathways, and recurring regulatory motifs. Network analysis has revealed that biological systems are highly organized rather than randomly assembled and that this organization reflects fundamental biological principles shaped by evolution.

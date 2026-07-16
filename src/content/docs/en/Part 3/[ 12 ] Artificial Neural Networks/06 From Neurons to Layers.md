@@ -1,3 +1,12 @@
+---
+title: "12.6 From Neurons to Layers"
+sidebar:
+  label: "12.6 From Neurons to Layers"
+  order: 6
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.6 From Neurons to Layers
 
 ## A single neuron is only the beginning

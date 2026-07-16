@@ -1,3 +1,12 @@
+---
+title: "8.1 Why Learning Begins with Unlabeled Data"
+sidebar:
+  label: "8.1 Why Learning Begins with Unlabeled Data"
+  order: 1
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # Chapter 8 — Clustering: Discovering Structure in Biological Data
 
 ## 8.1 Why Learning Begins with Unlabeled Data

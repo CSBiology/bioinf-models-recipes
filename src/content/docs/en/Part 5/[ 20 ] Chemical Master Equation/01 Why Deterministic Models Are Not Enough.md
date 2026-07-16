@@ -1,3 +1,12 @@
+---
+title: "20.1 Why Deterministic Models Are Not Enough"
+sidebar:
+  label: "20.1 Why Deterministic Models Are Not Enough"
+  order: 1
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 20.1 Why Deterministic Models Are Not Enough
 
 Throughout this book, we have described biological systems using deterministic models. Ordinary differential equations (ODEs) have allowed us to understand regulatory networks, metabolic pathways, population dynamics, oscillations, and bifurcations. In all these examples, the state of a system changes continuously according to well-defined mathematical rules. Once the initial conditions and model parameters are known, the future trajectory of the system is uniquely determined.

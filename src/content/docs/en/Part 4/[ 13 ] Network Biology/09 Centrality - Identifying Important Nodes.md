@@ -1,3 +1,12 @@
+---
+title: "13.9 Centrality: Identifying Important Nodes"
+sidebar:
+  label: "13.9 Centrality: Identifying Important Nodes"
+  order: 9
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.9 Centrality: Identifying Important Nodes
 
 Not all nodes contribute equally to the organization and function of a biological network. Some proteins participate in many interactions, others connect otherwise independent pathways, and some occupy positions that allow them to rapidly communicate with the rest of the network. Collectively, such nodes are often referred to as *central*. Graph theory provides a family of quantitative measures, known as **centrality measures**, that capture different aspects of node importance.

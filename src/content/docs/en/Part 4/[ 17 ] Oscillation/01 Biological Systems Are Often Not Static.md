@@ -1,3 +1,12 @@
+---
+title: "17.1 Biological Systems Are Often Not Static"
+sidebar:
+  label: "17.1 Biological Systems Are Often Not Static"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.1 Biological Systems Are Often Not Static
 
 In the previous section, we revisited the classical concept of homeostasis and the idea that negative feedback stabilizes biological systems around a stable equilibrium point. This naturally leads to the expectation that physiological variables should remain approximately constant over time.

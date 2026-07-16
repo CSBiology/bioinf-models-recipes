@@ -1,3 +1,12 @@
+---
+title: "11.4 Decision Trees: Learning Through Sequential Decisions"
+sidebar:
+  label: "11.4 Decision Trees: Learning Through Sequential Decisions"
+  order: 4
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.4 Decision Trees: Learning Through Sequential Decisions
 
 ## A different way of thinking about classification

@@ -1,3 +1,12 @@
+---
+title: "12.1 Why Neural Networks?"
+sidebar:
+  label: "12.1 Why Neural Networks?"
+  order: 1
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 12.1 Why Neural Networks?
 
 ### Learning Goals

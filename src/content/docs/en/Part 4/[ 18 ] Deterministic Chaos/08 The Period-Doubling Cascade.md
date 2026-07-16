@@ -1,3 +1,12 @@
+---
+title: "18.8 The Period-Doubling Cascade"
+sidebar:
+  label: "18.8 The Period-Doubling Cascade"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.8 The Period-Doubling Cascade
 
 In the previous section, we learned how the logistic map evolves through repeated iteration and how the cobweb diagram provides a graphical representation of this process.

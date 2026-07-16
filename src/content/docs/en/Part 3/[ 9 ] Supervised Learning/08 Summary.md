@@ -1,3 +1,12 @@
+---
+title: "Chapter Summary"
+sidebar:
+  label: "Chapter Summary"
+  order: 8
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # Chapter Summary
 
 Supervised learning addresses one of the central challenges in modern biology: predicting biological properties from measurable observations. Unlike unsupervised learning, which discovers structure in unlabeled data, supervised learning learns a mapping between biological inputs and known outputs. Once this relationship has been learned from experimental examples, it can be used to make predictions for previously unseen observations.

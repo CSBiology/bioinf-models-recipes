@@ -1,3 +1,12 @@
+---
+title: "9.2 Representing Biology as Features"
+sidebar:
+  label: "9.2 Representing Biology as Features"
+  order: 2
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9.2 Representing Biology as Features
 
 ## Why biological observations must become numbers

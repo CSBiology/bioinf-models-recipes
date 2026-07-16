@@ -1,3 +1,12 @@
+---
+title: "12.2 Learning by Optimization"
+sidebar:
+  label: "12.2 Learning by Optimization"
+  order: 2
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.2 Learning by Optimization
 
 ## Neural networks follow the same learning cycle

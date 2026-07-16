@@ -1,3 +1,12 @@
+---
+title: "16.7 Pitchfork Bifurcations: From One Cell to Many Cell Types"
+sidebar:
+  label: "16.7 Pitchfork Bifurcations: From One Cell to Many Cell Types"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ### 16.7 Pitchfork Bifurcations: From One Cell to Many Cell Types
 
 One of the most fascinating questions in developmental biology is how a single fertilized egg gives rise to hundreds of specialized cell types.

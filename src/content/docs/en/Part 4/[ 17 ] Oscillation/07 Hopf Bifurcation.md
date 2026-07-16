@@ -1,3 +1,12 @@
+---
+title: "17.7 Hopf Bifurcation"
+sidebar:
+  label: "17.7 Hopf Bifurcation"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.6 Time Delays Generate Oscillations
 
 In the previous section, we discovered that oscillations can emerge when a negative feedback loop becomes highly sensitive. A controller that reacts too strongly tends to overcorrect deviations, causing the system to oscillate around its equilibrium.

@@ -1,3 +1,12 @@
+---
+title: "16.2 Biological Switches: Small Changes, Large Effects"
+sidebar:
+  label: "16.2 Biological Switches: Small Changes, Large Effects"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.2 Biological Switches: Small Changes, Large Effects
 
 Many biological processes respond gradually to changes in their environment. Increasing the concentration of a nutrient may slightly accelerate growth, or a modest increase in enzyme activity may lead to a corresponding increase in metabolic flux.

@@ -1,3 +1,12 @@
+---
+title: "15.1 Why do biological systems reach stable states?"
+sidebar:
+  label: "15.1 Why do biological systems reach stable states?"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.1 Why do biological systems reach stable states?
 
 Dynamic models describe how biological systems change over time. They allow us to predict how transcript levels respond to regulation, how populations grow or decline, and how signaling pathways react to external stimuli. In the previous chapter, we developed the mathematical framework required to describe these processes using state variables, vector fields, and differential equations.

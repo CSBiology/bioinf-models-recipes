@@ -1,3 +1,12 @@
+---
+title: "14.5 Vector Fields: The Landscape of Biological Change"
+sidebar:
+  label: "14.5 Vector Fields: The Landscape of Biological Change"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.5 Vector Fields: The Landscape of Biological Change
 
 Representing a biological system as a point in state space tells us **where** the system is, but it does not tell us **where it will go next**.

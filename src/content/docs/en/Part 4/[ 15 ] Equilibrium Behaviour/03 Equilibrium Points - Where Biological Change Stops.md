@@ -1,3 +1,12 @@
+---
+title: "15.3 Equilibrium Points: Where Biological Change Stops"
+sidebar:
+  label: "15.3 Equilibrium Points: Where Biological Change Stops"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.3 Equilibrium Points: Where Biological Change Stops
 
 The examples of carrying capacity and the Allee effect suggest that biological systems often evolve towards preferred states. Regardless of their initial conditions, populations may eventually stabilize at a characteristic size. Similar behaviour is observed in many other biological systems, from metabolite concentrations to gene regulatory networks.

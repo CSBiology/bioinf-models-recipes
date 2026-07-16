@@ -1,3 +1,12 @@
+---
+title: "8.7 Density-Based Clustering: Discovering Clusters of Arbitrary Shape"
+sidebar:
+  label: "8.7 Density-Based Clustering: Discovering Clusters of Arbitrary Shape"
+  order: 7
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.7 Density-Based Clustering: Discovering Clusters of Arbitrary Shape
 
 ### Learning Goals

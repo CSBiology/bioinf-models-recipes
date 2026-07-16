@@ -1,3 +1,12 @@
+---
+title: "19.3 Probability Distributions Distinguish Biological Mechanisms"
+sidebar:
+  label: "19.3 Probability Distributions Distinguish Biological Mechanisms"
+  order: 3
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.3 Probability Distributions Distinguish Biological Mechanisms
 
 The previous sections established that biological systems exhibit intrinsic variability and that stochastic models are often required to describe their behavior.

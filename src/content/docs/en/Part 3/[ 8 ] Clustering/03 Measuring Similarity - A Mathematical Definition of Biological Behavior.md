@@ -1,3 +1,12 @@
+---
+title: "8.3 Measuring Similarity: A Mathematical Definition of Biological Behavior"
+sidebar:
+  label: "8.3 Measuring Similarity: A Mathematical Definition of Biological Behavior"
+  order: 3
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.3 Measuring Similarity: A Mathematical Definition of Biological Behavior
 
 ### Learning Goals

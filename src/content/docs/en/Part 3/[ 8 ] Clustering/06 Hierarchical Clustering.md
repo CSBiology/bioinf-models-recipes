@@ -1,3 +1,12 @@
+---
+title: "8.6 Hierarchical Clustering: Revealing Relationships Between Clusters"
+sidebar:
+  label: "8.6 Hierarchical Clustering: Revealing Relationships Between Clusters"
+  order: 6
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.6 Hierarchical Clustering: Revealing Relationships Between Clusters
 
 ### Learning Goals

@@ -1,3 +1,12 @@
+---
+title: "12.8 Training Neural Networks"
+sidebar:
+  label: "12.8 Training Neural Networks"
+  order: 8
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.8 Training Neural Networks
 
 ## Learning means adjusting millions of parameters

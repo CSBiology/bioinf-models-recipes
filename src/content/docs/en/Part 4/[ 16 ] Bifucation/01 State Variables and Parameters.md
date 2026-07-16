@@ -1,3 +1,12 @@
+---
+title: "16.1 State Variables and Parameters"
+sidebar:
+  label: "16.1 State Variables and Parameters"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.1 State Variables and Parameters
 
 In the previous chapters, we described biological systems using **state variables** such as protein concentrations, population sizes, or metabolite abundances. These variables changed continuously over time as the system evolved according to its underlying biological interactions.

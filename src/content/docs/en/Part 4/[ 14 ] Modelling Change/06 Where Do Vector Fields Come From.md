@@ -1,3 +1,12 @@
+---
+title: "14.6 Where Do Vector Fields Come From?"
+sidebar:
+  label: "14.6 Where Do Vector Fields Come From?"
+  order: 6
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.6 Where Do Vector Fields Come From?
 
 State-space representations and vector fields provide a powerful way of visualizing biological dynamics. They allow us to describe not only the current state of a system but also how it changes over time. However, an important question remains unanswered.

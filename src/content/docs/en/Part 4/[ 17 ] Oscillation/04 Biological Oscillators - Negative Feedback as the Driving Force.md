@@ -1,3 +1,12 @@
+---
+title: "17.4 Biological Oscillators: Negative Feedback as the Driving Force"
+sidebar:
+  label: "17.4 Biological Oscillators: Negative Feedback as the Driving Force"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.4 Biological Oscillators: Negative Feedback as the Driving Force
 
 The Rayleigh oscillator demonstrated that stable oscillations require two essential ingredients: a mechanism that generates periodic motion and a mechanism that stabilizes its amplitude.

@@ -1,3 +1,12 @@
+---
+title: "18.6 The Logistic Map: The Simplest Chaotic System"
+sidebar:
+  label: "18.6 The Logistic Map: The Simplest Chaotic System"
+  order: 6
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.6 The Logistic Map: The Simplest Chaotic System
 
 So far, we have encountered deterministic chaos in the context of a biological food-chain model. Although this example demonstrates that chaotic dynamics can arise naturally in biology, the model itself is still relatively complex. It contains multiple interacting populations, several nonlinear interactions, and many parameters.

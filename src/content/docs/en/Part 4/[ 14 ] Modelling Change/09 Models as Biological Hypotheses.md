@@ -1,3 +1,12 @@
+---
+title: "14.9 Models as Biological Hypotheses"
+sidebar:
+  label: "14.9 Models as Biological Hypotheses"
+  order: 9
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.9 Models as Biological Hypotheses
 
 At this point, we have developed all the essential ingredients of a dynamic model. We can identify the relevant state variables, formulate differential equations describing their interactions, and simulate their behaviour over time.

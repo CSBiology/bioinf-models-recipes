@@ -1,3 +1,12 @@
+---
+title: "14.7 Modelling Biological Change with Differential Equations"
+sidebar:
+  label: "14.7 Modelling Biological Change with Differential Equations"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.7 Modelling Biological Change with Differential Equations
 
 The previous sections established that a biological system can be represented as a point moving through state space. We also saw that the direction of this movement is determined by a mathematical model. The remaining question is how to formulate such a model.

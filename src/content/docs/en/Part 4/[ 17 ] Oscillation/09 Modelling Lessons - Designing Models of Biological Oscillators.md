@@ -1,3 +1,12 @@
+---
+title: "17.9 Modelling Lessons: Constructing Models of Biological Oscillators"
+sidebar:
+  label: "17.9 Modelling Lessons: Constructing Models of Biological Oscillators"
+  order: 9
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.9 Modelling Lessons: Constructing Models of Biological Oscillators
 
 Throughout this chapter, we have studied several biological oscillators that differ enormously in their molecular components and physiological roles. Hormone regulation, respiratory control, motor control, and gene expression appear to be unrelated biological systems.

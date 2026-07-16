@@ -1,3 +1,12 @@
+---
+title: "16.8 A Unified View of Biological Bifurcations"
+sidebar:
+  label: "16.8 A Unified View of Biological Bifurcations"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.8 A Unified View of Biological Bifurcations
 
 Throughout this chapter, we have encountered several different types of bifurcations. At first sight, saddle-node, transcritical, and pitchfork bifurcations appear to be distinct mathematical phenomena. They are described by different equations, produce different bifurcation diagrams, and occur in different biological systems.

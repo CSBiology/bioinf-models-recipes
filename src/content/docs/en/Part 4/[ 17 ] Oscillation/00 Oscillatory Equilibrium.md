@@ -1,3 +1,12 @@
+---
+title: "17 Oscillatory Equilibrium"
+sidebar:
+  label: "17 Oscillatory Equilibrium"
+  order: 0
+  group: "Part 4"
+  part: "Part 4"
+---
+
 # 17 Oscillatory Equilibrium
 
 In the previous chapter, we introduced one of the central ideas of dynamical systems: **equilibrium**. We learned that many biological systems can be understood as dynamical systems that evolve toward stable equilibrium points. Negative feedback loops stabilize these systems, allowing them to maintain homeostasis despite continuous disturbances. This framework explains numerous biological phenomena, ranging from gene regulation to cellular decision making.

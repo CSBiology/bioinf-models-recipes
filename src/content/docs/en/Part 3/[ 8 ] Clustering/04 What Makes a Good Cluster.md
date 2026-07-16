@@ -1,3 +1,12 @@
+---
+title: "8.4 What Makes a Good Cluster?"
+sidebar:
+  label: "8.4 What Makes a Good Cluster?"
+  order: 4
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.4 What Makes a Good Cluster?
 
 ### Learning Goals

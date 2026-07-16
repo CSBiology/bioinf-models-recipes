@@ -1,3 +1,12 @@
+---
+title: "16.3 The lac Operon: Why Bacteria Need Switches"
+sidebar:
+  label: "16.3 The lac Operon: Why Bacteria Need Switches"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.3 The lac Operon: Why Bacteria Need Switches
 
 To understand why biological switches evolve, it is helpful to study one of the best-known examples of gene regulation: the **lac operon** of *Escherichia coli*. Although relatively simple, this regulatory system illustrates many of the principles that underlie cellular decision making.

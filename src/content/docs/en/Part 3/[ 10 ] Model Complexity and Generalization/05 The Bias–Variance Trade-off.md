@@ -1,3 +1,12 @@
+---
+title: "10.5 The Bias–Variance Trade-off"
+sidebar:
+  label: "10.5 The Bias–Variance Trade-off"
+  order: 5
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.5 The Bias–Variance Trade-off
 
 ## Two fundamentally different sources of prediction error

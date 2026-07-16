@@ -1,3 +1,12 @@
+---
+title: "9.5 Learning as Optimization"
+sidebar:
+  label: "9.5 Learning as Optimization"
+  order: 5
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9.5 Learning as Optimization
 
 ## What does it actually mean to learn?

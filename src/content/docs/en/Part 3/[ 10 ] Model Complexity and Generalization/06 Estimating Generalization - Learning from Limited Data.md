@@ -1,3 +1,12 @@
+---
+title: "10.6 Estimating Generalization: Learning from Limited Data"
+sidebar:
+  label: "10.6 Estimating Generalization: Learning from Limited Data"
+  order: 6
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.6 Estimating Generalization: Learning from Limited Data
 
 ## The fundamental dilemma of machine learning

@@ -1,3 +1,12 @@
+---
+title: "11.2 Classification in Feature Space"
+sidebar:
+  label: "11.2 Classification in Feature Space"
+  order: 2
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.2 Classification in Feature Space
 
 ## From biological features to decision boundaries

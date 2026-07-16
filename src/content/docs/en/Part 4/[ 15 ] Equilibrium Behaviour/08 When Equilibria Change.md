@@ -1,3 +1,12 @@
+---
+title: "15.8 When Equilibria Change"
+sidebar:
+  label: "15.8 When Equilibria Change"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.8 When Equilibria Change
 
 Throughout this chapter, we have assumed that the mathematical model describing the biological system remains unchanged. Under this assumption, we identified equilibrium points, determined whether they are stable or unstable, and investigated how trajectories evolve towards or away from these states.

@@ -1,3 +1,12 @@
+---
+title: "13.4 Network Connectivity: Degree and Degree Distribution"
+sidebar:
+  label: "13.4 Network Connectivity: Degree and Degree Distribution"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.4 Network Connectivity: Degree and Degree Distribution
 
 Once a biological system has been represented as a graph, the next question naturally arises: **How can we describe its structure quantitatively?** Graph theory provides a large number of measures for characterizing networks, ranging from simple local properties of individual nodes to global descriptors of the entire network. The simplest and most fundamental of these measures is the **degree** of a node.

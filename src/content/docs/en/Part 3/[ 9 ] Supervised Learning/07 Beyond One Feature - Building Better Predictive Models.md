@@ -1,3 +1,12 @@
+---
+title: "9.7 Beyond One Feature: Building Better Predictive Models"
+sidebar:
+  label: "9.7 Beyond One Feature: Building Better Predictive Models"
+  order: 7
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9.7 Beyond One Feature: Building Better Predictive Models
 
 ## One feature is rarely enough

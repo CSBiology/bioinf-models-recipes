@@ -1,3 +1,12 @@
+---
+title: "16.6 Transcritical Bifurcations: When States Exchange Their Stability"
+sidebar:
+  label: "16.6 Transcritical Bifurcations: When States Exchange Their Stability"
+  order: 6
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.6 Transcritical Bifurcations: When States Exchange Their Stability
 
 The saddle-node bifurcation introduced in the previous section describes the appearance or disappearance of equilibrium points. Not all biological transitions, however, occur in this way.

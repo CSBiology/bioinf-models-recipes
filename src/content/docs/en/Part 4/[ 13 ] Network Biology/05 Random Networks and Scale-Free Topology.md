@@ -1,3 +1,12 @@
+---
+title: "13.5 Random Networks and Scale-Free Topology"
+sidebar:
+  label: "13.5 Random Networks and Scale-Free Topology"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.5 Random Networks and Scale-Free Topology
 
 One of the central questions in network biology is whether biological networks possess a characteristic organization or whether they are simply collections of randomly connected components. To answer this question, we first need a reference model describing what a random network would look like. Only by comparing biological networks to this null model can we determine whether their structure reflects underlying biological principles.

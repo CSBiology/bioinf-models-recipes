@@ -1,3 +1,12 @@
+---
+title: "12.3 Feed-Forward Neural Networks"
+sidebar:
+  label: "12.3 Feed-Forward Neural Networks"
+  order: 3
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.3 Feed-Forward Neural Networks
 
 ## From biological neurons to artificial neurons

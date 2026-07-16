@@ -1,3 +1,12 @@
+---
+title: "10.3 When Does a Model Become Too Complex?"
+sidebar:
+  label: "10.3 When Does a Model Become Too Complex?"
+  order: 3
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.3 When Does a Model Become Too Complex?
 
 ## The temptation of a perfect fit

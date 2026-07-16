@@ -1,3 +1,12 @@
+---
+title: "8.2 From Biological Measurements to Feature Spaces"
+sidebar:
+  label: "8.2 From Biological Measurements to Feature Spaces"
+  order: 2
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.2 From Biological Measurements to Feature Spaces
 
 ### Learning Goals

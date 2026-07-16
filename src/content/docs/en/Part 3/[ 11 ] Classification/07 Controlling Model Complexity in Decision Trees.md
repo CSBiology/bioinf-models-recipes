@@ -1,3 +1,12 @@
+---
+title: "11.7 Controlling Model Complexity in Decision Trees"
+sidebar:
+  label: "11.7 Controlling Model Complexity in Decision Trees"
+  order: 7
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.7 Controlling Model Complexity in Decision Trees
 
 ## When does a decision tree become too complex?

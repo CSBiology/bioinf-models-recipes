@@ -1,3 +1,12 @@
+---
+title: "18.10 Modelling Lessons: Constructing Models of Chaotic Biological Systems"
+sidebar:
+  label: "18.10 Modelling Lessons: Constructing Models of Chaotic Biological Systems"
+  order: 10
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.10 Modelling Lessons: Constructing Models of Chaotic Biological Systems
 
 Throughout this chapter, we have seen that deterministic chaos is not a mysterious or exceptional phenomenon. Instead, it emerges naturally from nonlinear interactions in dynamical systems.

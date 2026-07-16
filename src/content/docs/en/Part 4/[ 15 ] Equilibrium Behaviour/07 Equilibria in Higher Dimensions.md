@@ -1,3 +1,12 @@
+---
+title: "15.7 Equilibria in Higher Dimensions"
+sidebar:
+  label: "15.7 Equilibria in Higher Dimensions"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.7 Equilibria in Higher Dimensions
 
 Most biological systems consist of many interacting components. Gene regulatory networks involve multiple genes and proteins, metabolic pathways contain numerous metabolites and enzymes, and ecological communities consist of interacting species. As a result, the state of a biological system is usually described by several state variables rather than a single quantity.

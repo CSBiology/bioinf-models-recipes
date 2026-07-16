@@ -1,3 +1,12 @@
+---
+title: "14.3 Oscillatory Behaviour: When Stability Becomes Dynamic"
+sidebar:
+  label: "14.3 Oscillatory Behaviour: When Stability Becomes Dynamic"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.3 Oscillatory Behaviour: When Stability Becomes Dynamic
 
 Negative feedback is often associated with stability. Whenever a biological variable deviates from its desired level, negative feedback acts to restore the original state. It therefore seems natural to expect that negative feedback always produces steady behaviour.

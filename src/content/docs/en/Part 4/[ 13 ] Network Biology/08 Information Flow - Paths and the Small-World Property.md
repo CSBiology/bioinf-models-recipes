@@ -1,3 +1,12 @@
+---
+title: "13.8 Information Flow: Paths and the Small-World Property"
+sidebar:
+  label: "13.8 Information Flow: Paths and the Small-World Property"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.8 Information Flow: Paths and the Small-World Property
 
 Biological systems continuously exchange information, energy, and matter. Signals propagate through regulatory pathways, metabolites are converted along metabolic routes, and proteins communicate through complex interaction networks. The efficiency of these processes depends not only on the existence of interactions but also on how components are connected across the entire network. Graph theory provides several concepts for describing these communication pathways, including paths, distances, and the small-world property.

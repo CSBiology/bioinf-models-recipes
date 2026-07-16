@@ -1,3 +1,12 @@
+---
+title: "11.5 Entropy and Information Gain: Choosing the Best Split"
+sidebar:
+  label: "11.5 Entropy and Information Gain: Choosing the Best Split"
+  order: 5
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.5 Entropy and Information Gain: Choosing the Best Split
 
 ## Not all questions are equally informative

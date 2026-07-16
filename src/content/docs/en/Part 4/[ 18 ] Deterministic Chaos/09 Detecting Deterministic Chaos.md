@@ -1,3 +1,12 @@
+---
+title: "18.9 Detecting Deterministic Chaos"
+sidebar:
+  label: "18.9 Detecting Deterministic Chaos"
+  order: 9
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.9 Detecting Deterministic Chaos
 
 The previous sections showed how deterministic chaos can emerge from simple nonlinear models. In practice, however, we usually encounter the opposite problem.

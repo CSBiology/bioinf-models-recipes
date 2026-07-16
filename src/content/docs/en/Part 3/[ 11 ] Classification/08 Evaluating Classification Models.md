@@ -1,3 +1,12 @@
+---
+title: "11.8 Evaluating Classification Models"
+sidebar:
+  label: "11.8 Evaluating Classification Models"
+  order: 8
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.8 Evaluating Classification Models
 
 ## When is a classifier "good"?

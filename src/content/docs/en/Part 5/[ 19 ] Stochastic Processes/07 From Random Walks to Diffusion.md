@@ -1,3 +1,12 @@
+---
+title: "19.7 From Random Walks to Diffusion"
+sidebar:
+  label: "19.7 From Random Walks to Diffusion"
+  order: 7
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.7 From Random Walks to Diffusion
 
 The random walk describes the movement of a single particle as a sequence of random steps.

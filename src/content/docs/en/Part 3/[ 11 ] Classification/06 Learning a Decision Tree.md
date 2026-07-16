@@ -1,3 +1,12 @@
+---
+title: "11.6 Learning a Decision Tree"
+sidebar:
+  label: "11.6 Learning a Decision Tree"
+  order: 6
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.6 Learning a Decision Tree
 
 ## From the first split to the complete tree

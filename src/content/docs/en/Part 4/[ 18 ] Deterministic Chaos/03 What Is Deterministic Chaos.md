@@ -1,3 +1,12 @@
+---
+title: "18.3 What Is Deterministic Chaos?"
+sidebar:
+  label: "18.3 What Is Deterministic Chaos?"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.3 What Is Deterministic Chaos?
 
 The word *chaos* is often used to describe complete disorder or randomness. In everyday language, chaotic systems are thought of as systems without rules, whose behavior is entirely unpredictable.

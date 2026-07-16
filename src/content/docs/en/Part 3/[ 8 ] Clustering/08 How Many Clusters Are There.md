@@ -1,3 +1,12 @@
+---
+title: "8.8 How Many Clusters Are There?"
+sidebar:
+  label: "8.8 How Many Clusters Are There?"
+  order: 8
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.8 How Many Clusters Are There?
 
 ### Learning Goals

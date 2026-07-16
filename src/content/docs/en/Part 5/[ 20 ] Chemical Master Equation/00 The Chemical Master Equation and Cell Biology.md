@@ -1,3 +1,12 @@
+---
+title: "20 The Chemical Master Equation and Cell Biology"
+sidebar:
+  label: "20 The Chemical Master Equation and Cell Biology"
+  order: 0
+  group: "Part 5"
+  part: "Part 5"
+---
+
 # 20 The Chemical Master Equation and Cell Biology
 
 Living cells are fundamentally stochastic systems. Every second, thousands of molecular interactions occur inside a cell, and many of these events are governed by chance. A transcription factor may bind to DNA—or it may not. An mRNA molecule may be degraded now or several minutes later. A ribosome may initiate translation immediately or after a random delay.

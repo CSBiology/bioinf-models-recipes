@@ -1,3 +1,12 @@
+---
+title: "14.1 From Structure to Dynamics"
+sidebar:
+  label: "14.1 From Structure to Dynamics"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.1 From Structure to Dynamics
 
 Biological networks describe how the components of a living system are connected. They reveal which proteins interact, which genes regulate one another, and how metabolites are linked through biochemical reactions. As we have seen in the previous chapter, this structural information already provides valuable insights into the organization, robustness, and evolution of biological systems.

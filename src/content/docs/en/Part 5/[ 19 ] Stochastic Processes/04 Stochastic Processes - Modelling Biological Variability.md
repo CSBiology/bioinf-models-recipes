@@ -1,3 +1,12 @@
+---
+title: "19.4 Stochastic Processes: Modelling Biological Variability"
+sidebar:
+  label: "19.4 Stochastic Processes: Modelling Biological Variability"
+  order: 4
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.4 Stochastic Processes: Modelling Biological Variability
 
 The Luria–Delbrück experiment demonstrated that biological systems cannot always be understood by considering only average behavior.

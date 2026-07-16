@@ -1,3 +1,12 @@
+---
+title: "15.5 Local Stability Analysis: Looking Close Is Often Enough"
+sidebar:
+  label: "15.5 Local Stability Analysis: Looking Close Is Often Enough"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.5 Local Stability Analysis: Looking Close Is Often Enough
 
 In the previous section, we distinguished between stable and unstable equilibria by observing how systems respond to perturbations. For simple examples such as the Allee model, this behaviour can often be understood intuitively. However, real biological systems are usually much more complex. Gene regulatory networks, signalling pathways, and metabolic systems often involve dozens or even hundreds of interacting components.

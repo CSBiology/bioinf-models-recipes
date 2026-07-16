@@ -1,3 +1,12 @@
+---
+title: "19.5 Describing Biological Variability with Probability"
+sidebar:
+  label: "19.5 Describing Biological Variability with Probability"
+  order: 5
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.5 Describing Biological Variability with Probability
 
 The previous section introduced stochastic processes as mathematical models that generate many possible trajectories rather than a single deterministic prediction.

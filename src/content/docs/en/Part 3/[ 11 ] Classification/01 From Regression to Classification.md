@@ -1,3 +1,12 @@
+---
+title: "11.1 From Regression to Classification"
+sidebar:
+  label: "11.1 From Regression to Classification"
+  order: 1
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 11.1 From Regression to Classification
 
 ## Two fundamentally different prediction problems

@@ -1,3 +1,12 @@
+---
+title: "14.10 Case Study: Revealing Hidden Biology Through Modelling"
+sidebar:
+  label: "14.10 Case Study: Revealing Hidden Biology Through Modelling"
+  order: 10
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.10 Case Study: Revealing Hidden Biology Through Modelling
 
 Throughout this chapter, we have developed the tools required to describe biological systems dynamically. We introduced state variables, state spaces, vector fields, differential equations, and numerical simulations. At first sight, these concepts may appear highly abstract.

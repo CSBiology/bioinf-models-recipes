@@ -1,3 +1,12 @@
+---
+title: "13.3 Graph Theory: The Language of Networks"
+sidebar:
+  label: "13.3 Graph Theory: The Language of Networks"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.3 Graph Theory: The Language of Networks
 
 Biological systems can be represented as networks because they consist of entities connected by interactions. To analyse these networks quantitatively, however, we need a mathematical language that is independent of the specific biological system. This language is provided by **graph theory**. Although originally developed as a branch of mathematics, graph theory has become one of the most important frameworks for analysing complex biological systems.

@@ -1,3 +1,12 @@
+---
+title: "8.10 Clustering as a Model of Biological Organization"
+sidebar:
+  label: "8.10 Clustering as a Model of Biological Organization"
+  order: 10
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.10 Clustering as a Model of Biological Organization
 
 ### Learning Goals

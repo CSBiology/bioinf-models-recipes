@@ -1,3 +1,12 @@
+---
+title: "17.8 Oscillations Across Biology"
+sidebar:
+  label: "17.8 Oscillations Across Biology"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.8 Oscillations Across Biology
 
 The previous sections introduced two universal mechanisms that generate stable oscillations:

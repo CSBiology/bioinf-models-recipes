@@ -1,3 +1,12 @@
+---
+title: "14.8 Numerical Simulation - Predicting Biological Behaviour"
+sidebar:
+  label: "14.8 Numerical Simulation - Predicting Biological Behaviour"
+  order: 8
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.8 Numerical Simulation - Predicting Biological Behaviour
 
 Once a mathematical model has been formulated, the next question is how it can be used to predict the behaviour of a biological system.

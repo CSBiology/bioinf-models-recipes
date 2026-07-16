@@ -1,3 +1,12 @@
+---
+title: "9.1 From Discovering Patterns to Predicting Biology"
+sidebar:
+  label: "9.1 From Discovering Patterns to Predicting Biology"
+  order: 1
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 9 Supervised Learning
 
 Biological systems continuously transform information. A DNA sequence encodes a protein, proteins assemble into molecular machines, signaling pathways process environmental stimuli, and gene regulatory networks determine cellular behavior. Understanding these relationships lies at the heart of modern biology.

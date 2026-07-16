@@ -1,3 +1,12 @@
+---
+title: "13.7 Functional Modules: Clustering and Hierarchical Organization"
+sidebar:
+  label: "13.7 Functional Modules: Clustering and Hierarchical Organization"
+  order: 7
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.7 Functional Modules: Clustering and Hierarchical Organization
 
 Biological networks are not randomly connected collections of molecules. Instead, they exhibit a remarkable internal organization. Closely related components often form densely interconnected groups that carry out specific biological functions, while these groups remain connected to other parts of the network through comparatively few interactions. Such modular organization is one of the defining characteristics of living systems and contributes to their robustness, adaptability, and evolutionary flexibility.

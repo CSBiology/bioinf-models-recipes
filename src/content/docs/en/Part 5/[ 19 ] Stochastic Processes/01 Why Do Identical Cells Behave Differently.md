@@ -1,3 +1,12 @@
+---
+title: "19.1 Why Do Identical Cells Behave Differently?"
+sidebar:
+  label: "19.1 Why Do Identical Cells Behave Differently?"
+  order: 1
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.1 Why Do Identical Cells Behave Differently?
 
 Imagine two genetically identical bacterial cells growing side by side in the same nutrient medium.

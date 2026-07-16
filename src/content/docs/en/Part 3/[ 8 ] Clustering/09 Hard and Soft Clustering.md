@@ -1,3 +1,12 @@
+---
+title: "8.9 Hard and Soft Clustering: Can a Gene Belong to More Than One Group?"
+sidebar:
+  label: "8.9 Hard and Soft Clustering: Can a Gene Belong to More Than One Group?"
+  order: 9
+  group: "Part 3"
+  part: "Part 3"
+---
+
 ## 8.9 Hard and Soft Clustering: Can a Gene Belong to More Than One Group?
 
 ### Learning Goals

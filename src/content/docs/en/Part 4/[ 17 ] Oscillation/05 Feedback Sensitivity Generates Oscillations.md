@@ -1,3 +1,12 @@
+---
+title: "17.5 Feedback Sensitivity Generates Oscillations"
+sidebar:
+  label: "17.5 Feedback Sensitivity Generates Oscillations"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.5 Feedback Sensitivity Generates Oscillations
 
 The previous section introduced the HPG model and identified the sensitivity of the negative feedback loop as one of its most important parameters.

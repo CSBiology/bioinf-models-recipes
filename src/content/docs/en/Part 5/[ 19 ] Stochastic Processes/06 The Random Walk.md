@@ -1,3 +1,12 @@
+---
+title: "19.6 The Random Walk: The Simplest Stochastic Model"
+sidebar:
+  label: "19.6 The Random Walk: The Simplest Stochastic Model"
+  order: 6
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.6 The Random Walk: The Simplest Stochastic Model
 
 So far, we have introduced stochastic processes as mathematical models that generate an ensemble of possible trajectories rather than a single deterministic prediction.

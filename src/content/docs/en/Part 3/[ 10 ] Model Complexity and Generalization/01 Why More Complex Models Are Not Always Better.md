@@ -1,3 +1,12 @@
+---
+title: "10.1 Why More Complex Models Are Not Always Better"
+sidebar:
+  label: "10.1 Why More Complex Models Are Not Always Better"
+  order: 1
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 10.1 Why More Complex Models Are Not Always Better
 
 ### Revisiting the protein stability example

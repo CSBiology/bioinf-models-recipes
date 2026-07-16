@@ -1,3 +1,12 @@
+---
+title: "12.7 What Is Hidden in a Hidden Layer?"
+sidebar:
+  label: "12.7 What Is Hidden in a Hidden Layer?"
+  order: 7
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.7 What Is Hidden in a Hidden Layer?
 
 ## The mystery of hidden neurons

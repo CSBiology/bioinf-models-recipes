@@ -1,3 +1,12 @@
+---
+title: "12.11 AlphaFold: Predicting Protein Structure with Deep Learning"
+sidebar:
+  label: "12.11 AlphaFold: Predicting Protein Structure with Deep Learning"
+  order: 11
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.11 AlphaFold: Predicting Protein Structure with Deep Learning
 
 ## One of biology's greatest unsolved problems

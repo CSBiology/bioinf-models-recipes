@@ -1,3 +1,12 @@
+---
+title: "15.6 Phase Portraits and Basins of Attraction"
+sidebar:
+  label: "15.6 Phase Portraits and Basins of Attraction"
+  order: 6
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.6 Phase Portraits and Basins of Attraction
 
 So far, we have analysed individual equilibrium points and determined whether they are stable or unstable. While this provides valuable information, it still leaves an important question unanswered.

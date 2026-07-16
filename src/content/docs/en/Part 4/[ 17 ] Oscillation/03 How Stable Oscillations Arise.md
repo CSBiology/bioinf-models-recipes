@@ -1,3 +1,12 @@
+---
+title: "17.3 How Stable Oscillations Arise"
+sidebar:
+  label: "17.3 How Stable Oscillations Arise"
+  order: 3
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 17.3 How Stable Oscillations Arise
 
 So far, we have introduced oscillatory equilibrium as a new type of stable behavior. We now understand that a limit cycle represents a stable periodic trajectory in state space rather than a stationary point.

@@ -1,3 +1,12 @@
+---
+title: "15.2 Population Dynamics: A Model System for Equilibrium Behaviour"
+sidebar:
+  label: "15.2 Population Dynamics: A Model System for Equilibrium Behaviour"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 15.2 Population Dynamics: A Model System for Equilibrium Behaviour
 
 To understand equilibrium behaviour, it is helpful to begin with one of the simplest dynamic systems found in biology: the growth of a population.

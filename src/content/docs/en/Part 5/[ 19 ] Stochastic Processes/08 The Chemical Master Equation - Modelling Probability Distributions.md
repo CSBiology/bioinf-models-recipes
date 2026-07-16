@@ -1,3 +1,12 @@
+---
+title: "19.8 The Chemical Master Equation: Modelling Probability Distributions"
+sidebar:
+  label: "19.8 The Chemical Master Equation: Modelling Probability Distributions"
+  order: 8
+  group: "Part 5"
+  part: "Part 5"
+---
+
 ## 19.8 The Chemical Master Equation: Modelling Probability Distributions
 
 The previous sections introduced stochastic processes from two complementary perspectives.

@@ -1,3 +1,12 @@
+---
+title: "13.1 From Components to Systems"
+sidebar:
+  label: "13.1 From Components to Systems"
+  order: 1
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 13.1 From Components to Systems
 
 ### Learning objectives

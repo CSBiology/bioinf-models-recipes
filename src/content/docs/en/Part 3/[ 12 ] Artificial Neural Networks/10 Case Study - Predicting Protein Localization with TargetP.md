@@ -1,3 +1,12 @@
+---
+title: "12.10 Case Study: Predicting Protein Localization with TargetP"
+sidebar:
+  label: "12.10 Case Study: Predicting Protein Localization with TargetP"
+  order: 10
+  group: "Part 3"
+  part: "Part 3"
+---
+
 # 12.10 Case Study: Predicting Protein Localization with TargetP
 
 ## A biological prediction problem

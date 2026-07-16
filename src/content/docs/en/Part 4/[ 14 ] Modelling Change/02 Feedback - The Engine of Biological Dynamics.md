@@ -1,3 +1,12 @@
+---
+title: "14.2 Feedback: The Engine of Biological Dynamics"
+sidebar:
+  label: "14.2 Feedback: The Engine of Biological Dynamics"
+  order: 2
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 14.2 Feedback: The Engine of Biological Dynamics
 
 If biological systems are constantly changing, an obvious question arises: why do they not simply drift into disorder? Every second, cells encounter fluctuations in nutrient availability, environmental conditions, and molecular noise. Yet despite these disturbances, living systems usually maintain their organization and continue to function reliably.

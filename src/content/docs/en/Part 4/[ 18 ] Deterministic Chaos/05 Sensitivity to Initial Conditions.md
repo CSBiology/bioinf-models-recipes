@@ -1,3 +1,12 @@
+---
+title: "18.5 Sensitivity to Initial Conditions"
+sidebar:
+  label: "18.5 Sensitivity to Initial Conditions"
+  order: 5
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 18.5 Sensitivity to Initial Conditions
 
 The food-chain model demonstrated that deterministic chaos can emerge naturally from simple biological interactions. The resulting trajectories appeared highly irregular, even though no randomness was present in the model.

@@ -1,3 +1,12 @@
+---
+title: "16.4 From Biology to Mathematics: Building a Minimal Model of the lac Operon"
+sidebar:
+  label: "16.4 From Biology to Mathematics: Building a Minimal Model of the lac Operon"
+  order: 4
+  group: "Part 4"
+  part: "Part 4"
+---
+
 ## 16.4 From Biology to Mathematics: Building a Minimal Model of the lac Operon
 
 The lac operon is a complex biological system. Lactose must enter the cell, be converted into allolactose, bind to the LacI repressor, activate gene expression, and ultimately increase the production of enzymes that import even more lactose. In reality, many additional processes also contribute, including transcription, translation, protein degradation, and dilution during cell division.
