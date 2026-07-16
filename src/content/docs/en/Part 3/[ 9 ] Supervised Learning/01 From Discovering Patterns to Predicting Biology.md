@@ -99,21 +99,21 @@ Nearly every supervised learning problem can be described using the same mathema
 
 We denote the observed biological information by
 
-\[
+$$
 X,
-\]
+$$
 
 and the quantity we wish to predict by
 
-\[
+$$
 Y.
-\]
+$$
 
 The objective of supervised learning is to learn a function
 
-\[
+$$
 f : X \rightarrow Y,
-\]
+$$
 
 that maps inputs to outputs as accurately as possible.
 

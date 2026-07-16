@@ -36,21 +36,21 @@ Both movements are equally likely.
 
 Suppose the molecule starts at position
 
-\[
+$$
 x=0.
-\]
+$$
 
 At the first step, it moves either to
 
-\[
+$$
 x=-1
-\]
+$$
 
 or
 
-\[
+$$
 x=+1.
-\]
+$$
 
 The same rule is then applied again.
 

@@ -54,11 +54,11 @@ The viral population changes through two opposing processes.
 
 The resulting differential equation describes the balance between these competing processes:
 
-\[
+$$
 \frac{dN_V}{dt}
 =
 -\;k_VN_V+\gamma N_I,
-\]
+$$
 
 where \(N_V\) denotes the viral load, \(k_V\) describes the clearance rate of virus particles, and \(\gamma N_I\) represents the production of new viruses by infected cells.
 

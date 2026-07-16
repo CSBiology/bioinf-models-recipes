@@ -41,9 +41,9 @@ The remaining chapters build upon this framework. We will next investigate how i
 
 - A supervised learning problem can be formulated as learning a mapping
 
-  \[
+  $$
   X \rightarrow Y,
-  \]
+  $$
 
   where \(X\) represents the observed biological features and \(Y\) the biological property to be predicted.
 

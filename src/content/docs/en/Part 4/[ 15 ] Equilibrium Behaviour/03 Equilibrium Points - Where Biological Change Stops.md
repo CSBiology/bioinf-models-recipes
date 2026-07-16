@@ -19,17 +19,17 @@ Rather than simulating the behaviour of the system over long periods, we can exa
 
 In Chapter 14, we introduced ordinary differential equations as mathematical descriptions of biological change. For a one-dimensional system, the general form is
 
-\[
+$$
 \frac{dX}{dt}=f(X),
-\]
+$$
 
 where \(X\) is the state variable and \(f(X)\) describes its rate of change.
 
 An **equilibrium point** is simply a state at which this rate of change becomes zero:
 
-\[
+$$
 \frac{dX}{dt}=0.
-\]
+$$
 
 At an equilibrium, the state variable no longer changes because all opposing biological processes exactly balance one another.
 
@@ -47,9 +47,9 @@ As a consequence, the Allee model possesses three equilibrium points.
 
 The first equilibrium occurs at
 
-\[
+$$
 X=0,
-\]
+$$
 
 corresponding to population extinction.
 

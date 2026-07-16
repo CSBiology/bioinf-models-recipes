@@ -61,9 +61,9 @@ The first process is **metabolic production**.
 
 Since metabolism continuously generates CO₂, we represent this by a constant production term,
 
-\[
+$$
 L.
-\]
+$$
 
 The second process is **ventilation**.
 
@@ -76,9 +76,9 @@ The amount removed depends on two factors:
 
 The resulting model is therefore
 
-\[
+$$
 X' = L - VX.
-\]
+$$
 
 This equation is structurally very similar to many models we have encountered throughout this book: one process continuously increases the concentration, while another removes it.
 
@@ -111,15 +111,15 @@ This assumption is unrealistic.
 
 To account for the transport time through the bloodstream, we introduce an explicit delay,
 
-\[
+$$
 \tau.
-\]
+$$
 
 Instead of responding to the current concentration \(X(t)\), the controller now responds to
 
-\[
+$$
 X(t-\tau),
-\]
+$$
 
 the concentration measured one delay period earlier.
 

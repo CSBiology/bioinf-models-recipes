@@ -39,15 +39,15 @@ The only difference is the initial condition.
 
 Suppose one simulation starts with an initial protein concentration of
 
-\[
+$$
 x_0 = 0.500000,
-\]
+$$
 
 while the second simulation starts with
 
-\[
+$$
 x_0 = 0.500001.
-\]
+$$
 
 The difference between the two initial conditions is almost immeasurably small.
 

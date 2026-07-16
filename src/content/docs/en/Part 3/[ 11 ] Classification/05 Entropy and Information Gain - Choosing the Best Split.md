@@ -87,23 +87,23 @@ To quantify uncertainty, we must consider the probability of observing each clas
 
 Suppose that the proportion of edible mushrooms is
 
-\[
+$$
 p(\text{edible}),
-\]
+$$
 
 while the proportion of poisonous mushrooms is
 
-\[
+$$
 p(\text{poisonous}).
-\]
+$$
 
 The entropy of the dataset is then defined as
 
-\[
+$$
 H(S)
 =
 -\sum_i p_i \log_2 p_i,
-\]
+$$
 
 where
 
@@ -133,11 +133,11 @@ Suppose every mushroom in the dataset is edible.
 
 The class probabilities are therefore
 
-\[
+$$
 p(\text{edible})=1,
 \qquad
 p(\text{poisonous})=0.
-\]
+$$
 
 There is no uncertainty whatsoever.
 
@@ -145,9 +145,9 @@ Every mushroom belongs to the same class.
 
 Consequently,
 
-\[
+$$
 H=0.
-\]
+$$
 
 This is the smallest possible entropy.
 
@@ -161,7 +161,7 @@ Now consider a dataset in which half of the mushrooms are edible and half are po
 
 The probabilities become
 
-\[
+$$
 p(\text{edible})
 =
 0.5,
@@ -169,7 +169,7 @@ p(\text{edible})
 p(\text{poisonous})
 =
 0.5.
-\]
+$$
 
 Now, before observing the class label, both outcomes are equally likely.
 
@@ -238,13 +238,13 @@ Information gain measures how much uncertainty is removed by partitioning the da
 
 It is defined as
 
-\[
+$$
 \text{Information Gain}
 =
 H(S)
 -
 H(S \mid A),
-\]
+$$
 
 where
 

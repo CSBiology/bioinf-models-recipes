@@ -43,9 +43,9 @@ The answer is provided by the **gradient**.
 
 For a function of a single variable, the gradient reduces to the ordinary derivative,
 
-\[
+$$
 \frac{d\,\mathrm{MSE}}{dm},
-\]
+$$
 
 which describes the slope of the loss function at the current parameter value.
 
@@ -106,14 +106,14 @@ Finally, it repeats this procedure until further improvements become negligible.
 
 Mathematically, the parameter update is written as
 
-\[
+$$
 m_{\text{new}}
 =
 m_{\text{old}}
 -
 \alpha
 \frac{d\,\mathrm{MSE}}{dm},
-\]
+$$
 
 where
 
@@ -135,9 +135,9 @@ Over time, these small improvements accumulate until the model converges toward 
 
 The learning rate,
 
-\[
+$$
 \alpha,
-\]
+$$
 
 controls the size of each optimization step.
 

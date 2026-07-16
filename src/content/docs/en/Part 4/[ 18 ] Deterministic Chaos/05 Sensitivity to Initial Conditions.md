@@ -49,17 +49,17 @@ Instead, the separation typically grows **exponentially**.
 
 If the initial difference is denoted by
 
-\[
+$$
 \delta_0,
-\]
+$$
 
 then after some time \(t\), the separation approximately follows
 
-\[
+$$
 \delta(t)
 =
 \delta_0 e^{\lambda t},
-\]
+$$
 
 where \(\lambda\) is called the **Lyapunov exponent**.
 

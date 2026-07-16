@@ -50,11 +50,11 @@ Suppose we measure the expression level of a gene under six different environmen
 
 The resulting expression profile can be written as
 
-\[
+$$
 \mathbf{x}
 =
 (x_1,x_2,\ldots,x_6),
-\]
+$$
 
 where each component represents the measured expression level under one experimental condition.
 
@@ -86,7 +86,7 @@ In this matrix,
 
 Mathematically, the expression matrix can be written as
 
-\[
+$$
 X=
 \begin{pmatrix}
 x_{11} & x_{12} & \cdots & x_{1m}\\
@@ -94,7 +94,7 @@ x_{21} & x_{22} & \cdots & x_{2m}\\
 \vdots & \vdots & \ddots & \vdots\\
 x_{n1} & x_{n2} & \cdots & x_{nm}
 \end{pmatrix},
-\]
+$$
 
 where \(n\) denotes the number of genes and \(m\) the number of experimental conditions.
 

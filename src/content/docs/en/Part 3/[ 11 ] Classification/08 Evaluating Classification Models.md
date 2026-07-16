@@ -69,11 +69,11 @@ The most intuitive measure of classification performance is **accuracy**.
 
 Accuracy simply describes the proportion of correctly classified observations,
 
-\[
+$$
 \text{Accuracy}
 =
 \frac{TP+TN}{TP+TN+FP+FN}.
-\]
+$$
 
 If a classifier correctly predicts 95 out of 100 observations, its accuracy is 95%.
 
@@ -107,11 +107,11 @@ Precision asks:
 
 It is defined as
 
-\[
+$$
 \text{Precision}
 =
 \frac{TP}{TP+FP}.
-\]
+$$
 
 High precision means that positive predictions are highly reliable.
 
@@ -129,11 +129,11 @@ Recall asks a different question:
 
 It is defined as
 
-\[
+$$
 \text{Recall}
 =
 \frac{TP}{TP+FN}.
-\]
+$$
 
 High recall means that only few positive observations are missed.
 
@@ -181,14 +181,14 @@ When both precision and recall are important, they are often combined into a sin
 
 The F1-score is defined as the harmonic mean of precision and recall,
 
-\[
+$$
 F_1
 =
 2
 \cdot
 \frac{\text{Precision}\times\text{Recall}}
 {\text{Precision}+\text{Recall}}.
-\]
+$$
 
 Unlike the arithmetic mean, the harmonic mean becomes small whenever either precision or recall is poor.
 

@@ -53,13 +53,13 @@ Its objective is to find cluster centers that minimize the overall variability w
 
 More precisely, the algorithm minimizes the **within-cluster sum of squares (WCSS)**,
 
-\[
+$$
 J
 =
 \sum_{k=1}^{K}
 \sum_{\mathbf{x}\in C_k}
 \|\mathbf{x}-\boldsymbol{\mu}_k\|^2,
-\]
+$$
 
 where
 

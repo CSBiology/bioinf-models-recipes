@@ -53,11 +53,11 @@ This leads to **difference equations**, also known as **iterative maps**.
 
 One of the simplest nonlinear difference equations is
 
-\[
+$$
 x_{n+1}
 =
 rx_n(1-x_n),
-\]
+$$
 
 where
 
@@ -69,9 +69,9 @@ Although this equation consists of only a single line, it captures two important
 
 The factor
 
-\[
+$$
 rx_n
-\]
+$$
 
 describes exponential population growth.
 
@@ -79,9 +79,9 @@ Without any environmental limitations, the population would simply increase prop
 
 The second factor
 
-\[
+$$
 (1-x_n)
-\]
+$$
 
 introduces **resource limitation**.
 

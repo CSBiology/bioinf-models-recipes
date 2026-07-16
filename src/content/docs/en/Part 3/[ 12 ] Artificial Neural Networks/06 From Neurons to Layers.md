@@ -29,7 +29,7 @@ Consider a hidden layer consisting of four neurons.
 
 Each neuron receives exactly the same input vector
 
-\[
+$$
 \mathbf{x}
 =
 \begin{pmatrix}
@@ -38,7 +38,7 @@ x_2\\
 \vdots\\
 x_n
 \end{pmatrix},
-\]
+$$
 
 where each component represents one biological feature.
 
@@ -46,9 +46,9 @@ Although every neuron receives the same input, they do **not** produce the same 
 
 Each neuron possesses its own set of weights and its own bias,
 
-\[
+$$
 w_1,w_2,\ldots,w_n,b.
-\]
+$$
 
 Consequently, every neuron learns to recognize a different pattern in the data.
 
@@ -74,9 +74,9 @@ Fortunately, linear algebra provides a much more elegant description.
 
 The weights of all neurons within one layer can be collected into a single **weight matrix**
 
-\[
+$$
 W.
-\]
+$$
 
 If the layer contains
 
@@ -85,9 +85,9 @@ If the layer contains
 
 then the weight matrix has the dimensions
 
-\[
+$$
 m \times n.
-\]
+$$
 
 Each **row** corresponds to one neuron.
 
@@ -95,19 +95,19 @@ Each **column** corresponds to one input feature.
 
 The bias values of all neurons are collected into a bias vector,
 
-\[
+$$
 \mathbf{b}.
-\]
+$$
 
 The complete computation of the entire layer can now be written compactly as
 
-\[
+$$
 \mathbf{z}
 =
 W\mathbf{x}
 +
 \mathbf{b}.
-\]
+$$
 
 Instead of describing one neuron, this equation simultaneously describes every neuron in the layer.
 
@@ -121,7 +121,7 @@ In reality, it provides a much deeper insight into how neural networks operate.
 
 Recall that each neuron computes its own weighted sum,
 
-\[
+$$
 z_i
 =
 w_{i1}x_1
@@ -133,13 +133,13 @@ w_{i2}x_2
 w_{in}x_n
 +
 b_i.
-\]
+$$
 
 The matrix multiplication
 
-\[
+$$
 W\mathbf{x}
-\]
+$$
 
 simply performs all of these weighted sums simultaneously.
 
@@ -157,9 +157,9 @@ Neural networks are essentially enormous collections of matrix multiplications i
 
 The weighted sums calculated by the layer are collected in the vector
 
-\[
+$$
 \mathbf{z}.
-\]
+$$
 
 As we learned in the previous section, these values are not passed directly to the next layer.
 
@@ -167,23 +167,23 @@ Instead, the activation function is applied **independently to every neuron**.
 
 Mathematically,
 
-\[
+$$
 \mathbf{a}
 =
 \phi(\mathbf{z}),
-\]
+$$
 
 where the activation function acts on every component of the vector individually.
 
 The complete computation of a neural network layer therefore becomes
 
-\[
+$$
 \boxed{
 \mathbf{a}
 =
 \phi(W\mathbf{x}+\mathbf{b})
 }
-\]
+$$
 
 This compact equation is one of the most important equations in deep learning.
 
@@ -199,17 +199,17 @@ Notice what has happened during this computation.
 
 The input vector
 
-\[
+$$
 \mathbf{x}
-\]
+$$
 
 contained the original biological features.
 
 After multiplication with the weight matrix and application of the activation function, these features have been transformed into a new vector,
 
-\[
+$$
 \mathbf{a}.
-\]
+$$
 
 Importantly, the components of this new vector no longer correspond directly to the original biological measurements.
 
@@ -241,17 +241,17 @@ A feed-forward neural network does not stop after one hidden layer.
 
 The output
 
-\[
+$$
 \mathbf{a}
-\]
+$$
 
 of one layer becomes the input of the next.
 
 The next layer again computes
 
-\[
+$$
 \phi(W\mathbf{a}+\mathbf{b}),
-\]
+$$
 
 producing an even richer representation.
 
@@ -271,9 +271,9 @@ The next section explores exactly what these hidden representations look like an
 
 Neurons become powerful only when combined into layers. Every neuron within a layer receives the same input but learns different weights, allowing the layer to detect multiple patterns simultaneously. Matrix notation provides an elegant mathematical description of this computation, reducing hundreds of individual neuron equations to the compact expression
 
-\[
+$$
 \mathbf{a}=\phi(W\mathbf{x}+\mathbf{b}).
-\]
+$$
 
 Each layer transforms one representation of the biological data into another, allowing deep networks to build increasingly abstract descriptions of complex biological systems.
 
@@ -286,8 +286,8 @@ Each layer transforms one representation of the biological data into another, al
 3. What information is stored in the weight matrix \(W\)?
 4. Why is matrix multiplication particularly well suited for describing neural network computations?
 5. Explain the meaning of the equation
-   \[
+   $$
    \mathbf{a}=\phi(W\mathbf{x}+\mathbf{b}).
-   \]
+   $$
 6. Why do the outputs of a hidden layer no longer correspond directly to the original biological features?
 7. How do successive hidden layers create increasingly abstract representations of the input data?

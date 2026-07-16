@@ -85,9 +85,9 @@ Mathematically, an oscillation is characterized by **periodicity**.
 
 A state variable \(x(t)\) is said to oscillate if there exists a period \(T\) such that
 
-\[
+$$
 x(t+T)=x(t)
-\]
+$$
 
 for every point in time \(t\).
 

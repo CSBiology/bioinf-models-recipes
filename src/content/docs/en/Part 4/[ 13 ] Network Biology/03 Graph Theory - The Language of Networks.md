@@ -45,9 +45,9 @@ Mathematically, a graph consists of two sets:
 
 A graph is commonly written as
 
-\[
+$$
 G = (V,E),
-\]
+$$
 
 where
 
@@ -156,21 +156,21 @@ Instead, graphs are stored as matrices.
 
 For a graph containing \(n\) nodes, the **adjacency matrix**
 
-\[
+$$
 A \in \mathbb{R}^{n \times n}
-\]
+$$
 
 contains one entry for every possible pair of nodes.
 
 For an unweighted graph,
 
-\[
+$$
 A_{ij} =
 \begin{cases}
 1, & \text{if node }i\text{ is connected to node }j,\\
 0, & \text{otherwise.}
 \end{cases}
-\]
+$$
 
 For weighted graphs, the corresponding matrix entry stores the weight of the interaction.
 

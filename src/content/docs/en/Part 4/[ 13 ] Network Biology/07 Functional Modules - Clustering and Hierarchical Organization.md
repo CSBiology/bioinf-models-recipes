@@ -63,20 +63,20 @@ The clustering coefficient quantifies exactly this property.
 
 For a node with degree \(k_i\), at most
 
-\[
+$$
 \frac{k_i(k_i-1)}{2}
-\]
+$$
 
 edges can exist between its neighbours.
 
 The local clustering coefficient is defined as
 
-\[
+$$
 C_i
 =
 \frac{2E_i}
 {k_i(k_i-1)},
-\]
+$$
 
 where \(E_i\) is the number of observed edges between neighbouring nodes.
 

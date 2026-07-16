@@ -75,9 +75,9 @@ To accomplish this, DBSCAN introduces two intuitive parameters.
 
 The first parameter is the neighborhood radius, denoted by
 
-\[
+$$
 \varepsilon
-\]
+$$
 
 (pronounced "epsilon").
 
@@ -97,9 +97,9 @@ The second parameter is the minimum number of neighboring observations required 
 
 This parameter is commonly denoted as
 
-\[
+$$
 \text{MinPts}.
-\]
+$$
 
 Only if an observation has at least **MinPts** neighbors within its \(\varepsilon\)-neighborhood is the surrounding region considered sufficiently dense to belong to a cluster.
 

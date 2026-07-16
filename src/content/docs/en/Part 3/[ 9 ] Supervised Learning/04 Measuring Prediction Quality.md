@@ -39,21 +39,21 @@ For every protein in our dataset, we therefore have two quantities:
 
 - the experimentally measured stability,
 
-\[
+$$
 y_i,
-\]
+$$
 
 - and the stability predicted by our model,
 
-\[
+$$
 \hat{y}_i.
-\]
+$$
 
 The difference between these two quantities,
 
-\[
+$$
 y_i-\hat{y}_i,
-\]
+$$
 
 is called the **prediction error** or **residual**.
 
@@ -107,13 +107,13 @@ The most widely used loss function for regression problems is the **Mean Squared
 
 It is defined as
 
-\[
+$$
 \mathrm{MSE}
 =
 \frac{1}{n}
 \sum_{i=1}^{n}
 \left(y_i-\hat{y}_i\right)^2.
-\]
+$$
 
 Although the equation may initially appear intimidating, its interpretation is straightforward.
 

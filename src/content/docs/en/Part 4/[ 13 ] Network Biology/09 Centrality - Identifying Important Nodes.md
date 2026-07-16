@@ -49,9 +49,9 @@ It assumes that highly connected nodes are more important than poorly connected 
 
 For a node with degree \(k_i\),
 
-\[
+$$
 C_D(i)=k_i.
-\]
+$$
 
 In many biological networks, nodes with high degree correspond to hubs.
 

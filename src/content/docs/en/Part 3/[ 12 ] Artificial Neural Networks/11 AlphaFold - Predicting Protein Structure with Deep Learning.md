@@ -222,11 +222,11 @@ This distinction is subtle but fundamental.
 
 The network has learned a highly accurate mapping
 
-\[
+$$
 \text{Sequence}
 \longrightarrow
 \text{Structure}.
-\]
+$$
 
 It has **not** learned the complete sequence of molecular events that transforms an unfolded protein into its native structure.
 

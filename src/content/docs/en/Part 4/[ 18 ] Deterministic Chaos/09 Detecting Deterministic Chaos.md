@@ -89,9 +89,9 @@ Perhaps the most widely used quantitative measure of chaos is the **Lyapunov exp
 
 As discussed earlier in this chapter, nearby trajectories in a chaotic system diverge approximately according to
 
-\[
+$$
 \delta(t)=\delta_0 e^{\lambda t},
-\]
+$$
 
 where \(\lambda\) is the Lyapunov exponent.
 

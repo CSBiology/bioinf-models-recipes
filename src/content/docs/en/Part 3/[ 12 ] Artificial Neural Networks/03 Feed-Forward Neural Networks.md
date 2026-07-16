@@ -135,7 +135,7 @@ This process continues until the output layer generates the final prediction.
 
 Mathematically, a feed-forward neural network can therefore be viewed as a sequence of successive transformations,
 
-\[
+$$
 \text{Input}
 \rightarrow
 \text{Hidden Layer 1}
@@ -145,7 +145,7 @@ Mathematically, a feed-forward neural network can therefore be viewed as a seque
 \cdots
 \rightarrow
 \text{Output}.
-\]
+$$
 
 Each transformation extracts increasingly useful information from the input.
 

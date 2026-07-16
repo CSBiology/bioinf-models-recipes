@@ -89,13 +89,13 @@ and decreases through transitions **out of** the state.
 
 Conceptually,
 
-\[
+$$
 \frac{dP}{dt}
 =
 \text{probability flowing in}
 -
 \text{probability flowing out}.
-\]
+$$
 
 The familiar modelling principle therefore remains unchanged.
 

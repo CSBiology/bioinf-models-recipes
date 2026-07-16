@@ -46,9 +46,9 @@ For our purposes, however, such detail is unnecessary.
 
 Instead, we introduce a single state variable,
 
-\[
+$$
 X,
-\]
+$$
 
 representing the overall activity of the lac operon.
 
@@ -74,9 +74,9 @@ Gene products are continuously degraded or diluted during cell growth. If no gen
 
 The simplest mathematical function with these properties is a linear function,
 
-\[
+$$
 R(X)=kX,
-\]
+$$
 
 where \(k\) is the degradation rate.
 
@@ -116,11 +116,11 @@ The activity of the operon increases through activation and decreases through de
 
 The resulting model is therefore
 
-\[
+$$
 \frac{dX}{dt}
 =
 I(X)-R(X),
-\]
+$$
 
 where
 
@@ -141,9 +141,9 @@ The balance between activation and degradation determines whether operon activit
 
 Equilibrium points occur whenever both processes are exactly balanced,
 
-\[
+$$
 I(X)=R(X).
-\]
+$$
 
 Graphically, these equilibria correspond to the intersections between the activation and degradation curves.
 

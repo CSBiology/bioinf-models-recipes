@@ -23,27 +23,27 @@ A remarkably elegant graphical method, known as the **cobweb diagram**, provides
 
 Consider the logistic map
 
-\[
+$$
 x_{n+1}=f(x_n).
-\]
+$$
 
 Starting from an initial population \(x_0\), the equation calculates the next generation,
 
-\[
+$$
 x_1=f(x_0).
-\]
+$$
 
 The same equation is then applied again,
 
-\[
+$$
 x_2=f(x_1),
-\]
+$$
 
 followed by
 
-\[
+$$
 x_3=f(x_2),
-\]
+$$
 
 and so on.
 
@@ -61,17 +61,17 @@ The graph contains two curves.
 
 The first is the function
 
-\[
+$$
 y=f(x),
-\]
+$$
 
 which, for the logistic map, is a downward-opening parabola.
 
 The second is the diagonal line
 
-\[
+$$
 y=x.
-\]
+$$
 
 This diagonal plays a special role because every point on it has identical \(x\)- and \(y\)-coordinates.
 
@@ -85,9 +85,9 @@ The first step is to move vertically until we reach the curve \(y=f(x)\).
 
 The height of this point represents the next population,
 
-\[
+$$
 x_1=f(x_0).
-\]
+$$
 
 However, the horizontal axis still represents the old population \(x_0\).
 
@@ -119,9 +119,9 @@ Eventually, all iterations converge to this single point.
 
 Mathematically, this intersection satisfies
 
-\[
+$$
 f(x)=x.
-\]
+$$
 
 Such a point is called a **fixed point** because applying the function no longer changes its value.
 

@@ -13,9 +13,9 @@ In the previous section, we developed a minimal mathematical model of the lac op
 
 The equilibrium states of the system are determined by the intersections of these two processes,
 
-\[
+$$
 I(X)=R(X).
-\]
+$$
 
 As long as the biological parameters remain unchanged, these intersections remain fixed.
 

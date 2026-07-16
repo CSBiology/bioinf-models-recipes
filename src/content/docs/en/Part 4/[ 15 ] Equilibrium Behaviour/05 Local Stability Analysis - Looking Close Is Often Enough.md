@@ -59,9 +59,9 @@ To understand local behaviour, we only need to examine the **slope** of the syst
 
 Consider a one-dimensional system
 
-\[
+$$
 \frac{dX}{dt}=f(X).
-\]
+$$
 
 Suppose \(X^\ast\) is an equilibrium point.
 
@@ -77,23 +77,23 @@ The equilibrium is therefore **unstable**.
 
 Mathematically,
 
-\[
+$$
 \left.\frac{df(X)}{dX}\right|_{X=X^\ast}<0
 \qquad
 \Rightarrow
 \qquad
 \text{stable equilibrium},
-\]
+$$
 
 whereas
 
-\[
+$$
 \left.\frac{df(X)}{dX}\right|_{X=X^\ast}>0
 \qquad
 \Rightarrow
 \qquad
 \text{unstable equilibrium}.
-\]
+$$
 
 Remarkably, this simple criterion allows us to determine the stability of many biological systems without solving the differential equations explicitly.
 

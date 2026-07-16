@@ -43,21 +43,21 @@ Suppose we decide to include not only hydrophobicity but also the overall surfac
 
 Instead of describing every protein by one feature,
 
-\[
+$$
 x,
-\]
+$$
 
 we now describe it by two features,
 
-\[
+$$
 x_1
 \quad\text{and}\quad
 x_2.
-\]
+$$
 
 Our regression model becomes
 
-\[
+$$
 \hat{y}
 =
 m_1x_1
@@ -65,7 +65,7 @@ m_1x_1
 m_2x_2
 +
 c.
-\]
+$$
 
 The interpretation remains exactly the same as before.
 
@@ -120,13 +120,13 @@ Instead of optimizing only one regression coefficient, we now estimate several s
 
 Consequently, the loss function depends on multiple variables,
 
-\[
+$$
 \mathrm{MSE}(m_1,m_2,\ldots).
-\]
+$$
 
 The gradient therefore also becomes multidimensional,
 
-\[
+$$
 \nabla
 \mathrm{MSE}
 =
@@ -135,7 +135,7 @@ The gradient therefore also becomes multidimensional,
 \frac{\partial \mathrm{MSE}}{\partial m_2},
 \ldots
 \right).
-\]
+$$
 
 Each component tells us how one particular parameter should change in order to reduce the prediction error.
 

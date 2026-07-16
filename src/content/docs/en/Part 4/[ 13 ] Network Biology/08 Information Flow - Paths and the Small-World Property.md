@@ -39,9 +39,9 @@ A **path** is a sequence of connected nodes.
 
 For example,
 
-\[
+$$
 A \rightarrow B \rightarrow C \rightarrow D
-\]
+$$
 
 represents a path connecting node \(A\) to node \(D\).
 

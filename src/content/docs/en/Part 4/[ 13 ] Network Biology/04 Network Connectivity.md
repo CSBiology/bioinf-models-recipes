@@ -41,9 +41,9 @@ In an undirected graph, every edge contributes exactly one connection to the nod
 
 Mathematically, the degree of node \(i\) is
 
-\[
+$$
 k_i=\sum_{j=1}^{n}A_{ij},
-\]
+$$
 
 where \(A_{ij}\) denotes the corresponding entry of the adjacency matrix.
 
@@ -59,17 +59,17 @@ Consequently, each node has two different degrees.
 
 The **in-degree** counts the number of incoming edges,
 
-\[
+$$
 k_i^{\mathrm{in}}
 =\sum_j A_{ji},
-\]
+$$
 
 whereas the **out-degree** counts the outgoing edges,
 
-\[
+$$
 k_i^{\mathrm{out}}
 =\sum_j A_{ij}.
-\]
+$$
 
 The biological interpretation depends on the network.
 
@@ -97,9 +97,9 @@ The **degree distribution** describes the probability that a randomly selected n
 
 If \(N_k\) denotes the number of nodes with degree \(k\) in a network containing \(N\) nodes, then the degree distribution is given by
 
-\[
+$$
 P(k)=\frac{N_k}{N}.
-\]
+$$
 
 Rather than focusing on individual nodes, the degree distribution characterizes the overall architecture of the network.
 

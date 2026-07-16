@@ -51,11 +51,11 @@ Suppose we describe every protein by four properties:
 
 Instead of representing the protein by its sequence, we now represent it by the numerical vector
 
-\[
+$$
 \mathbf{x}
 =
 (x_1,x_2,x_3,x_4).
-\]
+$$
 
 Such a collection of numerical features is called a **feature vector**.
 
@@ -119,9 +119,9 @@ For each protein, we also calculate its overall hydrophobicity from its amino ac
 
 Our dataset therefore consists of pairs of observations,
 
-\[
+$$
 (\text{hydrophobicity},\; \text{protein stability}).
-\]
+$$
 
 The biological question is straightforward:
 

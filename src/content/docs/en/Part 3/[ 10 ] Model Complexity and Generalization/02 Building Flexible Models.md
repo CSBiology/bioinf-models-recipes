@@ -37,9 +37,9 @@ Instead of describing a biological relationship with a single equation, we combi
 
 Mathematically, this idea can be written as
 
-\[
+$$
 f(x)=\sum_{i=1}^{n} w_i h_i(x),
-\]
+$$
 
 where
 

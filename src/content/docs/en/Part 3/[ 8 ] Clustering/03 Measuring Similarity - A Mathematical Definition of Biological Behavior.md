@@ -53,23 +53,23 @@ It corresponds to the ordinary straight-line distance between two points in geom
 
 For two feature vectors
 
-\[
+$$
 \mathbf{x}=(x_1,x_2,\ldots,x_n)
-\]
+$$
 
 and
 
-\[
+$$
 \mathbf{y}=(y_1,y_2,\ldots,y_n),
-\]
+$$
 
 the Euclidean distance is defined as
 
-\[
+$$
 d(\mathbf{x},\mathbf{y})
 =
 \sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}.
-\]
+$$
 
 Although the equation may initially appear intimidating, each component has a clear interpretation.
 
@@ -85,11 +85,11 @@ An alternative and frequently used measure is the **Manhattan distance**.
 
 Instead of measuring the shortest straight-line distance, the Manhattan distance sums the absolute differences along each individual dimension:
 
-\[
+$$
 d(\mathbf{x},\mathbf{y})
 =
 \sum_{i=1}^{n}|x_i-y_i|.
-\]
+$$
 
 The name originates from the rectangular street grid of Manhattan. A pedestrian cannot walk directly through buildings but must follow the streets, accumulating the distance traveled along each block.
 
@@ -125,33 +125,33 @@ To behave consistently, a distance measure should satisfy four fundamental mathe
 
 Distances can never be negative.
 
-\[
+$$
 d(x,y)\ge0
-\]
+$$
 
 **Identity**
 
 The distance between an object and itself must always be zero.
 
-\[
+$$
 d(x,x)=0
-\]
+$$
 
 **Symmetry**
 
 The order of comparison must not matter.
 
-\[
+$$
 d(x,y)=d(y,x)
-\]
+$$
 
 **Triangle Inequality**
 
 The direct distance between two objects should never exceed the distance obtained by traveling through a third object.
 
-\[
+$$
 d(x,z)\le d(x,y)+d(y,z)
-\]
+$$
 
 Together, these four properties define what mathematicians call a **metric**.
 

@@ -53,9 +53,9 @@ Changing a parameter does not move the system to a different point in state spac
 
 The distinction becomes particularly clear in the logistic growth model
 
-\[
+$$
 \frac{dN}{dt}=rN\left(1-\frac{N}{K}\right),
-\]
+$$
 
 where \(N\) denotes the population size.
 

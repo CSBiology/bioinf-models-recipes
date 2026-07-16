@@ -39,15 +39,15 @@ This input might represent a biological property such as
 
 The neuron multiplies this input by an adjustable parameter, called the **weight**,
 
-\[
+$$
 w.
-\]
+$$
 
 The output of the neuron therefore becomes
 
-\[
+$$
 z = wx.
-\]
+$$
 
 If the weight is large and positive, the input strongly increases the neuron's output.
 
@@ -77,21 +77,21 @@ Suppose the neuron receives three biological features,
 
 Each feature is associated with its own weight,
 
-\[
+$$
 w_1,\;w_2,\;w_3.
-\]
+$$
 
 The neuron first multiplies every input by its corresponding weight,
 
-\[
+$$
 w_1x_1,\qquad
 w_2x_2,\qquad
 w_3x_3.
-\]
+$$
 
 These weighted contributions are then added together,
 
-\[
+$$
 z
 =
 w_1x_1
@@ -99,7 +99,7 @@ w_1x_1
 w_2x_2
 +
 w_3x_3.
-\]
+$$
 
 This weighted sum represents the combined evidence provided by all input features.
 
@@ -119,7 +119,7 @@ Just as linear regression contains an intercept, artificial neurons contain an a
 
 Including the bias yields
 
-\[
+$$
 z
 =
 w_1x_1
@@ -131,7 +131,7 @@ w_2x_2
 w_nx_n
 +
 b.
-\]
+$$
 
 The bias allows the neuron to shift its response independently of the input values.
 
@@ -151,7 +151,7 @@ At this point, the equation should look remarkably familiar.
 
 Compare it with the linear regression model introduced in Chapter 9:
 
-\[
+$$
 \hat{y}
 =
 w_1x_1
@@ -163,7 +163,7 @@ w_2x_2
 w_nx_n
 +
 b.
-\]
+$$
 
 Apart from the notation, the two equations are identical.
 
@@ -213,28 +213,28 @@ We can therefore view every artificial neuron as performing two consecutive oper
 
 First, it calculates a weighted linear combination,
 
-\[
+$$
 z
 =
 \sum_{i=1}^{n}
 w_i x_i
 +
 b.
-\]
+$$
 
 Second, it applies a nonlinear activation function,
 
-\[
+$$
 a
 =
 \phi(z).
-\]
+$$
 
 The value
 
-\[
+$$
 a
-\]
+$$
 
 is then transmitted to the next layer of the network.
 

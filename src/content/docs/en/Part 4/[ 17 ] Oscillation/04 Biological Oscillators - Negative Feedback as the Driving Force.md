@@ -59,15 +59,15 @@ Each hormone is also degraded continuously.
 
 The pituitary and gonadal dynamics can therefore be written as
 
-\[
+$$
 P' = H-k_1P
-\]
+$$
 
 and
 
-\[
+$$
 G' = P-k_2G.
-\]
+$$
 
 These equations should already look familiar.
 

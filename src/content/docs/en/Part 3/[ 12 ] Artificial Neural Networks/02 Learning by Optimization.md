@@ -37,9 +37,9 @@ Suppose we wish to predict the thermal stability of a protein from its hydrophob
 
 The simplest model might be
 
-\[
+$$
 \hat{y}=mx+b,
-\]
+$$
 
 where
 
@@ -127,7 +127,7 @@ Eventually, the prediction error stabilizes, indicating that the network has lea
 
 The learning process can therefore be summarized as a continuous feedback loop:
 
-\[
+$$
 \text{Input}
 \rightarrow
 \text{Prediction}
@@ -137,7 +137,7 @@ The learning process can therefore be summarized as a continuous feedback loop:
 \text{Parameter Update}
 \rightarrow
 \text{Improved Prediction}.
-\]
+$$
 
 This iterative optimization process forms the foundation of all modern neural network training.
 

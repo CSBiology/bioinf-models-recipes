@@ -66,33 +66,33 @@ It is interesting because it introduces the fundamental concepts of supervised l
 
 A straight line can be described mathematically by
 
-\[
+$$
 \hat{y}=mx+c.
-\]
+$$
 
 This equation contains four different quantities, each with a specific interpretation.
 
 The variable
 
-\[
+$$
 x
-\]
+$$
 
 represents the observed biological feature.
 
 In our example,
 
-\[
+$$
 x
-\]
+$$
 
 is the hydrophobicity of a protein.
 
 The quantity
 
-\[
+$$
 \hat{y}
-\]
+$$
 
 is the predicted protein stability.
 
@@ -102,11 +102,11 @@ It reminds us that this value is not measured experimentally but estimated by th
 
 The remaining two quantities,
 
-\[
+$$
 m
 \quad\text{and}\quad
 c,
-\]
+$$
 
 are the **model parameters**.
 
@@ -130,15 +130,15 @@ Once the regression model has been specified, it can generate predictions.
 
 For every protein in the dataset, the measured hydrophobicity is inserted into the regression equation, producing a predicted stability,
 
-\[
+$$
 \hat{y}.
-\]
+$$
 
 These predictions can then be compared with the experimentally measured values,
 
-\[
+$$
 y.
-\]
+$$
 
 If the model were perfect, every prediction would exactly match the corresponding observation.
 

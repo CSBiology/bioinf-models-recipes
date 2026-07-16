@@ -37,9 +37,9 @@ The first component is the **model structure**.
 
 For linear regression, we decided that protein stability should be described by the equation
 
-\[
+$$
 \hat{y}=mx+c.
-\]
+$$
 
 This equation reflects our biological hypothesis that protein stability depends approximately linearly on hydrophobicity.
 
@@ -78,9 +78,9 @@ Some underestimate protein stability, whereas others systematically overestimate
 
 Although all of these lines share the same mathematical form,
 
-\[
+$$
 \hat{y}=mx+c,
-\]
+$$
 
 they correspond to different parameter values.
 
@@ -151,11 +151,11 @@ the minimum of the loss function.
 
 Mathematically,
 
-\[
+$$
 \underset{m}{\operatorname{argmin}}
 \;
 \mathrm{MSE}(m).
-\]
+$$
 
 This notation simply means:
 

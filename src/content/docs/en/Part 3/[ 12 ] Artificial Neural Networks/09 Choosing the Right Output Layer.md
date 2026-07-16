@@ -51,9 +51,9 @@ For this reason, the output neuron usually applies **no activation function at a
 
 The final prediction is simply
 
-\[
+$$
 \hat{y}=z,
-\]
+$$
 
 where \(z\) is the weighted sum calculated by the last neuron.
 
@@ -82,11 +82,11 @@ As discussed in Chapter 11, probabilities must lie between 0 and 1.
 
 The appropriate activation function is therefore the **sigmoid function**,
 
-\[
+$$
 P(y=1|x)
 =
 \frac{1}{1+e^{-z}}.
-\]
+$$
 
 The output neuron now produces values such as
 
@@ -99,9 +99,9 @@ These numbers have a direct probabilistic interpretation.
 
 For example,
 
-\[
+$$
 P(\text{chloroplast})=0.91
-\]
+$$
 
 indicates that the network estimates a 91% probability that the protein is localized to the chloroplast.
 
@@ -139,18 +139,18 @@ Suppose the output layer contains one neuron for each possible class.
 
 Each neuron first computes a score,
 
-\[
+$$
 z_i.
-\]
+$$
 
 The softmax function converts these scores into probabilities,
 
-\[
+$$
 P_i
 =
 \frac{e^{z_i}}
 {\sum_j e^{z_j}}.
-\]
+$$
 
 Two important properties follow immediately.
 
@@ -162,9 +162,9 @@ Second,
 
 the probabilities always sum to one,
 
-\[
+$$
 \sum_i P_i = 1.
-\]
+$$
 
 The output therefore represents a proper probability distribution across all possible classes.
 
@@ -196,7 +196,7 @@ After applying the softmax function, the network might produce
 
 Notice that
 
-\[
+$$
 0.82
 +
 0.09
@@ -208,7 +208,7 @@ Notice that
 0.02
 =
 1.
-\]
+$$
 
 The network therefore predicts that the protein is localized to the chloroplast while simultaneously expressing its confidence in every alternative localization.
 

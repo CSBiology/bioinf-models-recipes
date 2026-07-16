@@ -69,27 +69,27 @@ The organization of a network can be summarized by its degree distribution.
 
 For Erdős–Rényi networks, the degree distribution follows a binomial distribution,
 
-\[
+$$
 P(k)
 =
 \binom{N-1}{k}
 p^k
 (1-p)^{N-1-k}.
-\]
+$$
 
 For large networks with relatively small connection probabilities, this distribution is well approximated by a Poisson distribution,
 
-\[
+$$
 P(k)
 =
 \frac{\lambda^k e^{-\lambda}}{k!},
-\]
+$$
 
 where
 
-\[
+$$
 \lambda=\langle k\rangle
-\]
+$$
 
 is the average degree of the network.
 
@@ -123,9 +123,9 @@ This observation fundamentally changed the understanding of biological network o
 
 The observed degree distributions were found to approximately follow a **power law**
 
-\[
+$$
 P(k)\propto k^{-\gamma},
-\]
+$$
 
 where the exponent \(\gamma\) is typically between 2 and 3.
 

@@ -13,9 +13,9 @@ sidebar:
 
 In the previous section, we saw that every artificial neuron first computes a weighted sum of its inputs,
 
-\[
+$$
 z=\sum_{i=1}^{n} w_i x_i+b.
-\]
+$$
 
 At first glance, this appears to be a perfectly reasonable computational model.
 
@@ -49,21 +49,21 @@ A linear transformation followed by another linear transformation is still a lin
 
 For example,
 
-\[
+$$
 y = A(Bx)
-\]
+$$
 
 can always be written as
 
-\[
+$$
 y = Cx,
-\]
+$$
 
 where
 
-\[
+$$
 C = AB.
-\]
+$$
 
 The two transformations simply merge into a single one.
 
@@ -101,9 +101,9 @@ This is precisely the role of the activation function.
 
 Instead of passing the weighted sum directly to the next layer, every neuron first transforms it using a nonlinear mathematical function,
 
-\[
+$$
 a=\phi(z).
-\]
+$$
 
 This seemingly simple modification fundamentally changes the behavior of the entire network.
 
@@ -119,11 +119,11 @@ The expressive power of deep learning therefore arises not from the weighted sum
 
 Historically, one of the first activation functions used in neural networks was the **sigmoid function**,
 
-\[
+$$
 \phi(z)
 =
 \frac{1}{1+e^{-z}}.
-\]
+$$
 
 The sigmoid transforms every input into a value between 0 and 1.
 
@@ -155,29 +155,29 @@ This problem became one of the major obstacles to training deep neural networks.
 
 A closely related activation function is the **hyperbolic tangent**, or **tanh**,
 
-\[
+$$
 \phi(z)
 =
 \tanh(z).
-\]
+$$
 
 Like the sigmoid, tanh is smooth and nonlinear.
 
 However, its output ranges from
 
-\[
+$$
 -1
 \quad\text{to}\quad
 1,
-\]
+$$
 
 rather than from
 
-\[
+$$
 0
 \quad\text{to}\quad
 1.
-\]
+$$
 
 Because positive and negative outputs are balanced around zero, optimization is often more efficient.
 
@@ -197,11 +197,11 @@ Modern deep learning is largely built upon a much simpler activation function kn
 
 Its mathematical definition is remarkably simple,
 
-\[
+$$
 \phi(z)
 =
 \max(0,z).
-\]
+$$
 
 If the weighted sum is negative, the output becomes zero.
 

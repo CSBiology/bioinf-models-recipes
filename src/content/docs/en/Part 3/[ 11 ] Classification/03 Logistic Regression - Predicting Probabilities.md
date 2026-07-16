@@ -15,9 +15,9 @@ The simplest classification algorithm is closely related to a model that we alre
 
 In Chapter 9, we introduced **linear regression**, where a biological property was predicted as a weighted combination of several input features,
 
-\[
+$$
 \hat{y}=w_1x_1+w_2x_2+\cdots+w_nx_n+b.
-\]
+$$
 
 This model works well when the quantity to be predicted is continuous, such as protein stability, enzyme activity, or gene expression.
 
@@ -29,11 +29,11 @@ For example, suppose we wish to predict whether a protein is localized to the ch
 
 A linear regression model might produce predictions such as
 
-\[
+$$
 \hat{y}=2.3,\qquad
 \hat{y}=-1.7,\qquad
 \hat{y}=15.2.
-\]
+$$
 
 These numbers have no obvious biological interpretation.
 
@@ -72,9 +72,9 @@ Two proteins may both be classified as chloroplast proteins, yet one prediction 
 
 Rather than producing only a class label, logistic regression therefore estimates the probability
 
-\[
+$$
 P(y=1|x),
-\]
+$$
 
 that an observation belongs to a particular class.
 
@@ -96,21 +96,21 @@ Instead of using the linear prediction directly, we pass it through a nonlinear 
 
 The linear model first computes the score
 
-\[
+$$
 z
 =
 w_1x_1+w_2x_2+\cdots+w_nx_n+b.
-\]
+$$
 
 This score may assume any positive or negative value.
 
 The sigmoid function then transforms this score into a probability,
 
-\[
+$$
 P(y=1|x)
 =
 \frac{1}{1+e^{-z}}.
-\]
+$$
 
 The sigmoid has several remarkable properties.
 
@@ -132,9 +132,9 @@ Although logistic regression predicts probabilities, its geometric interpretatio
 
 The linear combination
 
-\[
+$$
 z=w_1x_1+\cdots+w_nx_n+b
-\]
+$$
 
 still defines a hyperplane in feature space.
 
@@ -166,9 +166,9 @@ From the perspective of optimization, logistic regression closely resembles line
 
 The model still contains adjustable parameters,
 
-\[
+$$
 w_1,w_2,\ldots,w_n,b,
-\]
+$$
 
 that must be estimated from labeled training data.
 

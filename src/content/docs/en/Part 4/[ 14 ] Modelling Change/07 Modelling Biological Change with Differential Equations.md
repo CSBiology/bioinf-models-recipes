@@ -35,9 +35,9 @@ Rather than describing the value of \(X\) itself, we are interested in its **rat
 
 Mathematically, this is written as
 
-\[
+$$
 \frac{dX}{dt}.
-\]
+$$
 
 This notation is read as "the change of \(X\) with respect to time."
 
@@ -57,9 +57,9 @@ The rate of change therefore depends on the current biological state.
 
 Mathematically, this relationship can be written in the general form
 
-\[
+$$
 \frac{dX}{dt}=f(X),
-\]
+$$
 
 where the function \(f\) summarizes all biological processes that influence the quantity \(X\).
 
@@ -82,13 +82,13 @@ Transcript abundance increases through transcription but decreases because the p
 
 These biological assumptions can be translated directly into a mathematical model:
 
-\[
+$$
 \frac{dP}{dt}=m\beta PT-aP
-\]
+$$
 
-\[
+$$
 \frac{dT}{dt}=bT-\beta PT
-\]
+$$
 
 Although these equations may appear unfamiliar at first, every term has a direct biological interpretation.
 
